@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="workspace_type" table="x_1534869_wrm_workspace_options" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>workspace_type</element>
+            <name>x_1534869_wrm_workspace_options</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>tgadson</sys_created_by>
+            <sys_created_on>2026-06-25 22:20:22</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>workspace_type</sys_name>
+            <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+            <sys_update_name>sys_choice_x_1534869_wrm_workspace_options_workspace_type</sys_update_name>
+            <sys_updated_by>tgadson</sys_updated_by>
+            <sys_updated_on>2026-06-25 22:20:22</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workspace_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hot desk</label>
+            <language>en</language>
+            <name>x_1534869_wrm_workspace_options</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>tgadson</sys_created_by>
+            <sys_created_on>2026-06-25 22:20:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>tgadson</sys_updated_by>
+            <sys_updated_on>2026-06-25 22:25:21</sys_updated_on>
+            <value>hot_desk</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workspace_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Focus room</label>
+            <language>en</language>
+            <name>x_1534869_wrm_workspace_options</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>tgadson</sys_created_by>
+            <sys_created_on>2026-06-25 22:20:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>tgadson</sys_updated_by>
+            <sys_updated_on>2026-06-25 22:25:35</sys_updated_on>
+            <value>focus_room</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workspace_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Collaboration space</label>
+            <language>en</language>
+            <name>x_1534869_wrm_workspace_options</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>tgadson</sys_created_by>
+            <sys_created_on>2026-06-25 22:21:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>tgadson</sys_updated_by>
+            <sys_updated_on>2026-06-25 22:25:42</sys_updated_on>
+            <value>collaboration_space</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workspace_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Meeting room</label>
+            <language>en</language>
+            <name>x_1534869_wrm_workspace_options</name>
+            <sequence>40</sequence>
+            <synonyms/>
+            <sys_created_by>tgadson</sys_created_by>
+            <sys_created_on>2026-06-25 22:22:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>tgadson</sys_updated_by>
+            <sys_updated_on>2026-06-25 22:25:30</sys_updated_on>
+            <value>meeting_room</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
