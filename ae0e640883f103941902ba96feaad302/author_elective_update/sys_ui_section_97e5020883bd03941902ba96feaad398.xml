@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="New section 1" section_id="97e5020883bd03941902ba96feaad398" sys_domain="global" table="x_1534869_wrm_workspace_options" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>image</element>
+            <position>0</position>
+            <sys_created_by>tgadson</sys_created_by>
+            <sys_created_on>2026-06-25 22:47:19</sys_created_on>
+            <sys_id>a7e5020883bd03941902ba96feaad3f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New section 1" display_value="New section 1" name="x_1534869_wrm_workspace_options" sys_domain="global" view="Default view">97e5020883bd03941902ba96feaad398</sys_ui_section>
+            <sys_updated_by>tgadson</sys_updated_by>
+            <sys_updated_on>2026-06-25 22:47:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>New section 1</caption>
+            <header>false</header>
+            <name>x_1534869_wrm_workspace_options</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>tgadson</sys_created_by>
+            <sys_created_on>2026-06-25 22:47:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>97e5020883bd03941902ba96feaad398</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1534869_wrm_workspace_options</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+            <sys_update_name>sys_ui_section_97e5020883bd03941902ba96feaad398</sys_update_name>
+            <sys_updated_by>tgadson</sys_updated_by>
+            <sys_updated_on>2026-06-25 22:47:18</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</application>
+        <file_path/>
+        <instance_id>0210aedcff7fc218c812f8e4fc4fd90d</instance_id>
+        <instance_name>dev284016</instance_name>
+        <name>sys_ui_section_97e5020883bd03941902ba96feaad398</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="New section 1" section_id="97e5020883bd03941902ba96feaad398" sys_domain="global" table="x_1534869_wrm_workspace_options" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>image</element><position>0</position><sys_created_by>tgadson</sys_created_by><sys_created_on>2026-06-25 22:47:19</sys_created_on><sys_id>a7e5020883bd03941902ba96feaad3f3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New section 1" display_value="New section 1" name="x_1534869_wrm_workspace_options" sys_domain="global" view="Default view">97e5020883bd03941902ba96feaad398</sys_ui_section><sys_updated_by>tgadson</sys_updated_by><sys_updated_on>2026-06-25 22:47:19</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>New section 1</caption><header>false</header><name>x_1534869_wrm_workspace_options</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>tgadson</sys_created_by><sys_created_on>2026-06-25 22:47:18</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>97e5020883bd03941902ba96feaad398</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1534869_wrm_workspace_options</sys_name><sys_overrides/><sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package><sys_policy/><sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope><sys_update_name>sys_ui_section_97e5020883bd03941902ba96feaad398</sys_update_name><sys_updated_by>tgadson</sys_updated_by><sys_updated_on>2026-06-25 22:47:18</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1955668819</payload_hash>
+        <record_name>Workspace Options</record_name>
+        <reverted_from/>
+        <source>5219c1cc83b503941902ba96feaad341</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>tgadson</sys_created_by>
+        <sys_created_on>2026-06-25 22:47:19</sys_created_on>
+        <sys_id>6fe5020883bd03941902ba96feaad3f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f00f7604f0000001</sys_recorded_at>
+        <sys_updated_by>tgadson</sys_updated_by>
+        <sys_updated_on>2026-06-25 22:47:19</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>23e5020804bd0394163a185a706845f6</update_guid>
+        <update_guid_history>23e5020804bd0394163a185a706845f6:-1955668819</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>tgadson</sys_created_by>
+        <sys_created_on>2026-06-25 22:49:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>5a44e81952d04dcc91b6955d93f2e290</sys_id>
+        <sys_metadata>97e5020883bd03941902ba96feaad398</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New section 1</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_parent display_value="Workspace Options">5cc5458883b503941902ba96feaad3b9</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_scope_delete display_value="">393aa292a9794d92995d1bcc716fef44</sys_scope_delete>
+        <sys_update_name>sys_ui_section_97e5020883bd03941902ba96feaad398</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_97e5020883bd03941902ba96feaad398">6fe5020883bd03941902ba96feaad3f6</sys_update_version>
+        <sys_updated_by>tgadson</sys_updated_by>
+        <sys_updated_on>2026-06-25 22:49:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
