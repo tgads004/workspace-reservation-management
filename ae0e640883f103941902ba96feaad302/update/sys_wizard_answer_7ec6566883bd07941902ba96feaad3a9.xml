@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>New Reservation Tracker</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Reservation Tracker</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">49fb6e42187232108bb255f46a373ade</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>tgadson</sys_created_by>
+        <sys_created_on>2026-06-27 13:17:57</sys_created_on>
+        <sys_id>7ec6566883bd07941902ba96feaad3a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reservation Tracker</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_wizard_answer_7ec6566883bd07941902ba96feaad3a9</sys_update_name>
+        <sys_updated_by>tgadson</sys_updated_by>
+        <sys_updated_on>2026-06-27 13:17:57</sys_updated_on>
+        <table/>
+        <target_url>x_1534869_wrm_reservation_tracker.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>
