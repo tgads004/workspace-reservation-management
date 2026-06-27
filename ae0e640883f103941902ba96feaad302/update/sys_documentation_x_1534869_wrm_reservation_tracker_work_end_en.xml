@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="work_end" label="End date/time" language="en" table="x_1534869_wrm_reservation_tracker">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>work_end</element>
+            <help/>
+            <hint/>
+            <label>End date/time</label>
+            <language>en</language>
+            <name>x_1534869_wrm_reservation_tracker</name>
+            <plural>End date/times</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>tgadson</sys_created_by>
+            <sys_created_on>2026-06-27 13:32:28</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>End date/time</sys_name>
+            <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+            <sys_update_name>sys_documentation_x_1534869_wrm_reservation_tracker_work_end_en</sys_update_name>
+            <sys_updated_by>tgadson</sys_updated_by>
+            <sys_updated_on>2026-06-27 13:32:28</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
