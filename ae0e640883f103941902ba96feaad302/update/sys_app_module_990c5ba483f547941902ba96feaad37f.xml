@@ -10,7 +10,7 @@
         <hint/>
         <homepage/>
         <image/>
-        <link_type>FILTER</link_type>
+        <link_type>LIST</link_type>
         <map_page/>
         <mobile_title>Open</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
@@ -27,15 +27,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>990c5ba483f547941902ba96feaad37f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Open</sys_name>
         <sys_overrides/>
         <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name>sys_app_module_990c5ba483f547941902ba96feaad37f</sys_update_name>
-        <sys_updated_by>tgadson</sys_updated_by>
-        <sys_updated_on>2026-06-27 20:48:12</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-02 02:30:50</sys_updated_on>
         <timeline_page/>
         <title>Open</title>
         <uncancelable>false</uncancelable>

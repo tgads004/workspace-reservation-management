@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app">
     <sys_app action="INSERT_OR_UPDATE">
         <active>true</active>
-        <can_edit_in_studio>true</can_edit_in_studio>
+        <can_edit_in_studio>false</can_edit_in_studio>
         <enforce_license>log</enforce_license>
         <guided_setup_guid/>
         <hide_on_ui>false</hide_on_ui>
@@ -32,9 +32,9 @@
         <sys_created_by>tgadson</sys_created_by>
         <sys_created_on>2026-06-25 16:23:19</sys_created_on>
         <sys_id>ae0e640883f103941902ba96feaad302</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>tgadson</sys_updated_by>
-        <sys_updated_on>2026-06-25 16:31:09</sys_updated_on>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 03:25:22</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>

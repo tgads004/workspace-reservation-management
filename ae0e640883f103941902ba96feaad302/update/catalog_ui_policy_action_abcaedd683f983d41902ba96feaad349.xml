@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Workspace Reservation Request">1a31ed1683b983d41902ba96feaad37f</catalog_item>
+        <catalog_variable>IO:9e136d1a83b983d41902ba96feaad3de</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-02 20:35:54</sys_created_on>
+        <sys_id>abcaedd683f983d41902ba96feaad349</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>reserved_for</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_abcaedd683f983d41902ba96feaad349</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-02 20:35:54</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Reserved for read-only + mandatory">c7396d1683f983d41902ba96feaad363</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>reserved_for</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=abcaedd683f983d41902ba96feaad349"/>
+</record_update>

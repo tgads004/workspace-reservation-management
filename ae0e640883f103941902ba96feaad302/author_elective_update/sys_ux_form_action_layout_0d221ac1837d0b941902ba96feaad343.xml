@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action_layout">
+    <sys_ux_form_action_layout action="DELETE">
+        <action_config/>
+        <active>true</active>
+        <description/>
+        <name>Reservation Tracker Layout</name>
+        <order>0</order>
+        <specificity>20</specificity>
+        <sys_class_name>sys_ux_form_action_layout</sys_class_name>
+        <sys_created_by>tgadson</sys_created_by>
+        <sys_created_on>2026-06-29 02:15:16</sys_created_on>
+        <sys_id>0d221ac1837d0b941902ba96feaad343</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reservation Tracker Layout</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_ux_form_action_layout_0d221ac1837d0b941902ba96feaad343</sys_update_name>
+        <sys_updated_by>tgadson</sys_updated_by>
+        <sys_updated_on>2026-06-29 02:15:16</sys_updated_on>
+        <table>x_1534869_wrm_reservation_tracker</table>
+        <use_layout_items_only>true</use_layout_items_only>
+    </sys_ux_form_action_layout>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</application>
+        <file_path/>
+        <instance_id>0210aedcff7fc218c812f8e4fc4fd90d</instance_id>
+        <instance_name>dev284016</instance_name>
+        <name>sys_ux_form_action_layout_0d221ac1837d0b941902ba96feaad343</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action_layout"><sys_ux_form_action_layout action="INSERT_OR_UPDATE"><action_config/><active>true</active><description/><name>Reservation Tracker Layout</name><order>0</order><specificity>20</specificity><sys_class_name>sys_ux_form_action_layout</sys_class_name><sys_created_by>tgadson</sys_created_by><sys_created_on>2026-06-29 02:15:16</sys_created_on><sys_id>0d221ac1837d0b941902ba96feaad343</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Reservation Tracker Layout</sys_name><sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package><sys_policy/><sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope><sys_update_name>sys_ux_form_action_layout_0d221ac1837d0b941902ba96feaad343</sys_update_name><sys_updated_by>tgadson</sys_updated_by><sys_updated_on>2026-06-29 02:15:16</sys_updated_on><table>x_1534869_wrm_reservation_tracker</table><use_layout_items_only>true</use_layout_items_only></sys_ux_form_action_layout></record_update>]]></payload>
+        <payload_hash>772085011</payload_hash>
+        <record_name>Reservation Tracker Layout</record_name>
+        <reverted_from/>
+        <source>acd67d0983790b941902ba96feaad39f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>tgadson</sys_created_by>
+        <sys_created_on>2026-06-29 02:15:16</sys_created_on>
+        <sys_id>4b42dec1837d0b941902ba96feaad393</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f1128d6a00000001</sys_recorded_at>
+        <sys_updated_by>tgadson</sys_updated_by>
+        <sys_updated_on>2026-06-29 02:15:16</sys_updated_on>
+        <type>UX Form Actions Layout</type>
+        <update_guid>0b42dec1c47d0b940bcb10f55afc7192</update_guid>
+        <update_guid_history>0b42dec1c47d0b940bcb10f55afc7192:772085011</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>tgadson</sys_created_by>
+        <sys_created_on>2026-06-29 02:36:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_form_action_layout">sys_ux_form_action_layout</sys_db_object>
+        <sys_id>174b1fe51a55449c8d4b3e92229bac90</sys_id>
+        <sys_metadata>0d221ac1837d0b941902ba96feaad343</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reservation Tracker Layout</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_scope_delete display_value="">393aa292a9794d92995d1bcc716fef44</sys_scope_delete>
+        <sys_update_name>sys_ux_form_action_layout_0d221ac1837d0b941902ba96feaad343</sys_update_name>
+        <sys_update_version display_value="sys_ux_form_action_layout_0d221ac1837d0b941902ba96feaad343">4b42dec1837d0b941902ba96feaad393</sys_update_version>
+        <sys_updated_by>tgadson</sys_updated_by>
+        <sys_updated_on>2026-06-29 02:36:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
