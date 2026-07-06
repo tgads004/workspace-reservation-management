@@ -19,8 +19,8 @@
         <do_not_select_first>false</do_not_select_first>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <dynamic_value_dot_walk_path/>
-        <dynamic_value_field/>
+        <dynamic_value_dot_walk_path>location</dynamic_value_dot_walk_path>
+        <dynamic_value_field display_value="Select workspace">65e0b116833d83d41902ba96feaad351</dynamic_value_field>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
         <field/>
@@ -82,14 +82,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-02 22:21:51</sys_created_on>
         <sys_id>11c28e1a83bd83d41902ba96feaad34d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Location</sys_name>
         <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name>item_option_new_11c28e1a83bd83d41902ba96feaad34d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-02 22:21:51</sys_updated_on>
+        <sys_updated_on>2026-07-05 21:51:03</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
