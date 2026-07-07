@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="45bf366783f54fd41902ba96feaad3af" extends="sys_import_set_row" label="WRM Sprint 2 Stories" max_length="40" name="x_1534869_wrm_wrm_sprint_2_stories" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Description" label="Description" max_length="405" name="u_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Product" label="Product" max_length="40" name="u_product" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Short Description" label="Short Description" max_length="64" name="u_short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Sprint" label="Sprint" max_length="40" name="u_sprint" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Acceptance Criteria" label="Acceptance Criteria" max_length="4606" name="u_acceptance_criteria" type="string"/>
+    </element>
+</database>
