@@ -14,6 +14,34 @@
             <sys_updated_by>tgadson</sys_updated_by>
             <sys_updated_on>2026-06-27 14:09:14</sys_updated_on>
         </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-03 00:39:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>64c226da83b1c3d41902ba96feaad3c5</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1534869_wrm_reservation_tracker" name="x_1534869_wrm_reservation_tracker" sys_domain="global" view="Default view">ce826a60833147941902ba96feaad3b5</sys_ui_form>
+            <sys_ui_section caption="Details" display_value="Details" name="x_1534869_wrm_reservation_tracker" sys_domain="global" view="Default view">acc226da83b1c3d41902ba96feaad375</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-03 00:39:36</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-03 00:39:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4ea222da83b1c3d41902ba96feaad3ae</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1534869_wrm_reservation_tracker" name="x_1534869_wrm_reservation_tracker" sys_domain="global" view="Default view">ce826a60833147941902ba96feaad3b5</sys_ui_form>
+            <sys_ui_section caption="Activities" display_value="Activities" name="x_1534869_wrm_reservation_tracker" sys_domain="global" view="Default view">c6a222da83b1c3d41902ba96feaad36a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-03 00:39:36</sys_updated_on>
+        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_1534869_wrm_reservation_tracker</name>
             <roles/>

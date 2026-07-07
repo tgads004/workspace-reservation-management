@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description>Open the record 'Reservation Tracker: test' in the 'Reservation Tracker' list</description>
+        <display_name>Open a Record in List</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>3</order>
+        <step_config display_value="Open a Record in List">0200ac2fe72003005c85cd19d2f6a942</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-29 21:57:26</sys_created_on>
+        <sys_id>8690a21183fd8b941902ba96feaad324</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open a Record in List</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_atf_step_8690a21183fd8b941902ba96feaad324</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-29 21:57:26</sys_updated_on>
+        <table>x_1534869_wrm_reservation_tracker</table>
+        <test display_value="My New Test">433fda1d83bd8b941902ba96feaad3c4</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=8690a21183fd8b941902ba96feaad324"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>8690a21183fd8b941902ba96feaad324</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-29 21:57:26</sys_created_on>
+        <sys_id>3fd062dd83bd8b941902ba96feaad38d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-29 21:57:26</sys_updated_on>
+        <value>x_1534869_wrm_reservation_tracker</value>
+        <variable display_value="Table">6fb0a06fe72003005c85cd19d2f6a9da</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>8690a21183fd8b941902ba96feaad324</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-29 21:57:26</sys_created_on>
+        <sys_id>73d062dd83bd8b941902ba96feaad38e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-29 21:57:26</sys_updated_on>
+        <value>x_1534869_wrm_reservation_tracker</value>
+        <variable display_value="Related list table">c181286fe72003005c85cd19d2f6a93b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>8690a21183fd8b941902ba96feaad324</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-29 21:57:26</sys_created_on>
+        <sys_id>7fd062dd83bd8b941902ba96feaad38c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-29 21:57:26</sys_updated_on>
+        <value>5ca0bf348379c7941902ba96feaad35d</value>
+        <variable display_value="Record">b076e295531233009e02ddeeff7b12d9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>8690a21183fd8b941902ba96feaad324</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-29 21:57:26</sys_created_on>
+        <sys_id>b3d062dd83bd8b941902ba96feaad38d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-29 21:57:26</sys_updated_on>
+        <value>list</value>
+        <variable display_value="List type">b8c89a36538333009e02ddeeff7b12f6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>8690a21183fd8b941902ba96feaad324</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-29 21:57:26</sys_created_on>
+        <sys_id>f7d062dd83bd8b941902ba96feaad38d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-29 21:57:26</sys_updated_on>
+        <value>task_ci.task</value>
+        <variable display_value="Related list">5121646fe72003005c85cd19d2f6a99a</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_0200ac2fe72003005c85cd19d2f6a942^id=8690a21183fd8b941902ba96feaad324"/>
+</record_update>
