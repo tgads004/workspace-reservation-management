@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_1534869_wrm_workspace_maintenance">x_1534869_wrm_workspace_maintenance</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>WRM</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>tgadson</sys_created_by>
+        <sys_created_on>2026-06-28 02:25:47</sys_created_on>
+        <sys_id>131bc130837587941902ba96feaad399</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>WRM</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_number_131bc130837587941902ba96feaad399</sys_update_name>
+        <sys_updated_by>tgadson</sys_updated_by>
+        <sys_updated_on>2026-06-28 02:25:47</sys_updated_on>
+    </sys_number>
+</record_update>

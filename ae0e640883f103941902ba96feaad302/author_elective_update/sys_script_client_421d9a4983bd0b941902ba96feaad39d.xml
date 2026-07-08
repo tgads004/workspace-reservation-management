@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Hide Discuss Button</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    // Safely look up to the Next Experience Unified Navigation top-bar container
+    try {
+        var topDoc = window.top.document;
+        if (topDoc) {
+            // Locates the specific Sidebar "discuss" action element in Core UI
+            var discussBtn = topDoc.querySelector('[data-action-name="discuss"]');
+            if (discussBtn) {
+                discussBtn.style.display = 'none';
+            }
+        }
+    } catch (e) {
+        // Keeps the console clean and logs errors safely without disrupting the form load
+        jslog('Note: Sidebar component element not available or accessible in this view context.');
+    }
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>tgadson</sys_created_by>
+        <sys_created_on>2026-06-29 03:04:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>421d9a4983bd0b941902ba96feaad39d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hide Discuss Button</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_script_client_421d9a4983bd0b941902ba96feaad39d</sys_update_name>
+        <sys_updated_by>tgadson</sys_updated_by>
+        <sys_updated_on>2026-06-29 03:04:16</sys_updated_on>
+        <table>x_1534869_wrm_reservation_tracker</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</application>
+        <file_path/>
+        <instance_id>0210aedcff7fc218c812f8e4fc4fd90d</instance_id>
+        <instance_name>dev284016</instance_name>
+        <name>sys_script_client_421d9a4983bd0b941902ba96feaad39d</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Hide Discuss Button&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+    // Safely look up to the Next Experience Unified Navigation top-bar container
+    try {
+        var topDoc = window.top.document;
+        if (topDoc) {
+            // Locates the specific Sidebar "discuss" action element in Core UI
+            var discussBtn = topDoc.querySelector('[data-action-name="discuss"]');
+            if (discussBtn) {
+                discussBtn.style.display = 'none';
+            }
+        }
+    } catch (e) {
+        // Keeps the console clean and logs errors safely without disrupting the form load
+        jslog('Note: Sidebar component element not available or accessible in this view context.');
+    }
+}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;tgadson&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-29 03:04:16&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;421d9a4983bd0b941902ba96feaad39d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Hide Discuss Button&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm"&gt;ae0e640883f103941902ba96feaad302&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Workspace Reservation Management"&gt;ae0e640883f103941902ba96feaad302&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_421d9a4983bd0b941902ba96feaad39d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;tgadson&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-29 03:04:16&lt;/sys_updated_on&gt;&lt;table&gt;x_1534869_wrm_reservation_tracker&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>243712236</payload_hash>
+        <record_name>Hide Discuss Button</record_name>
+        <reverted_from/>
+        <source>acd67d0983790b941902ba96feaad39f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>tgadson</sys_created_by>
+        <sys_created_on>2026-06-29 03:04:16</sys_created_on>
+        <sys_id>3c8d528983bd0b941902ba96feaad375</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f1155b2170000001</sys_recorded_at>
+        <sys_updated_by>tgadson</sys_updated_by>
+        <sys_updated_on>2026-06-29 03:04:16</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>f88d528949bd0b94f5a92264b54ea074</update_guid>
+        <update_guid_history>f88d528949bd0b94f5a92264b54ea074:243712236</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>tgadson</sys_created_by>
+        <sys_created_on>2026-06-29 03:11:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>04b9d956ccca4a40b5ea404d6497fd04</sys_id>
+        <sys_metadata>421d9a4983bd0b941902ba96feaad39d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hide Discuss Button</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_parent display_value="Reservation Tracker">a6c6566883bd07941902ba96feaad36b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_scope_delete display_value="">393aa292a9794d92995d1bcc716fef44</sys_scope_delete>
+        <sys_update_name>sys_script_client_421d9a4983bd0b941902ba96feaad39d</sys_update_name>
+        <sys_update_version display_value="sys_script_client_421d9a4983bd0b941902ba96feaad39d">3c8d528983bd0b941902ba96feaad375</sys_update_version>
+        <sys_updated_by>tgadson</sys_updated_by>
+        <sys_updated_on>2026-06-29 03:11:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
