@@ -67,21 +67,21 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-02 19:55:58</sys_created_on>
         <sys_id>1a31ed1683b983d41902ba96feaad37f</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>Workspace Reservation Request</sys_name>
         <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name>sc_cat_item_1a31ed1683b983d41902ba96feaad37f</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-07-05 21:51:03</sys_updated_on>
+        <sys_updated_on>2026-07-09 15:08:52</sys_updated_on>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>19</version>
+        <version>29</version>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>
