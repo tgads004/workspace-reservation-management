@@ -1,9 +1,10 @@
 # Workspace Reservation Manager (WRM) 🚀
 
-![ServiceNow](https://shields.io)
-![JavaScript](https://shields.io)
-![License](https://shields.io)
-
+<p align="left">
+  <img src="https://shields.io" alt="ServiceNow" />
+  <img src="https://shields.io" alt="JavaScript" />
+  <img src="https://shields.io" alt="License" />
+</p>
 A custom, multi-table scoped ServiceNow application designed to automate, manage, and track hot desk and focus room reservations from request to closure. Built in an Agile framework using structured Git/GitHub branching and update set tracking.
 ---
 ## 📌 Architecture Overview
