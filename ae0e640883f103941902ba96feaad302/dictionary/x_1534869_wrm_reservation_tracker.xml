@@ -12,6 +12,6 @@
             </choice>
         </element>
         <element label="Workspace" max_length="32" name="workspace" reference="x_1534869_wrm_workspace_options" type="reference"/>
-        <element label="Request number" max_length="32" name="request_number" reference="sc_req_item" type="reference"/>
+        <element label="Request number" max_length="32" name="request_number" type="string"/>
     </element>
 </database>
