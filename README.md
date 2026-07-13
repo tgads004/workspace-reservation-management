@@ -5,24 +5,39 @@
 A custom, multi-table scoped ServiceNow application designed to automate, manage, and track hot desk and focus room reservations from request to closure. Built in an Agile framework using structured Git/GitHub branching and update set tracking.
 ---
 ## 📌 Architecture Overview
-The system is split into two strategic development phases, focusing first on database foundations and role-based access control, followed by cross-platform automation and integrations.
-┌──────────────────────────────┐
-│ Service Catalog Request │
-└──────────────┬───────────────┘
-│
-▼
-┌──────────────────────────────┐
-│ Flow Designer Automation │
-└──────────────┬───────────────┘
-│
-┌───────────────────────┴───────────────────────┐
-▼ ▼
-[ Approved Pathway ] [ Rejected Pathway ]
-├─ State: Pending Check-In ├─ State: Closed Skipped
-├─ Task SLA Starts (4 Biz Hours) └─ Email Rejection Alert
-├─ Standalone Confirmation Email
-└─ Discord Webhook Notification via Script Include
 
+```mermaid
+graph TD
+    %% Define Styles
+    classDef startEnd fill:#28a745,stroke:#fff,stroke-width:2px,color:#fff;
+    classDef process fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff;
+    classDef decision fill:#ffc107,stroke:#333,stroke-width:2px,color:#333;
+    classDef success fill:#28a745,stroke:#fff,stroke-width:1px,color:#fff;
+    classDef danger fill:#dc3545,stroke:#fff,stroke-width:1px,color:#fff;
+
+    A[Service Catalog Request Submission] --> B[Flow Designer Workflow Triggered]
+    B --> C{Workspace Agents Approval?}
+    
+    %% Approved Branch
+    C -- Approved --> D[State: Closed Complete]
+    D --> E[Instantiate Reservation Tracker Record]
+    E --> F[Set State: Pending Check-In]
+    F --> G[Task SLA Starts: 4 Business Hours]
+    F --> H[Trigger Standalone Confirmation Email]
+    F --> I[Execute discordNotification Script Include]
+    
+    %% Rejected Branch
+    C -- Rejected --> J[State: Closed Skipped]
+    J --> K[Dispatch Automated Rejection Email]
+    J --> L[Execute Discord Rejection Webhook Alert]
+
+    %% Assign Classes
+    class A startEnd;
+    class B,E,F,G,H,I,K,L process;
+    class C decision;
+    class D success;
+    class J danger;
+```
 ---
 ## 🛠️ Phase 1 — Building the Foundation
 
