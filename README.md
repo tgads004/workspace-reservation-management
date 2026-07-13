@@ -1,6 +1,6 @@
 # Workspace Reservation Manager (WRM) 🚀
 
-👉 **[ServiceNow: Xanadu / Washington](https://servicenow.com)** | **[Language: JavaScript / ES6](https://mozilla.org)** | **[License: MIT](https://opensource.org)**
+👉 **[ServiceNow: Zurich](https://servicenow.com)** | **[Language: JavaScript / ES6](https://mozilla.org)** | **[License: MIT](https://opensource.org)**
 
 ---
 
