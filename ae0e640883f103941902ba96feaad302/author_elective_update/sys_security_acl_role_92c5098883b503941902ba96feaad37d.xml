@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>tgadson</sys_created_by>
+        <sys_created_on>2026-06-25 18:07:04</sys_created_on>
+        <sys_id>92c5098883b503941902ba96feaad37d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1534869_wrm_workspace_options.x_1534869_wrm.wrm_admin</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_security_acl display_value="x_1534869_wrm_workspace_options">92c5098883b503941902ba96feaad378</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_92c5098883b503941902ba96feaad37d</sys_update_name>
+        <sys_updated_by>tgadson</sys_updated_by>
+        <sys_updated_on>2026-06-25 18:07:04</sys_updated_on>
+        <sys_user_role display_value="x_1534869_wrm.wrm_admin" name="x_1534869_wrm.wrm_admin">2e0e640883f103941902ba96feaad387</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</application>
+        <file_path/>
+        <instance_id>0210aedcff7fc218c812f8e4fc4fd90d</instance_id>
+        <instance_name>dev284016</instance_name>
+        <name>sys_security_acl_role_92c5098883b503941902ba96feaad37d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>tgadson</sys_created_by><sys_created_on>2026-06-25 18:07:04</sys_created_on><sys_id>92c5098883b503941902ba96feaad37d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1534869_wrm_workspace_options.x_1534869_wrm.wrm_admin</sys_name><sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package><sys_policy/><sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope><sys_security_acl display_value="x_1534869_wrm_workspace_options">92c5098883b503941902ba96feaad378</sys_security_acl><sys_update_name>sys_security_acl_role_92c5098883b503941902ba96feaad37d</sys_update_name><sys_updated_by>tgadson</sys_updated_by><sys_updated_on>2026-06-25 18:07:04</sys_updated_on><sys_user_role display_value="x_1534869_wrm.wrm_admin" name="x_1534869_wrm.wrm_admin">2e0e640883f103941902ba96feaad387</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>503335412</payload_hash>
+        <record_name>x_1534869_wrm_workspace_options.x_1534869_wrm.wrm_admin</record_name>
+        <reverted_from/>
+        <source>b1a8348c833503941902ba96feaad3f0</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>tgadson</sys_created_by>
+        <sys_created_on>2026-06-25 18:07:05</sys_created_on>
+        <sys_id>6ac5098883b503941902ba96feaad38e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19efff6ce190000001</sys_recorded_at>
+        <sys_updated_by>tgadson</sys_updated_by>
+        <sys_updated_on>2026-06-25 18:07:05</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>2ac509881eb50394d7d90ee134efca8d</update_guid>
+        <update_guid_history>2ac509881eb50394d7d90ee134efca8d:503335412</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1534869_wrm_workspace_options.x_1534869_wrm.wrm_admin">b3278b8e830a83501902ba96feaad396</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>tgadson</sys_created_by>
+        <sys_created_on>2026-07-14 18:55:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>1851b6a09c3e4e3bb5b70d7bb577cf91</sys_id>
+        <sys_metadata>92c5098883b503941902ba96feaad37d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1534869_wrm_workspace_options.x_1534869_wrm.wrm_admin</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_scope_delete display_value="">393aa292a9794d92995d1bcc716fef44</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_92c5098883b503941902ba96feaad37d</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_92c5098883b503941902ba96feaad37d">6ac5098883b503941902ba96feaad38e</sys_update_version>
+        <sys_updated_by>tgadson</sys_updated_by>
+        <sys_updated_on>2026-07-14 18:55:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

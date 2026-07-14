@@ -15,68 +15,68 @@
         <description/>
         <flow_priority/>
         <ih_action>false</ih_action>
-        <internal_name>send_discord_approval_notification</internal_name>
-        <label_cache>[{"name":"{{action.reserved_for}}","label":"action➛Reserved for","type":"action","ref":"","reference_display":"User","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.workspace}}","label":"action➛Workspace","type":"action","ref":"","reference_display":"Workspace Options","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.start_date_time}}","label":"action➛Start Date Time","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Date/Time","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"glide_date_time","uiUniqueId":"0f498117-b09d-4a62-9392-9874bbd4b5fa"}},{"name":"{{action.reserved_for.user_name}}","label":"action➛Reserved for➛User ID","type":"action","ref":"","reference_display":"User ID","base_type":"string","parent_table_name":"sys_user","column_name":"user_name","choices":null,"attributes":{}}]</label_cache>
-        <master_snapshot>de23fc2583464f101902ba96feaad3f8</master_snapshot>
+        <internal_name>send_discord_rejection_notification</internal_name>
+        <label_cache>[{"name":"{{action.reserved_for}}","label":"action➛Reserved for","type":"action","ref":"","reference_display":"User","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.workspace}}","label":"action➛Workspace","type":"action","ref":"","reference_display":"Workspace Options","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.start_date_time}}","label":"action➛Start Date Time","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master_snapshot>b6af02b1834203501902ba96feaad367</master_snapshot>
         <master_snapshot_digest/>
-        <name>Send Discord Approval Notification</name>
+        <name>Send Discord Rejection Notification</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
         <state>published</state>
         <sys_class_name>sys_hub_action_type_definition</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:33:37</sys_created_on>
+        <sys_created_on>2026-07-13 20:05:18</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>bceee02d83064f101902ba96feaad3f2</sys_id>
+        <sys_id>a17dc27d830203501902ba96feaad3f5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Send Discord Approval Notification</sys_name>
+        <sys_name>Send Discord Rejection Notification</sys_name>
         <sys_overrides/>
         <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
-        <sys_update_name>sys_hub_action_type_definition_bceee02d83064f101902ba96feaad3f2</sys_update_name>
+        <sys_update_name>sys_hub_action_type_definition_a17dc27d830203501902ba96feaad3f5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-14 22:06:09</sys_updated_on>
+        <sys_updated_on>2026-07-14 22:06:08</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
-    <sys_translated_text action="delete_multiple" query="documentkey=bceee02d83064f101902ba96feaad3f2"/>
-    <sys_variable_value action="delete_multiple" query="document_key=bceee02d83064f101902ba96feaad3f2"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=a17dc27d830203501902ba96feaad3f5"/>
+    <sys_variable_value action="delete_multiple" query="document_key=a17dc27d830203501902ba96feaad3f5"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_type_definition</document>
-        <document_key>bceee02d83064f101902ba96feaad3f2</document_key>
+        <document_key>a17dc27d830203501902ba96feaad3f5</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:43:52</sys_created_on>
-        <sys_id>8f31706183464f101902ba96feaad375</sys_id>
+        <sys_created_on>2026-07-13 20:08:34</sys_created_on>
+        <sys_id>213e02fd830203501902ba96feaad3d9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 18:43:52</sys_updated_on>
+        <sys_updated_on>2026-07-13 20:08:34</sys_updated_on>
         <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
-        <variable display_value="Action Status">3631706183464f101902ba96feaad350</variable>
+        <variable display_value="Action Status">d93e02fd830203501902ba96feaad3b2</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_type_definition</document>
-        <document_key>bceee02d83064f101902ba96feaad3f2</document_key>
+        <document_key>a17dc27d830203501902ba96feaad3f5</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:43:52</sys_created_on>
-        <sys_id>cf31706183464f101902ba96feaad374</sys_id>
+        <sys_created_on>2026-07-13 20:08:34</sys_created_on>
+        <sys_id>613e02fd830203501902ba96feaad3d8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 18:43:52</sys_updated_on>
+        <sys_updated_on>2026-07-13 20:08:34</sys_updated_on>
         <value>0</value>
-        <variable display_value="Don't Treat as Error">8b31706183464f101902ba96feaad358</variable>
+        <variable display_value="Don't Treat as Error">a13e02fd830203501902ba96feaad3bb</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_bceee02d83064f101902ba96feaad3f2^id=bceee02d83064f101902ba96feaad3f2"/>
-    <sys_hub_step_instance action="delete_multiple" query="action=bceee02d83064f101902ba96feaad3f2^sys_idNOT IN9cd134a183464f101902ba96feaad3e9"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_a17dc27d830203501902ba96feaad3f5^id=a17dc27d830203501902ba96feaad3f5"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=a17dc27d830203501902ba96feaad3f5^sys_idNOT IN41af8e71834203501902ba96feaad36e"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Send Discord Approval Notification">bceee02d83064f101902ba96feaad3f2</action>
-        <cid>238b0ba1-eae8-4d12-b191-41f639e747d2</cid>
+        <action display_value="Send Discord Rejection Notification">a17dc27d830203501902ba96feaad3f5</action>
+        <cid>2dbba5ac-432e-490e-9daa-85211e05dfb8</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
         <extended_inputs/>
@@ -89,26 +89,49 @@
         <section/>
         <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:46:25</sys_created_on>
-        <sys_id>9cd134a183464f101902ba96feaad3e9</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_created_on>2026-07-13 20:14:49</sys_created_on>
+        <sys_id>41af8e71834203501902ba96feaad36e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-14 08:49:03</sys_updated_on>
+        <sys_updated_on>2026-07-14 21:35:34</sys_updated_on>
     </sys_hub_step_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=9cd134a183464f101902ba96feaad3e9"/>
+    <sys_variable_value action="delete_multiple" query="document_key=41af8e71834203501902ba96feaad36e"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
-        <document_key>9cd134a183464f101902ba96feaad3e9</document_key>
+        <document_key>41af8e71834203501902ba96feaad36e</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-13 20:14:49</sys_created_on>
+        <sys_id>4daf8e71834203501902ba96feaad399</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-13 20:14:49</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>41af8e71834203501902ba96feaad36e</document_key>
         <order>600</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:46:25</sys_created_on>
-        <sys_id>24d174a183464f101902ba96feaad300</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_created_on>2026-07-13 20:14:49</sys_created_on>
+        <sys_id>81af8e71834203501902ba96feaad39a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-14 08:49:03</sys_updated_on>
-        <value>(function execute(inputs, outputs) {&#13;
+        <sys_updated_on>2026-07-14 21:35:34</sys_updated_on>
+        <value>// (function execute(inputs, outputs) {&#13;
+//     var discord = new discordNotification();&#13;
+//     var name = inputs.reserved_for.getDisplayValue();&#13;
+//     var workspace = inputs.workspace.getDisplayValue();&#13;
+//     var msg = name + ' was NOT approved for workspace ' + workspace + '.';&#13;
+//     discord.sendMessage(msg, ':x:');&#13;
+&#13;
+// })(inputs, outputs);&#13;
+&#13;
+(function execute(inputs, outputs) {&#13;
      gs.error('FLOW EXECUTION TEST — Script Step is running');&#13;
     var discord = new discordNotification();&#13;
 &#13;
@@ -130,192 +153,189 @@
     // var jsDate = new Date(gdt.getNumericValue());&#13;
     // var date = jsDate.toLocaleString();&#13;
 &#13;
-    // var gdt = new GlideDateTime(inputs.start_date_time);&#13;
-    // var date = gdt.getByFormat("MM-dd-yyyy hh:mm a"); // "12-07-2026 6:15 PM"&#13;
-&#13;
-    // var gdt = new GlideDateTime(inputs.start_date_time);&#13;
-    // // Extract the local time object from GlideDateTime&#13;
-    // var localTime = gdt.getLocalTime();     &#13;
-    // // GlideTime explicitly supports getByFormat() &#13;
-    // var timeString = localTime.getByFormat("hh:mm a");     &#13;
-    // // Removes leading zero if the hour is single digit (e.g., "04:00 PM" -&gt; "4:00 PM")&#13;
-    // var date = timeString.replace(/^0/, ''); &#13;
-&#13;
-    // var d = inputs.start_date_time;&#13;
-    &#13;
    &#13;
-    // var gdt = new GlideDateTime();&#13;
-    // gdt.setValue(inputs.start_date_time + '');&#13;
+    // //Option 2&#13;
 &#13;
-    // // 'getByFormat' is natively supported in Flow Designer scripts&#13;
-    // // Pattern: MMMM (Full Month), dd (Day), yyyy (Year), hh:mm (12-hr), a (AM/PM)&#13;
-    // var date = gdt.getByFormat("MMMM-dd-yyyy h:mm a");&#13;
+    // // 1. Pass the database date pill into GlideDateTime to initialize it&#13;
+    // var gdt = new GlideDateTime(inputs.start_date_time);&#13;
 &#13;
-    // // 1. Initialize your timestamp object&#13;
-    // var gdt = new GlideDateTime();&#13;
-    // gdt.setValue(inputs.start_date_time + '');&#13;
+    // // 2. Extract the raw numerical epoch milliseconds (this is timezone-neutral)&#13;
+    // var ms = gdt.getNumericValue();&#13;
 &#13;
-    // // 2. Extract the local Date and Time sub-objects&#13;
-    // var localDate = gdt.getLocalDate(); // Gets a GlideDate object in local timezone&#13;
-    // var localTime = gdt.getTime();      // Gets a GlideTime object in local timezone&#13;
+    // // 3. Drop it into a standard JavaScript Date object (automatically shifts back to Local Time)&#13;
+    // var jsDate = new Date(ms);&#13;
 &#13;
-    // // 3. Apply getByFormat to the sub-objects safely&#13;
-    // var datePart = localDate.getByFormat("MMMM-dd-yyyy"); // E.g., "July-14-2026"&#13;
-    // var timePart = localTime.getByFormat("h:mm a");       // E.g., "1:59 AM" (12-hour clock)&#13;
-&#13;
-    // // 4. Stitch them together for your final output string&#13;
-    // var date = datePart + " " + timePart;&#13;
-&#13;
-&#13;
-&#13;
-    // // 1. Get the raw text representation directly from the catalog item pill&#13;
-    // var rawString = inputs.start_date_time + ''; // Format: "YYYY-MM-DD HH:mm:ss"&#13;
-&#13;
-    // // Define a default fallback string&#13;
     // var date = "No Date Selected";&#13;
 &#13;
-    // if (rawString &amp;&amp; rawString.indexOf('-') &gt; -1) {&#13;
-    //     // 2. Split the string into pieces: [ "YYYY", "MM", "DD HH:mm:ss" ]&#13;
-    //     var parts = rawString.split('-');&#13;
-    //     var year = parts[0];&#13;
-    //     var monthNum = parseInt(parts[1], 10);&#13;
+    // if (jsDate) {&#13;
+    //     // 4. Extract individual time parts based on your instance's regional clock settings&#13;
+    //     var year = jsDate.getFullYear();&#13;
+    //     var day = jsDate.getDate();&#13;
+    //     var monthNum = jsDate.getMonth(); // Note: JS months are naturally 0-indexed (0 = January)&#13;
         &#13;
-    //     // Split the space between the day and the time: [ "DD", "HH:mm:ss" ]&#13;
-    //     var dayTimeParts = parts[2].split(' ');&#13;
-    //     var day = dayTimeParts[0];&#13;
+    //     var hour = jsDate.getHours();&#13;
+    //     var minute = jsDate.getMinutes();&#13;
         &#13;
-    //     // Split the time: [ "HH", "mm", "ss" ]&#13;
-    //     var timeParts = dayTimeParts[1].split(':');&#13;
-    //     var hour = parseInt(timeParts[0], 10);&#13;
-    //     var minute = timeParts[1];&#13;
+    //     // Add a leading zero to minutes if they are single digits (e.g., 9 -&gt; "09")&#13;
+    //     if (minute &lt; 10) { minute = "0" + minute; }&#13;
 &#13;
-    //     // 3. Map the month number to the full text name&#13;
+    //     // 5. Array map to assign the textual month name&#13;
     //     var monthNames = ["January", "February", "March", "April", "May", "June", &#13;
     //                     "July", "August", "September", "October", "November", "December"];&#13;
-    //     var monthName = monthNames[monthNum - 1];&#13;
+    //     var monthName = monthNames[monthNum];&#13;
 &#13;
-    //     // 4. Calculate 12-hour AM/PM from the raw database hour digit&#13;
+    //     // 6. Calculate 12-hour AM/PM structure&#13;
     //     var ampm = hour &gt;= 12 ? 'PM' : 'AM';&#13;
     //     hour = hour % 12;&#13;
     //     hour = hour ? hour : 12; // If hour is 0, make it 12&#13;
 &#13;
-    //     // 5. Build your exact target string structure&#13;
+    //     // 7. Format into your target layout: MONTH-Day-YEAR 8:00 PM&#13;
     //     date = monthName + "-" + day + "-" + year + " " + hour + ":" + minute + " " + ampm;&#13;
     // }&#13;
 &#13;
-    &#13;
-    // 1. Pass the database date pill into GlideDateTime to initialize it&#13;
-    var gdt = new GlideDateTime(inputs.start_date_time);&#13;
-&#13;
-    // 2. Extract the raw numerical epoch milliseconds (this is timezone-neutral)&#13;
-    var ms = gdt.getNumericValue();&#13;
-&#13;
-    // 3. Drop it into a standard JavaScript Date object (automatically shifts back to Local Time)&#13;
-    var jsDate = new Date(ms);&#13;
-&#13;
-    var date = "No Date Selected";&#13;
-&#13;
-    if (jsDate) {&#13;
-        // 4. Extract individual time parts based on your instance's regional clock settings&#13;
-        var year = jsDate.getFullYear();&#13;
-        var day = jsDate.getDate();&#13;
-        var monthNum = jsDate.getMonth(); // Note: JS months are naturally 0-indexed (0 = January)&#13;
-        &#13;
-        var hour = jsDate.getHours();&#13;
-        var minute = jsDate.getMinutes();&#13;
-        &#13;
-        // Add a leading zero to minutes if they are single digits (e.g., 9 -&gt; "09")&#13;
-        if (minute &lt; 10) { minute = "0" + minute; }&#13;
-&#13;
-        // 5. Array map to assign the textual month name&#13;
-        var monthNames = ["January", "February", "March", "April", "May", "June", &#13;
-                        "July", "August", "September", "October", "November", "December"];&#13;
-        var monthName = monthNames[monthNum];&#13;
-&#13;
-        // 6. Calculate 12-hour AM/PM structure&#13;
-        var ampm = hour &gt;= 12 ? 'PM' : 'AM';&#13;
-        hour = hour % 12;&#13;
-        hour = hour ? hour : 12; // If hour is 0, make it 12&#13;
-&#13;
-        // 7. Format into your target layout: MONTH-Day-YEAR 8:00 PM&#13;
-        date = monthName + "-" + day + "-" + year + " " + hour + ":" + minute + " " + ampm;&#13;
-    }&#13;
-&#13;
-    var msg = name + ' has been approved for workspace ' + workspace +&#13;
-            ' starting at ' + date + '.';&#13;
+    var msg = name + ' was NOT approved for workspace ' + workspace + '.';&#13;
     gs.info('Discord MSG (Flow Execution): ' + msg); //This shows up in Flow Execution Details.&#13;
-    discord.sendMessage(msg, ':white_check_mark:');&#13;
+    discord.sendMessage(msg, ':x:');&#13;
 &#13;
 })(inputs, outputs);&#13;
 </value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>9cd134a183464f101902ba96feaad3e9</document_key>
-        <order>400</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_element_mapping action="delete_multiple" query="id=41af8e71834203501902ba96feaad36e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>request_for</field>
+        <id>41af8e71834203501902ba96feaad36e</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:46:25</sys_created_on>
-        <sys_id>ecd134a183464f101902ba96feaad3ff</sys_id>
+        <sys_created_on>2026-07-13 20:14:49</sys_created_on>
+        <sys_id>c5af8e71834203501902ba96feaad39b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 18:46:25</sys_updated_on>
-        <value>35aa573fd7802200bdbaee5b5e610375</value>
-        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=9cd134a183464f101902ba96feaad3e9"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>reserved_for</field>
-        <id>9cd134a183464f101902ba96feaad3e9</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 23:14:00</sys_created_on>
-        <sys_id>481f6961834e4f101902ba96feaad3bd</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 23:19:08</sys_updated_on>
-        <table>var__m_sys_hub_step_ext_input_9cd134a183464f101902ba96feaad3e9</table>
+        <sys_updated_on>2026-07-13 20:14:49</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_41af8e71834203501902ba96feaad36e</table>
         <value>{{action.reserved_for}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>starte_date_time</field>
-        <id>9cd134a183464f101902ba96feaad3e9</id>
+        <field>reserved_for</field>
+        <id>41af8e71834203501902ba96feaad36e</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 23:14:00</sys_created_on>
-        <sys_id>c41f6961834e4f101902ba96feaad3bc</sys_id>
+        <sys_created_on>2026-07-13 22:01:57</sys_created_on>
+        <sys_id>96286eb5830603501902ba96feaad39d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 23:14:00</sys_updated_on>
-        <table>var__m_sys_hub_step_ext_input_9cd134a183464f101902ba96feaad3e9</table>
-        <value>{{action.start_date_time}}</value>
+        <sys_updated_on>2026-07-13 22:01:57</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_41af8e71834203501902ba96feaad36e</table>
+        <value>{{action.reserved_for}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>start_date_time</field>
-        <id>9cd134a183464f101902ba96feaad3e9</id>
+        <id>41af8e71834203501902ba96feaad36e</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-14 01:51:56</sys_created_on>
-        <sys_id>5bcc5f3583ca03501902ba96feaad36b</sys_id>
+        <sys_created_on>2026-07-14 20:43:45</sys_created_on>
+        <sys_id>2edf9b42830e83501902ba96feaad37b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-14 01:51:56</sys_updated_on>
-        <table>var__m_sys_hub_step_ext_input_9cd134a183464f101902ba96feaad3e9</table>
+        <sys_updated_on>2026-07-14 20:43:45</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_41af8e71834203501902ba96feaad36e</table>
         <value>{{action.start_date_time}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>workspace</field>
-        <id>9cd134a183464f101902ba96feaad3e9</id>
+        <id>41af8e71834203501902ba96feaad36e</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 23:14:00</sys_created_on>
-        <sys_id>041f6961834e4f101902ba96feaad3bd</sys_id>
+        <sys_created_on>2026-07-13 20:14:49</sys_created_on>
+        <sys_id>0daf8e71834203501902ba96feaad39b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 23:14:00</sys_updated_on>
-        <table>var__m_sys_hub_step_ext_input_9cd134a183464f101902ba96feaad3e9</table>
+        <sys_updated_on>2026-07-13 20:14:49</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_41af8e71834203501902ba96feaad36e</table>
         <value>{{action.workspace}}</value>
     </sys_element_mapping>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=9cd134a183464f101902ba96feaad3e9"/>
-    <sys_translated_text action="delete_multiple" query="documentkey=9cd134a183464f101902ba96feaad3e9"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=9cd134a183464f101902ba96feaad3e9^sys_idNOT IN0fcc5f3583ca03501902ba96feaad34e,c01f6961834e4f101902ba96feaad3aa,f70f6961834e4f101902ba96feaad397"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=41af8e71834203501902ba96feaad36e"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=41af8e71834203501902ba96feaad36e"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=41af8e71834203501902ba96feaad36e^sys_idNOT IN22df9b42830e83501902ba96feaad36c,2adf9b42830e83501902ba96feaad35e,45af8e71834203501902ba96feaad37d"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>reserved_for</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Script step">41af8e71834203501902ba96feaad36e</model>
+        <model_id>41af8e71834203501902ba96feaad36e</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_41af8e71834203501902ba96feaad36e</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 20:43:45</sys_created_on>
+        <sys_id>22df9b42830e83501902ba96feaad36c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 20:45:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -356,12 +376,12 @@
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Script step">9cd134a183464f101902ba96feaad3e9</model>
-        <model_id>9cd134a183464f101902ba96feaad3e9</model_id>
+        <model display_value="Script step">41af8e71834203501902ba96feaad36e</model>
+        <model_id>41af8e71834203501902ba96feaad36e</model_id>
         <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_input_9cd134a183464f101902ba96feaad3e9</name>
+        <name>var__m_sys_hub_step_ext_input_41af8e71834203501902ba96feaad36e</name>
         <next_element/>
-        <order>200</order>
+        <order>100</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -377,16 +397,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-14 01:51:56</sys_created_on>
-        <sys_id>0fcc5f3583ca03501902ba96feaad34e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2026-07-14 20:43:45</sys_created_on>
+        <sys_id>2adf9b42830e83501902ba96feaad35e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-14 01:52:04</sys_updated_on>
+        <sys_updated_on>2026-07-14 20:43:45</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -439,12 +459,12 @@
         <label/>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
-        <model display_value="Script step">9cd134a183464f101902ba96feaad3e9</model>
-        <model_id>9cd134a183464f101902ba96feaad3e9</model_id>
+        <model display_value="Script step">41af8e71834203501902ba96feaad36e</model>
+        <model_id>41af8e71834203501902ba96feaad36e</model_id>
         <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_input_9cd134a183464f101902ba96feaad3e9</name>
+        <name>var__m_sys_hub_step_ext_input_41af8e71834203501902ba96feaad36e</name>
         <next_element/>
-        <order>100</order>
+        <order>0</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -460,16 +480,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 23:14:00</sys_created_on>
-        <sys_id>c01f6961834e4f101902ba96feaad3aa</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2026-07-13 20:14:49</sys_created_on>
+        <sys_id>45af8e71834203501902ba96feaad37d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 23:14:31</sys_updated_on>
+        <sys_updated_on>2026-07-14 20:43:44</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -482,265 +502,14 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>reserved_for</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
-        <label/>
-        <mandatory>true</mandatory>
-        <max_length>32</max_length>
-        <model display_value="Script step">9cd134a183464f101902ba96feaad3e9</model>
-        <model_id>9cd134a183464f101902ba96feaad3e9</model_id>
-        <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_input_9cd134a183464f101902ba96feaad3e9</name>
-        <next_element/>
-        <order>0</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference display_value="" name="sys_user">sys_user</reference>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 23:13:59</sys_created_on>
-        <sys_id>f70f6961834e4f101902ba96feaad397</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 23:21:49</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=9cd134a183464f101902ba96feaad3e9"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=9cd134a183464f101902ba96feaad3e9"/>
-    <sys_hub_action_input action="delete_multiple" query="model=bceee02d83064f101902ba96feaad3f2^sys_idNOT IN3631342d83064f101902ba96feaad33a,77a553b5838a03501902ba96feaad37e,7e31706183464f101902ba96feaad325"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=41af8e71834203501902ba96feaad36e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=41af8e71834203501902ba96feaad36e"/>
+    <sys_hub_action_input action="delete_multiple" query="model=a17dc27d830203501902ba96feaad3f5^sys_idNOT IN913e02fd830203501902ba96feaad368,953e8abd830203501902ba96feaad390,9adf9b42830e83501902ba96feaad322"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=406f7542-4a87-43cb-89d7-f7c927f7994a</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table>sys_user</choice_table>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>reserved_for</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
-        <label>Reserved for</label>
-        <mandatory>false</mandatory>
-        <max_length>32</max_length>
-        <model display_value="Send Discord Approval Notification">bceee02d83064f101902ba96feaad3f2</model>
-        <model_id>bceee02d83064f101902ba96feaad3f2</model_id>
-        <model_table>sys_hub_action_type_definition</model_table>
-        <name>var__m_sys_hub_action_input_bceee02d83064f101902ba96feaad3f2</name>
-        <next_element/>
-        <order>1</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference display_value="" name="sys_user">sys_user</reference>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_action_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:43:51</sys_created_on>
-        <sys_id>3631342d83064f101902ba96feaad33a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 18:43:51</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_action_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3631342d83064f101902ba96feaad33a"/>
-    <sys_hub_action_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=0f498117-b09d-4a62-9392-9874bbd4b5fa</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>start_date_time</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label>Start Date Time</label>
-        <mandatory>false</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="Send Discord Approval Notification">bceee02d83064f101902ba96feaad3f2</model>
-        <model_id>bceee02d83064f101902ba96feaad3f2</model_id>
-        <model_table>sys_hub_action_type_definition</model_table>
-        <name>var__m_sys_hub_action_input_bceee02d83064f101902ba96feaad3f2</name>
-        <next_element/>
-        <order>3</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_action_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-14 01:20:50</sys_created_on>
-        <sys_id>77a553b5838a03501902ba96feaad37e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-14 01:20:50</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_action_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=77a553b5838a03501902ba96feaad37e"/>
-    <sys_hub_action_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=4a770083-0dc2-4f52-aa7a-b09d4ee18f3c</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=619b195e-f640-46fb-8fcc-96bb951307ac</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -776,12 +545,12 @@
         <label>Workspace</label>
         <mandatory>false</mandatory>
         <max_length>32</max_length>
-        <model display_value="Send Discord Approval Notification">bceee02d83064f101902ba96feaad3f2</model>
-        <model_id>bceee02d83064f101902ba96feaad3f2</model_id>
+        <model display_value="Send Discord Rejection Notification">a17dc27d830203501902ba96feaad3f5</model>
+        <model_id>a17dc27d830203501902ba96feaad3f5</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
-        <name>var__m_sys_hub_action_input_bceee02d83064f101902ba96feaad3f2</name>
+        <name>var__m_sys_hub_action_input_a17dc27d830203501902ba96feaad3f5</name>
         <next_element/>
-        <order>2</order>
+        <order>1</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -797,16 +566,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:43:51</sys_created_on>
-        <sys_id>7e31706183464f101902ba96feaad325</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2026-07-13 20:08:33</sys_created_on>
+        <sys_id>913e02fd830203501902ba96feaad368</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 18:43:51</sys_updated_on>
+        <sys_updated_on>2026-07-14 20:56:12</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -819,13 +588,96 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7e31706183464f101902ba96feaad325"/>
-    <sys_hub_action_output action="delete_multiple" query="model=bceee02d83064f101902ba96feaad3f2^sys_idNOT IN3631706183464f101902ba96feaad350,8b31706183464f101902ba96feaad358"/>
-    <sys_hub_action_output action="INSERT_OR_UPDATE">
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=913e02fd830203501902ba96feaad368"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=31530256-d0fb-4204-89e2-5edf1a2c339d</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=10a2609f-1be8-4ec8-a86f-6d883a29c785</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sys_user</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>reserved_for</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Reserved for</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Send Discord Rejection Notification">a17dc27d830203501902ba96feaad3f5</model>
+        <model_id>a17dc27d830203501902ba96feaad3f5</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_a17dc27d830203501902ba96feaad3f5</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-13 20:08:33</sys_created_on>
+        <sys_id>953e8abd830203501902ba96feaad390</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 20:56:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=953e8abd830203501902ba96feaad390"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=4b4eba14-1661-4e2a-ae76-c7e12641a1ca</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -849,8 +701,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>__action_status__</element>
-        <element_prototype/>
+        <element>start_date_time</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -858,17 +709,16 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_link/>
         <internal_type display_value="String">string</internal_type>
-        <label>Action Status</label>
+        <label>Start Date Time</label>
         <mandatory>false</mandatory>
-        <max_length>65000</max_length>
-        <model display_value="Send Discord Approval Notification">bceee02d83064f101902ba96feaad3f2</model>
-        <model_id>bceee02d83064f101902ba96feaad3f2</model_id>
+        <max_length>8000</max_length>
+        <model display_value="Send Discord Rejection Notification">a17dc27d830203501902ba96feaad3f5</model>
+        <model_id>a17dc27d830203501902ba96feaad3f5</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
-        <name>var__m_sys_hub_action_output_bceee02d83064f101902ba96feaad3f2</name>
+        <name>var__m_sys_hub_action_input_a17dc27d830203501902ba96feaad3f5</name>
         <next_element/>
-        <order>1</order>
+        <order>2</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -882,18 +732,18 @@
         <sizeclass/>
         <spell_check>false</spell_check>
         <staged>false</staged>
-        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:43:52</sys_created_on>
-        <sys_id>3631706183464f101902ba96feaad350</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2026-07-14 20:43:44</sys_created_on>
+        <sys_id>9adf9b42830e83501902ba96feaad322</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 18:43:52</sys_updated_on>
+        <sys_updated_on>2026-07-14 20:56:13</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -905,14 +755,14 @@
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
-    </sys_hub_action_output>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3631706183464f101902ba96feaad350"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=3631706183464f101902ba96feaad350"/>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9adf9b42830e83501902ba96feaad322"/>
+    <sys_hub_action_output action="delete_multiple" query="model=a17dc27d830203501902ba96feaad3f5^sys_idNOT INa13e02fd830203501902ba96feaad3bb,d93e02fd830203501902ba96feaad3b2"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=3a52c07d-bd6b-4404-9965-a9a64efd0c5b,visible_in_ui=false</attributes>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=9bce56f2-043f-405b-857e-0770d4252657,visible_in_ui=false</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -950,10 +800,10 @@
         <label>Don't Treat as Error</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Send Discord Approval Notification">bceee02d83064f101902ba96feaad3f2</model>
-        <model_id>bceee02d83064f101902ba96feaad3f2</model_id>
+        <model display_value="Send Discord Rejection Notification">a17dc27d830203501902ba96feaad3f5</model>
+        <model_id>a17dc27d830203501902ba96feaad3f5</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
-        <name>var__m_sys_hub_action_output_bceee02d83064f101902ba96feaad3f2</name>
+        <name>var__m_sys_hub_action_output_a17dc27d830203501902ba96feaad3f5</name>
         <next_element/>
         <order>2</order>
         <primary>false</primary>
@@ -971,16 +821,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:43:52</sys_created_on>
-        <sys_id>8b31706183464f101902ba96feaad358</sys_id>
-        <sys_mod_count>131</sys_mod_count>
+        <sys_created_on>2026-07-13 20:08:34</sys_created_on>
+        <sys_id>a13e02fd830203501902ba96feaad3bb</sys_id>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-14 08:49:07</sys_updated_on>
+        <sys_updated_on>2026-07-14 21:35:50</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -993,40 +843,150 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8b31706183464f101902ba96feaad358"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=8b31706183464f101902ba96feaad358"/>
-    <sys_hub_pill_compound action="delete_multiple" query="attached_to=bceee02d83064f101902ba96feaad3f2"/>
-    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=bceee02d83064f101902ba96feaad3f2^sys_idNOT IN0b31706183464f101902ba96feaad378"/>
-    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Send Discord Approval Notification">bceee02d83064f101902ba96feaad3f2</action_type_id>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a13e02fd830203501902ba96feaad3bb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a13e02fd830203501902ba96feaad3bb"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=0983172b-49a7-495d-b70f-7cb536260bd0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Send Discord Rejection Notification">a17dc27d830203501902ba96feaad3f5</model>
+        <model_id>a17dc27d830203501902ba96feaad3f5</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_a17dc27d830203501902ba96feaad3f5</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:43:52</sys_created_on>
-        <sys_id>0b31706183464f101902ba96feaad378</sys_id>
+        <sys_created_on>2026-07-13 20:08:34</sys_created_on>
+        <sys_id>d93e02fd830203501902ba96feaad3b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-13 20:08:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d93e02fd830203501902ba96feaad3b2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d93e02fd830203501902ba96feaad3b2"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=a17dc27d830203501902ba96feaad3f5"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=a17dc27d830203501902ba96feaad3f5^sys_idNOT INa93e02fd830203501902ba96feaad3db"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Send Discord Rejection Notification">a17dc27d830203501902ba96feaad3f5</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-13 20:08:34</sys_created_on>
+        <sys_id>a93e02fd830203501902ba96feaad3db</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 18:43:52</sys_updated_on>
+        <sys_updated_on>2026-07-13 20:08:34</sys_updated_on>
     </sys_hub_action_status_metadata>
-    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=0b31706183464f101902ba96feaad378"/>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=a93e02fd830203501902ba96feaad3db"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>workspace</element>
+        <help/>
+        <hint/>
+        <label>Workspace</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a17dc27d830203501902ba96feaad3f5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-13 20:08:34</sys_created_on>
+        <sys_id>593e02fd830203501902ba96feaad36e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Workspace</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_a17dc27d830203501902ba96feaad3f5_workspace_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-13 20:08:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>reserved_for</element>
         <help/>
         <hint/>
         <label>Reserved for</label>
         <language>en</language>
-        <name>var__m_sys_hub_action_input_bceee02d83064f101902ba96feaad3f2</name>
+        <name>var__m_sys_hub_action_input_a17dc27d830203501902ba96feaad3f5</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:43:51</sys_created_on>
-        <sys_id>7231706183464f101902ba96feaad324</sys_id>
+        <sys_created_on>2026-07-13 20:08:33</sys_created_on>
+        <sys_id>913e02fd830203501902ba96feaad366</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Reserved for</sys_name>
         <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_a17dc27d830203501902ba96feaad3f5_reserved_for_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 18:43:51</sys_updated_on>
+        <sys_updated_on>2026-07-13 20:08:33</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -1036,109 +996,86 @@
         <hint/>
         <label>Start Date Time</label>
         <language>en</language>
-        <name>var__m_sys_hub_action_input_bceee02d83064f101902ba96feaad3f2</name>
+        <name>var__m_sys_hub_action_input_a17dc27d830203501902ba96feaad3f5</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-14 01:20:50</sys_created_on>
-        <sys_id>7fa553b5838a03501902ba96feaad388</sys_id>
+        <sys_created_on>2026-07-14 20:43:44</sys_created_on>
+        <sys_id>96df9b42830e83501902ba96feaad335</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Start Date Time</sys_name>
         <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_a17dc27d830203501902ba96feaad3f5_start_date_time_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-14 01:20:50</sys_updated_on>
+        <sys_updated_on>2026-07-14 20:43:44</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>workspace</element>
-        <help/>
-        <hint/>
-        <label>Workspace</label>
-        <language>en</language>
-        <name>var__m_sys_hub_action_input_bceee02d83064f101902ba96feaad3f2</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:43:52</sys_created_on>
-        <sys_id>be31706183464f101902ba96feaad32b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Workspace</sys_name>
-        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 18:43:52</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_bceee02d83064f101902ba96feaad3f2"/>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>__dont_treat_as_error__</element>
-        <help/>
-        <hint/>
-        <label>Don't Treat as Error</label>
-        <language>en</language>
-        <name>var__m_sys_hub_action_output_bceee02d83064f101902ba96feaad3f2</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:43:52</sys_created_on>
-        <sys_id>0731706183464f101902ba96feaad361</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Don't Treat as Error</sys_name>
-        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 18:43:52</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_a17dc27d830203501902ba96feaad3f5"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>__action_status__</element>
         <help/>
         <hint/>
         <label>Action Status</label>
         <language>en</language>
-        <name>var__m_sys_hub_action_output_bceee02d83064f101902ba96feaad3f2</name>
+        <name>var__m_sys_hub_action_output_a17dc27d830203501902ba96feaad3f5</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:43:52</sys_created_on>
-        <sys_id>0b31706183464f101902ba96feaad357</sys_id>
+        <sys_created_on>2026-07-13 20:08:34</sys_created_on>
+        <sys_id>2d3e02fd830203501902ba96feaad3b9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Action Status</sys_name>
         <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_a17dc27d830203501902ba96feaad3f5___action_status___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 18:43:52</sys_updated_on>
+        <sys_updated_on>2026-07-13 20:08:34</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_bceee02d83064f101902ba96feaad3f2"/>
-    <sys_hub_action_plan action="delete_multiple" query="action_id=bceee02d83064f101902ba96feaad3f2^sys_idNOT INbe23306583464f101902ba96feaad39f"/>
-    <sys_hub_action_plan action="INSERT_OR_UPDATE">
-        <action_id display_value="Send Discord Approval Notification">bceee02d83064f101902ba96feaad3f2</action_id>
-        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"be23306583464f101902ba96feaad39f","name":"plan","plan_signature":null}}</plan>
-        <snapshot>e0cb348683c643501902ba96feaad3b8</snapshot>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_a17dc27d830203501902ba96feaad3f5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:52:19</sys_created_on>
+        <sys_created_on>2026-07-13 20:08:34</sys_created_on>
+        <sys_id>693e02fd830203501902ba96feaad3d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Don't Treat as Error</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_a17dc27d830203501902ba96feaad3f5___dont_treat_as_error___en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-13 20:08:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_a17dc27d830203501902ba96feaad3f5"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=a17dc27d830203501902ba96feaad3f5^sys_idNOT INc3af42b1834203501902ba96feaad344"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Send Discord Rejection Notification">a17dc27d830203501902ba96feaad3f5</action_id>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"c3af42b1834203501902ba96feaad344","name":"plan","plan_signature":null}}</plan>
+        <snapshot>aeb2e30a830e83501902ba96feaad3dd</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-13 20:14:58</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>be23306583464f101902ba96feaad39f</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_id>c3af42b1834203501902ba96feaad344</sys_id>
+        <sys_mod_count>3</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-14 08:46:50</sys_updated_on>
+        <sys_updated_on>2026-07-14 20:56:20</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1154,20 +1091,20 @@
         <copied_from_name/>
         <description/>
         <flow_priority/>
-        <internal_name>send_discord_approval_notification</internal_name>
-        <label_cache>[{"name":"{{action.reserved_for}}","label":"action➛Reserved for","type":"action","ref":"","reference_display":"User","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.workspace}}","label":"action➛Workspace","type":"action","ref":"","reference_display":"Workspace Options","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.start_date_time}}","label":"action➛Start Date Time","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Date/Time","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"glide_date_time","uiUniqueId":"0f498117-b09d-4a62-9392-9874bbd4b5fa"}},{"name":"{{action.reserved_for.user_name}}","label":"action➛Reserved for➛User ID","type":"action","ref":"","reference_display":"User ID","base_type":"string","parent_table_name":"sys_user","column_name":"user_name","choices":null,"attributes":{}}]</label_cache>
+        <internal_name>send_discord_rejection_notification</internal_name>
+        <label_cache>[{"name":"{{action.reserved_for}}","label":"action➛Reserved for","type":"action","ref":"","reference_display":"User","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.workspace}}","label":"action➛Workspace","type":"action","ref":"","reference_display":"Workspace Options","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.start_date_time}}","label":"action➛Start Date Time","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
         <master>true</master>
-        <name>Send Discord Approval Notification</name>
+        <name>Send Discord Rejection Notification</name>
         <natlang/>
         <outputs/>
-        <parent_action display_value="Send Discord Approval Notification">bceee02d83064f101902ba96feaad3f2</parent_action>
+        <parent_action display_value="Send Discord Rejection Notification">a17dc27d830203501902ba96feaad3f5</parent_action>
         <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:52:17</sys_created_on>
+        <sys_created_on>2026-07-13 20:14:56</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>de23fc2583464f101902ba96feaad3f8</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_id>b6af02b1834203501902ba96feaad367</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1175,45 +1112,45 @@
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-14 01:20:56</sys_updated_on>
+        <sys_updated_on>2026-07-14 20:45:40</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
-    <sys_translated_text action="delete_multiple" query="documentkey=de23fc2583464f101902ba96feaad3f8"/>
-    <sys_variable_value action="delete_multiple" query="document_key=de23fc2583464f101902ba96feaad3f8"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=b6af02b1834203501902ba96feaad367"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b6af02b1834203501902ba96feaad367"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_type_snapshot</document>
-        <document_key>de23fc2583464f101902ba96feaad3f8</document_key>
-        <order>1</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:52:17</sys_created_on>
-        <sys_id>1a23306583464f101902ba96feaad352</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 18:52:17</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
-        <variable display_value="Action Status">d623306583464f101902ba96feaad33c</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_type_snapshot</document>
-        <document_key>de23fc2583464f101902ba96feaad3f8</document_key>
+        <document_key>b6af02b1834203501902ba96feaad367</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:52:17</sys_created_on>
-        <sys_id>d223306583464f101902ba96feaad352</sys_id>
+        <sys_created_on>2026-07-13 20:14:57</sys_created_on>
+        <sys_id>b6af02b1834203501902ba96feaad3d8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 18:52:17</sys_updated_on>
+        <sys_updated_on>2026-07-13 20:14:57</sys_updated_on>
         <value>0</value>
-        <variable display_value="Don't Treat as Error">9623306583464f101902ba96feaad343</variable>
+        <variable display_value="Don't Treat as Error">7aaf02b1834203501902ba96feaad3bc</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_de23fc2583464f101902ba96feaad3f8^id=de23fc2583464f101902ba96feaad3f8"/>
-    <sys_hub_step_instance action="delete_multiple" query="action=de23fc2583464f101902ba96feaad3f8^sys_idNOT IN5a23306583464f101902ba96feaad328"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>b6af02b1834203501902ba96feaad367</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-13 20:14:57</sys_created_on>
+        <sys_id>faaf02b1834203501902ba96feaad3d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-13 20:14:57</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">f2af02b1834203501902ba96feaad3b5</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_b6af02b1834203501902ba96feaad367^id=b6af02b1834203501902ba96feaad367"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=b6af02b1834203501902ba96feaad367^sys_idNOT INbaaf02b1834203501902ba96feaad385"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Send Discord Approval Notification">de23fc2583464f101902ba96feaad3f8</action>
-        <cid>238b0ba1-eae8-4d12-b191-41f639e747d2</cid>
+        <action display_value="Send Discord Rejection Notification">b6af02b1834203501902ba96feaad367</action>
+        <cid>2dbba5ac-432e-490e-9daa-85211e05dfb8</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
         <extended_inputs/>
@@ -1226,26 +1163,49 @@
         <section/>
         <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:52:17</sys_created_on>
-        <sys_id>5a23306583464f101902ba96feaad328</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_created_on>2026-07-13 20:14:56</sys_created_on>
+        <sys_id>baaf02b1834203501902ba96feaad385</sys_id>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-14 08:49:08</sys_updated_on>
+        <sys_updated_on>2026-07-14 21:35:52</sys_updated_on>
     </sys_hub_step_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=5a23306583464f101902ba96feaad328"/>
+    <sys_variable_value action="delete_multiple" query="document_key=baaf02b1834203501902ba96feaad385"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
-        <document_key>5a23306583464f101902ba96feaad328</document_key>
+        <document_key>baaf02b1834203501902ba96feaad385</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-13 20:14:56</sys_created_on>
+        <sys_id>3aaf02b1834203501902ba96feaad3ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-13 20:14:56</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>baaf02b1834203501902ba96feaad385</document_key>
         <order>600</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:52:17</sys_created_on>
-        <sys_id>1223306583464f101902ba96feaad339</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_created_on>2026-07-13 20:14:56</sys_created_on>
+        <sys_id>7eaf02b1834203501902ba96feaad3ae</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-14 08:49:08</sys_updated_on>
-        <value>(function execute(inputs, outputs) {&#13;
+        <sys_updated_on>2026-07-14 21:35:52</sys_updated_on>
+        <value>// (function execute(inputs, outputs) {&#13;
+//     var discord = new discordNotification();&#13;
+//     var name = inputs.reserved_for.getDisplayValue();&#13;
+//     var workspace = inputs.workspace.getDisplayValue();&#13;
+//     var msg = name + ' was NOT approved for workspace ' + workspace + '.';&#13;
+//     discord.sendMessage(msg, ':x:');&#13;
+&#13;
+// })(inputs, outputs);&#13;
+&#13;
+(function execute(inputs, outputs) {&#13;
      gs.error('FLOW EXECUTION TEST — Script Step is running');&#13;
     var discord = new discordNotification();&#13;
 &#13;
@@ -1267,192 +1227,106 @@
     // var jsDate = new Date(gdt.getNumericValue());&#13;
     // var date = jsDate.toLocaleString();&#13;
 &#13;
-    // var gdt = new GlideDateTime(inputs.start_date_time);&#13;
-    // var date = gdt.getByFormat("MM-dd-yyyy hh:mm a"); // "12-07-2026 6:15 PM"&#13;
-&#13;
-    // var gdt = new GlideDateTime(inputs.start_date_time);&#13;
-    // // Extract the local time object from GlideDateTime&#13;
-    // var localTime = gdt.getLocalTime();     &#13;
-    // // GlideTime explicitly supports getByFormat() &#13;
-    // var timeString = localTime.getByFormat("hh:mm a");     &#13;
-    // // Removes leading zero if the hour is single digit (e.g., "04:00 PM" -&gt; "4:00 PM")&#13;
-    // var date = timeString.replace(/^0/, ''); &#13;
-&#13;
-    // var d = inputs.start_date_time;&#13;
-    &#13;
    &#13;
-    // var gdt = new GlideDateTime();&#13;
-    // gdt.setValue(inputs.start_date_time + '');&#13;
+    // //Option 2&#13;
 &#13;
-    // // 'getByFormat' is natively supported in Flow Designer scripts&#13;
-    // // Pattern: MMMM (Full Month), dd (Day), yyyy (Year), hh:mm (12-hr), a (AM/PM)&#13;
-    // var date = gdt.getByFormat("MMMM-dd-yyyy h:mm a");&#13;
+    // // 1. Pass the database date pill into GlideDateTime to initialize it&#13;
+    // var gdt = new GlideDateTime(inputs.start_date_time);&#13;
 &#13;
-    // // 1. Initialize your timestamp object&#13;
-    // var gdt = new GlideDateTime();&#13;
-    // gdt.setValue(inputs.start_date_time + '');&#13;
+    // // 2. Extract the raw numerical epoch milliseconds (this is timezone-neutral)&#13;
+    // var ms = gdt.getNumericValue();&#13;
 &#13;
-    // // 2. Extract the local Date and Time sub-objects&#13;
-    // var localDate = gdt.getLocalDate(); // Gets a GlideDate object in local timezone&#13;
-    // var localTime = gdt.getTime();      // Gets a GlideTime object in local timezone&#13;
+    // // 3. Drop it into a standard JavaScript Date object (automatically shifts back to Local Time)&#13;
+    // var jsDate = new Date(ms);&#13;
 &#13;
-    // // 3. Apply getByFormat to the sub-objects safely&#13;
-    // var datePart = localDate.getByFormat("MMMM-dd-yyyy"); // E.g., "July-14-2026"&#13;
-    // var timePart = localTime.getByFormat("h:mm a");       // E.g., "1:59 AM" (12-hour clock)&#13;
-&#13;
-    // // 4. Stitch them together for your final output string&#13;
-    // var date = datePart + " " + timePart;&#13;
-&#13;
-&#13;
-&#13;
-    // // 1. Get the raw text representation directly from the catalog item pill&#13;
-    // var rawString = inputs.start_date_time + ''; // Format: "YYYY-MM-DD HH:mm:ss"&#13;
-&#13;
-    // // Define a default fallback string&#13;
     // var date = "No Date Selected";&#13;
 &#13;
-    // if (rawString &amp;&amp; rawString.indexOf('-') &gt; -1) {&#13;
-    //     // 2. Split the string into pieces: [ "YYYY", "MM", "DD HH:mm:ss" ]&#13;
-    //     var parts = rawString.split('-');&#13;
-    //     var year = parts[0];&#13;
-    //     var monthNum = parseInt(parts[1], 10);&#13;
+    // if (jsDate) {&#13;
+    //     // 4. Extract individual time parts based on your instance's regional clock settings&#13;
+    //     var year = jsDate.getFullYear();&#13;
+    //     var day = jsDate.getDate();&#13;
+    //     var monthNum = jsDate.getMonth(); // Note: JS months are naturally 0-indexed (0 = January)&#13;
         &#13;
-    //     // Split the space between the day and the time: [ "DD", "HH:mm:ss" ]&#13;
-    //     var dayTimeParts = parts[2].split(' ');&#13;
-    //     var day = dayTimeParts[0];&#13;
+    //     var hour = jsDate.getHours();&#13;
+    //     var minute = jsDate.getMinutes();&#13;
         &#13;
-    //     // Split the time: [ "HH", "mm", "ss" ]&#13;
-    //     var timeParts = dayTimeParts[1].split(':');&#13;
-    //     var hour = parseInt(timeParts[0], 10);&#13;
-    //     var minute = timeParts[1];&#13;
+    //     // Add a leading zero to minutes if they are single digits (e.g., 9 -&gt; "09")&#13;
+    //     if (minute &lt; 10) { minute = "0" + minute; }&#13;
 &#13;
-    //     // 3. Map the month number to the full text name&#13;
+    //     // 5. Array map to assign the textual month name&#13;
     //     var monthNames = ["January", "February", "March", "April", "May", "June", &#13;
     //                     "July", "August", "September", "October", "November", "December"];&#13;
-    //     var monthName = monthNames[monthNum - 1];&#13;
+    //     var monthName = monthNames[monthNum];&#13;
 &#13;
-    //     // 4. Calculate 12-hour AM/PM from the raw database hour digit&#13;
+    //     // 6. Calculate 12-hour AM/PM structure&#13;
     //     var ampm = hour &gt;= 12 ? 'PM' : 'AM';&#13;
     //     hour = hour % 12;&#13;
     //     hour = hour ? hour : 12; // If hour is 0, make it 12&#13;
 &#13;
-    //     // 5. Build your exact target string structure&#13;
+    //     // 7. Format into your target layout: MONTH-Day-YEAR 8:00 PM&#13;
     //     date = monthName + "-" + day + "-" + year + " " + hour + ":" + minute + " " + ampm;&#13;
     // }&#13;
 &#13;
-    &#13;
-    // 1. Pass the database date pill into GlideDateTime to initialize it&#13;
-    var gdt = new GlideDateTime(inputs.start_date_time);&#13;
-&#13;
-    // 2. Extract the raw numerical epoch milliseconds (this is timezone-neutral)&#13;
-    var ms = gdt.getNumericValue();&#13;
-&#13;
-    // 3. Drop it into a standard JavaScript Date object (automatically shifts back to Local Time)&#13;
-    var jsDate = new Date(ms);&#13;
-&#13;
-    var date = "No Date Selected";&#13;
-&#13;
-    if (jsDate) {&#13;
-        // 4. Extract individual time parts based on your instance's regional clock settings&#13;
-        var year = jsDate.getFullYear();&#13;
-        var day = jsDate.getDate();&#13;
-        var monthNum = jsDate.getMonth(); // Note: JS months are naturally 0-indexed (0 = January)&#13;
-        &#13;
-        var hour = jsDate.getHours();&#13;
-        var minute = jsDate.getMinutes();&#13;
-        &#13;
-        // Add a leading zero to minutes if they are single digits (e.g., 9 -&gt; "09")&#13;
-        if (minute &lt; 10) { minute = "0" + minute; }&#13;
-&#13;
-        // 5. Array map to assign the textual month name&#13;
-        var monthNames = ["January", "February", "March", "April", "May", "June", &#13;
-                        "July", "August", "September", "October", "November", "December"];&#13;
-        var monthName = monthNames[monthNum];&#13;
-&#13;
-        // 6. Calculate 12-hour AM/PM structure&#13;
-        var ampm = hour &gt;= 12 ? 'PM' : 'AM';&#13;
-        hour = hour % 12;&#13;
-        hour = hour ? hour : 12; // If hour is 0, make it 12&#13;
-&#13;
-        // 7. Format into your target layout: MONTH-Day-YEAR 8:00 PM&#13;
-        date = monthName + "-" + day + "-" + year + " " + hour + ":" + minute + " " + ampm;&#13;
-    }&#13;
-&#13;
-    var msg = name + ' has been approved for workspace ' + workspace +&#13;
-            ' starting at ' + date + '.';&#13;
+    var msg = name + ' was NOT approved for workspace ' + workspace + '.';&#13;
     gs.info('Discord MSG (Flow Execution): ' + msg); //This shows up in Flow Execution Details.&#13;
-    discord.sendMessage(msg, ':white_check_mark:');&#13;
+    discord.sendMessage(msg, ':x:');&#13;
 &#13;
 })(inputs, outputs);&#13;
 </value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>5a23306583464f101902ba96feaad328</document_key>
-        <order>400</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_element_mapping action="delete_multiple" query="id=baaf02b1834203501902ba96feaad385"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>request_for</field>
+        <id>baaf02b1834203501902ba96feaad385</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:52:17</sys_created_on>
-        <sys_id>da23306583464f101902ba96feaad338</sys_id>
+        <sys_created_on>2026-07-13 20:14:56</sys_created_on>
+        <sys_id>beaf02b1834203501902ba96feaad3af</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 18:52:17</sys_updated_on>
-        <value>35aa573fd7802200bdbaee5b5e610375</value>
-        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=5a23306583464f101902ba96feaad328"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>reserved_for</field>
-        <id>5a23306583464f101902ba96feaad328</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 23:14:33</sys_created_on>
-        <sys_id>403fad61834e4f101902ba96feaad3f1</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 23:21:57</sys_updated_on>
-        <table>var__m_sys_hub_step_ext_input_5a23306583464f101902ba96feaad328</table>
+        <sys_updated_on>2026-07-13 20:14:56</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_baaf02b1834203501902ba96feaad385</table>
         <value>{{action.reserved_for}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>starte_date_time</field>
-        <id>5a23306583464f101902ba96feaad328</id>
+        <field>reserved_for</field>
+        <id>baaf02b1834203501902ba96feaad385</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 23:14:33</sys_created_on>
-        <sys_id>c43fad61834e4f101902ba96feaad3f0</sys_id>
+        <sys_created_on>2026-07-13 22:02:12</sys_created_on>
+        <sys_id>c63822f5830603501902ba96feaad3e6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 23:14:33</sys_updated_on>
-        <table>var__m_sys_hub_step_ext_input_5a23306583464f101902ba96feaad328</table>
-        <value>{{action.start_date_time}}</value>
+        <sys_updated_on>2026-07-13 22:02:12</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_baaf02b1834203501902ba96feaad385</table>
+        <value>{{action.reserved_for}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>start_date_time</field>
-        <id>5a23306583464f101902ba96feaad328</id>
+        <id>baaf02b1834203501902ba96feaad385</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-14 01:52:05</sys_created_on>
-        <sys_id>eddcdf3583ca03501902ba96feaad3c7</sys_id>
+        <sys_created_on>2026-07-14 20:45:41</sys_created_on>
+        <sys_id>fe40ab82830e83501902ba96feaad36e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-14 01:52:05</sys_updated_on>
-        <table>var__m_sys_hub_step_ext_input_5a23306583464f101902ba96feaad328</table>
+        <sys_updated_on>2026-07-14 20:45:41</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_baaf02b1834203501902ba96feaad385</table>
         <value>{{action.start_date_time}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>workspace</field>
-        <id>5a23306583464f101902ba96feaad328</id>
+        <id>baaf02b1834203501902ba96feaad385</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 23:14:33</sys_created_on>
-        <sys_id>0c3fad61834e4f101902ba96feaad3f0</sys_id>
+        <sys_created_on>2026-07-13 20:14:56</sys_created_on>
+        <sys_id>f2af02b1834203501902ba96feaad3b0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 23:14:33</sys_updated_on>
-        <table>var__m_sys_hub_step_ext_input_5a23306583464f101902ba96feaad328</table>
+        <sys_updated_on>2026-07-13 20:14:56</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_baaf02b1834203501902ba96feaad385</table>
         <value>{{action.workspace}}</value>
     </sys_element_mapping>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=5a23306583464f101902ba96feaad328"/>
-    <sys_translated_text action="delete_multiple" query="documentkey=5a23306583464f101902ba96feaad328"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=5a23306583464f101902ba96feaad328^sys_idNOT IN043fad61834e4f101902ba96feaad3b6,372fad61834e4f101902ba96feaad3b0,a1dcdf3583ca03501902ba96feaad3ac"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=baaf02b1834203501902ba96feaad385"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=baaf02b1834203501902ba96feaad385"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=baaf02b1834203501902ba96feaad385^sys_idNOT IN72af02b1834203501902ba96feaad39f,b640ab82830e83501902ba96feaad34e,f240ab82830e83501902ba96feaad35e"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1493,12 +1367,12 @@
         <label>workspace</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
-        <model display_value="Script step">5a23306583464f101902ba96feaad328</model>
-        <model_id>5a23306583464f101902ba96feaad328</model_id>
+        <model display_value="Script step">baaf02b1834203501902ba96feaad385</model>
+        <model_id>baaf02b1834203501902ba96feaad385</model_id>
         <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_input_5a23306583464f101902ba96feaad328</name>
+        <name>var__m_sys_hub_step_ext_input_baaf02b1834203501902ba96feaad385</name>
         <next_element/>
-        <order>100</order>
+        <order>0</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -1514,91 +1388,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 23:14:32</sys_created_on>
-        <sys_id>043fad61834e4f101902ba96feaad3b6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 23:14:32</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_step_ext_input>
-    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>reserved_for</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
-        <label>reserved_for</label>
-        <mandatory>true</mandatory>
-        <max_length>32</max_length>
-        <model display_value="Script step">5a23306583464f101902ba96feaad328</model>
-        <model_id>5a23306583464f101902ba96feaad328</model_id>
-        <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_input_5a23306583464f101902ba96feaad328</name>
-        <next_element/>
-        <order>0</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference display_value="" name="sys_user">sys_user</reference>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 23:14:32</sys_created_on>
-        <sys_id>372fad61834e4f101902ba96feaad3b0</sys_id>
+        <sys_created_on>2026-07-13 20:14:56</sys_created_on>
+        <sys_id>72af02b1834203501902ba96feaad39f</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -1606,7 +1397,7 @@
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 23:21:57</sys_updated_on>
+        <sys_updated_on>2026-07-14 20:45:40</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1659,12 +1450,12 @@
         <label>start_date_time</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Script step">5a23306583464f101902ba96feaad328</model>
-        <model_id>5a23306583464f101902ba96feaad328</model_id>
+        <model display_value="Script step">baaf02b1834203501902ba96feaad385</model>
+        <model_id>baaf02b1834203501902ba96feaad385</model_id>
         <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_input_5a23306583464f101902ba96feaad328</name>
+        <name>var__m_sys_hub_step_ext_input_baaf02b1834203501902ba96feaad385</name>
         <next_element/>
-        <order>200</order>
+        <order>100</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -1680,8 +1471,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-14 01:52:05</sys_created_on>
-        <sys_id>a1dcdf3583ca03501902ba96feaad3ac</sys_id>
+        <sys_created_on>2026-07-14 20:45:40</sys_created_on>
+        <sys_id>b640ab82830e83501902ba96feaad34e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -1689,7 +1480,7 @@
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-14 01:52:05</sys_updated_on>
+        <sys_updated_on>2026-07-14 20:45:40</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1702,14 +1493,11 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=5a23306583464f101902ba96feaad328"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=5a23306583464f101902ba96feaad328"/>
-    <sys_hub_action_input action="delete_multiple" query="model=de23fc2583464f101902ba96feaad3f8^sys_idNOT IN1623306583464f101902ba96feaad315,5a23306583464f101902ba96feaad300,99b5d3b5838a03501902ba96feaad39d"/>
-    <sys_hub_action_input action="INSERT_OR_UPDATE">
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=4a770083-0dc2-4f52-aa7a-b09d4ee18f3c</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1719,91 +1507,7 @@
 })(current);]]></calculation>
         <choice/>
         <choice_field/>
-        <choice_table>x_1534869_wrm_workspace_options</choice_table>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>workspace</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
-        <label>Workspace</label>
-        <mandatory>false</mandatory>
-        <max_length>32</max_length>
-        <model display_value="Send Discord Approval Notification">de23fc2583464f101902ba96feaad3f8</model>
-        <model_id>de23fc2583464f101902ba96feaad3f8</model_id>
-        <model_table>sys_hub_action_type_snapshot</model_table>
-        <name>var__m_sys_hub_action_input_de23fc2583464f101902ba96feaad3f8</name>
-        <next_element/>
-        <order>2</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference display_value="" name="x_1534869_wrm_workspace_options">x_1534869_wrm_workspace_options</reference>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_action_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:52:17</sys_created_on>
-        <sys_id>1623306583464f101902ba96feaad315</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 18:52:17</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_action_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1623306583464f101902ba96feaad315"/>
-    <sys_hub_action_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=406f7542-4a87-43cb-89d7-f7c927f7994a</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table>sys_user</choice_table>
+        <choice_table/>
         <column_label/>
         <comments/>
         <create_roles/>
@@ -1826,15 +1530,15 @@
         <help/>
         <hint/>
         <internal_type display_value="Reference">reference</internal_type>
-        <label>Reserved for</label>
-        <mandatory>false</mandatory>
+        <label>reserved_for</label>
+        <mandatory>true</mandatory>
         <max_length>32</max_length>
-        <model display_value="Send Discord Approval Notification">de23fc2583464f101902ba96feaad3f8</model>
-        <model_id>de23fc2583464f101902ba96feaad3f8</model_id>
-        <model_table>sys_hub_action_type_snapshot</model_table>
-        <name>var__m_sys_hub_action_input_de23fc2583464f101902ba96feaad3f8</name>
+        <model display_value="Script step">baaf02b1834203501902ba96feaad385</model>
+        <model_id>baaf02b1834203501902ba96feaad385</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_baaf02b1834203501902ba96feaad385</name>
         <next_element/>
-        <order>1</order>
+        <order>200</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -1848,18 +1552,18 @@
         <sizeclass/>
         <spell_check>false</spell_check>
         <staged>false</staged>
-        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:52:17</sys_created_on>
-        <sys_id>5a23306583464f101902ba96feaad300</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2026-07-14 20:45:41</sys_created_on>
+        <sys_id>f240ab82830e83501902ba96feaad35e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 18:52:17</sys_updated_on>
+        <sys_updated_on>2026-07-14 20:45:41</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1871,13 +1575,15 @@
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
-    </sys_hub_action_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5a23306583464f101902ba96feaad300"/>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=baaf02b1834203501902ba96feaad385"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=baaf02b1834203501902ba96feaad385"/>
+    <sys_hub_action_input action="delete_multiple" query="model=b6af02b1834203501902ba96feaad367^sys_idNOT IN3a40ab82830e83501902ba96feaad335,7aaf02b1834203501902ba96feaad377,faaf02b1834203501902ba96feaad36e"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=0f498117-b09d-4a62-9392-9874bbd4b5fa</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=4b4eba14-1661-4e2a-ae76-c7e12641a1ca</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1913,12 +1619,12 @@
         <label>Start Date Time</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Send Discord Approval Notification">de23fc2583464f101902ba96feaad3f8</model>
-        <model_id>de23fc2583464f101902ba96feaad3f8</model_id>
+        <model display_value="Send Discord Rejection Notification">b6af02b1834203501902ba96feaad367</model>
+        <model_id>b6af02b1834203501902ba96feaad367</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
-        <name>var__m_sys_hub_action_input_de23fc2583464f101902ba96feaad3f8</name>
+        <name>var__m_sys_hub_action_input_b6af02b1834203501902ba96feaad367</name>
         <next_element/>
-        <order>3</order>
+        <order>2</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -1934,16 +1640,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-14 01:20:56</sys_created_on>
-        <sys_id>99b5d3b5838a03501902ba96feaad39d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2026-07-14 20:45:40</sys_created_on>
+        <sys_id>3a40ab82830e83501902ba96feaad335</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-14 01:20:56</sys_updated_on>
+        <sys_updated_on>2026-07-14 20:56:18</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1956,13 +1662,181 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=99b5d3b5838a03501902ba96feaad39d"/>
-    <sys_hub_action_output action="delete_multiple" query="model=de23fc2583464f101902ba96feaad3f8^sys_idNOT IN9623306583464f101902ba96feaad343,d623306583464f101902ba96feaad33c"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3a40ab82830e83501902ba96feaad335"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=619b195e-f640-46fb-8fcc-96bb951307ac</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1534869_wrm_workspace_options</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>workspace</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Workspace</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Send Discord Rejection Notification">b6af02b1834203501902ba96feaad367</model>
+        <model_id>b6af02b1834203501902ba96feaad367</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_b6af02b1834203501902ba96feaad367</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_1534869_wrm_workspace_options">x_1534869_wrm_workspace_options</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-13 20:14:56</sys_created_on>
+        <sys_id>7aaf02b1834203501902ba96feaad377</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 20:56:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7aaf02b1834203501902ba96feaad377"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=10a2609f-1be8-4ec8-a86f-6d883a29c785</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sys_user</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>reserved_for</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Reserved for</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Send Discord Rejection Notification">b6af02b1834203501902ba96feaad367</model>
+        <model_id>b6af02b1834203501902ba96feaad367</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_b6af02b1834203501902ba96feaad367</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-13 20:14:56</sys_created_on>
+        <sys_id>faaf02b1834203501902ba96feaad36e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 20:56:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=faaf02b1834203501902ba96feaad36e"/>
+    <sys_hub_action_output action="delete_multiple" query="model=b6af02b1834203501902ba96feaad367^sys_idNOT IN7aaf02b1834203501902ba96feaad3bc,f2af02b1834203501902ba96feaad3b5"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=3a52c07d-bd6b-4404-9965-a9a64efd0c5b,visible_in_ui=false</attributes>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=9bce56f2-043f-405b-857e-0770d4252657,visible_in_ui=false</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -2000,10 +1874,10 @@
         <label>Don't Treat as Error</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Send Discord Approval Notification">de23fc2583464f101902ba96feaad3f8</model>
-        <model_id>de23fc2583464f101902ba96feaad3f8</model_id>
+        <model display_value="Send Discord Rejection Notification">b6af02b1834203501902ba96feaad367</model>
+        <model_id>b6af02b1834203501902ba96feaad367</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
-        <name>var__m_sys_hub_action_output_de23fc2583464f101902ba96feaad3f8</name>
+        <name>var__m_sys_hub_action_output_b6af02b1834203501902ba96feaad367</name>
         <next_element/>
         <order>2</order>
         <primary>false</primary>
@@ -2021,16 +1895,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:52:17</sys_created_on>
-        <sys_id>9623306583464f101902ba96feaad343</sys_id>
-        <sys_mod_count>63</sys_mod_count>
+        <sys_created_on>2026-07-13 20:14:57</sys_created_on>
+        <sys_id>7aaf02b1834203501902ba96feaad3bc</sys_id>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-14 08:49:08</sys_updated_on>
+        <sys_updated_on>2026-07-14 21:35:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2043,13 +1917,13 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9623306583464f101902ba96feaad343"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=9623306583464f101902ba96feaad343"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7aaf02b1834203501902ba96feaad3bc"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7aaf02b1834203501902ba96feaad3bc"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=31530256-d0fb-4204-89e2-5edf1a2c339d</attributes>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=0983172b-49a7-495d-b70f-7cb536260bd0</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -2087,10 +1961,10 @@
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Send Discord Approval Notification">de23fc2583464f101902ba96feaad3f8</model>
-        <model_id>de23fc2583464f101902ba96feaad3f8</model_id>
+        <model display_value="Send Discord Rejection Notification">b6af02b1834203501902ba96feaad367</model>
+        <model_id>b6af02b1834203501902ba96feaad367</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
-        <name>var__m_sys_hub_action_output_de23fc2583464f101902ba96feaad3f8</name>
+        <name>var__m_sys_hub_action_output_b6af02b1834203501902ba96feaad367</name>
         <next_element/>
         <order>1</order>
         <primary>false</primary>
@@ -2108,8 +1982,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:52:17</sys_created_on>
-        <sys_id>d623306583464f101902ba96feaad33c</sys_id>
+        <sys_created_on>2026-07-13 20:14:56</sys_created_on>
+        <sys_id>f2af02b1834203501902ba96feaad3b5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -2117,7 +1991,7 @@
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 18:52:17</sys_updated_on>
+        <sys_updated_on>2026-07-13 20:14:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2130,32 +2004,32 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d623306583464f101902ba96feaad33c"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=d623306583464f101902ba96feaad33c"/>
-    <sys_hub_pill_compound action="delete_multiple" query="attached_to=de23fc2583464f101902ba96feaad3f8"/>
-    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=de23fc2583464f101902ba96feaad3f8^sys_idNOT IN9223306583464f101902ba96feaad355"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f2af02b1834203501902ba96feaad3b5"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f2af02b1834203501902ba96feaad3b5"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b6af02b1834203501902ba96feaad367"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=b6af02b1834203501902ba96feaad367^sys_idNOT IN76af02b1834203501902ba96feaad3db"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Send Discord Approval Notification">de23fc2583464f101902ba96feaad3f8</action_type_id>
+        <action_type_id display_value="Send Discord Rejection Notification">b6af02b1834203501902ba96feaad367</action_type_id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:52:17</sys_created_on>
-        <sys_id>9223306583464f101902ba96feaad355</sys_id>
+        <sys_created_on>2026-07-13 20:14:57</sys_created_on>
+        <sys_id>76af02b1834203501902ba96feaad3db</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 18:52:17</sys_updated_on>
+        <sys_updated_on>2026-07-13 20:14:57</sys_updated_on>
     </sys_hub_action_status_metadata>
-    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=9223306583464f101902ba96feaad355"/>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=76af02b1834203501902ba96feaad3db"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>start_date_time</element>
         <help/>
         <hint/>
         <label>Start Date Time</label>
         <language>en</language>
-        <name>var__m_sys_hub_action_input_de23fc2583464f101902ba96feaad3f8</name>
+        <name>var__m_sys_hub_action_input_b6af02b1834203501902ba96feaad367</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-14 01:20:56</sys_created_on>
-        <sys_id>59b5d3b5838a03501902ba96feaad3a2</sys_id>
+        <sys_created_on>2026-07-14 20:45:40</sys_created_on>
+        <sys_id>b640ab82830e83501902ba96feaad33a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Start Date Time</sys_name>
         <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
@@ -2163,30 +2037,7 @@
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-14 01:20:56</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>reserved_for</element>
-        <help/>
-        <hint/>
-        <label>Reserved for</label>
-        <language>en</language>
-        <name>var__m_sys_hub_action_input_de23fc2583464f101902ba96feaad3f8</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:52:17</sys_created_on>
-        <sys_id>9223306583464f101902ba96feaad314</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Reserved for</sys_name>
-        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 18:52:17</sys_updated_on>
+        <sys_updated_on>2026-07-14 20:45:40</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -2196,12 +2047,12 @@
         <hint/>
         <label>Workspace</label>
         <language>en</language>
-        <name>var__m_sys_hub_action_input_de23fc2583464f101902ba96feaad3f8</name>
+        <name>var__m_sys_hub_action_input_b6af02b1834203501902ba96feaad367</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:52:17</sys_created_on>
-        <sys_id>d223306583464f101902ba96feaad31b</sys_id>
+        <sys_created_on>2026-07-13 20:14:56</sys_created_on>
+        <sys_id>beaf02b1834203501902ba96feaad37d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Workspace</sys_name>
         <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
@@ -2209,46 +2060,46 @@
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 18:52:17</sys_updated_on>
+        <sys_updated_on>2026-07-13 20:14:56</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_de23fc2583464f101902ba96feaad3f8"/>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>__action_status__</element>
+        <element>reserved_for</element>
         <help/>
         <hint/>
-        <label>Action Status</label>
+        <label>Reserved for</label>
         <language>en</language>
-        <name>var__m_sys_hub_action_output_de23fc2583464f101902ba96feaad3f8</name>
+        <name>var__m_sys_hub_action_input_b6af02b1834203501902ba96feaad367</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:52:17</sys_created_on>
-        <sys_id>1623306583464f101902ba96feaad342</sys_id>
+        <sys_created_on>2026-07-13 20:14:56</sys_created_on>
+        <sys_id>f2af02b1834203501902ba96feaad376</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Action Status</sys_name>
+        <sys_name>Reserved for</sys_name>
         <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 18:52:17</sys_updated_on>
+        <sys_updated_on>2026-07-13 20:14:56</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_b6af02b1834203501902ba96feaad367"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>__dont_treat_as_error__</element>
         <help/>
         <hint/>
         <label>Don't Treat as Error</label>
         <language>en</language>
-        <name>var__m_sys_hub_action_output_de23fc2583464f101902ba96feaad3f8</name>
+        <name>var__m_sys_hub_action_output_b6af02b1834203501902ba96feaad367</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-12 18:52:17</sys_created_on>
-        <sys_id>9e23306583464f101902ba96feaad34a</sys_id>
+        <sys_created_on>2026-07-13 20:14:57</sys_created_on>
+        <sys_id>beaf02b1834203501902ba96feaad3d0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
@@ -2256,14 +2107,37 @@
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-12 18:52:17</sys_updated_on>
+        <sys_updated_on>2026-07-13 20:14:57</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_de23fc2583464f101902ba96feaad3f8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_b6af02b1834203501902ba96feaad367</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-13 20:14:57</sys_created_on>
+        <sys_id>f2af02b1834203501902ba96feaad3bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Action Status</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-13 20:14:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_b6af02b1834203501902ba96feaad367"/>
     <sys_hub_action_type_definition action="UPDATE">
-        <sys_id>bceee02d83064f101902ba96feaad3f2</sys_id>
-        <latest_snapshot>de23fc2583464f101902ba96feaad3f8</latest_snapshot>
+        <sys_id>a17dc27d830203501902ba96feaad3f5</sys_id>
+        <latest_snapshot>b6af02b1834203501902ba96feaad367</latest_snapshot>
         <compiler_build>glide-zurich-07-01-2025__patch6-01-16-2026_02-02-2026_1554.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>
