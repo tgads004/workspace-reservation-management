@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>false</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description>Allows wrm_agent to read only reservation records assigned to them.</description>
+        <local_or_existing>Existing</local_or_existing>
+        <name>x_1534869_wrm_reservation_tracker</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-29 17:43:02</sys_created_on>
+        <sys_id>f7456d1583f58b941902ba96feaad31c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>x_1534869_wrm_reservation_tracker</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_security_acl_f7456d1583f58b941902ba96feaad31c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-05 21:02:58</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</application>
+        <file_path/>
+        <instance_id>0210aedcff7fc218c812f8e4fc4fd90d</instance_id>
+        <instance_name>dev284016</instance_name>
+        <name>sys_security_acl_f7456d1583f58b941902ba96feaad31c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>false</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Allows wrm_agent to read only reservation records assigned to them.</description><local_or_existing>Existing</local_or_existing><name>x_1534869_wrm_reservation_tracker</name><operation display_value="read">read</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-29 17:43:02</sys_created_on><sys_id>f7456d1583f58b941902ba96feaad31c</sys_id><sys_mod_count>4</sys_mod_count><sys_name>x_1534869_wrm_reservation_tracker</sys_name><sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package><sys_policy/><sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope><sys_update_name>sys_security_acl_f7456d1583f58b941902ba96feaad31c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-05 21:02:58</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>229104886</payload_hash>
+        <record_name>x_1534869_wrm_reservation_tracker</record_name>
+        <reverted_from/>
+        <source>8908fe7a83b5c7d41902ba96feaad3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-05 21:02:58</sys_created_on>
+        <sys_id>e0fdc99783798bd41902ba96feaad359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f34176eb80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-05 21:02:58</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>20fdc99777798bd416d58443ecbffe58</update_guid>
+        <update_guid_history>20fdc99777798bd416d58443ecbffe58:229104886,26db899331798bd4214e3d725526376d:-1685035569,67a50dd357398bd48adb9602c88c8214:564111783,bcc65e557e7d8b943945f1789eb037ea:-683532855,5da6a5d56cf58b9473aa5c89bd4206c3:-1734354103</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-15 01:16:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>46c1afbd956d4a84b5f68b8244e79990</sys_id>
+        <sys_metadata>f7456d1583f58b941902ba96feaad31c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1534869_wrm_reservation_tracker</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_parent display_value="x_1534869_wrm_reservation_tracker">f6c6566883bd07941902ba96feaad37f</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_scope_delete display_value="">393aa292a9794d92995d1bcc716fef44</sys_scope_delete>
+        <sys_update_name>sys_security_acl_f7456d1583f58b941902ba96feaad31c</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_f7456d1583f58b941902ba96feaad31c">e0fdc99783798bd41902ba96feaad359</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-15 01:16:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

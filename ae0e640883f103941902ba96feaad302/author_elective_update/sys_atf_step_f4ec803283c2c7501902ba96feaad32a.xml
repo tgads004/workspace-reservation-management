@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>false</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description>Generate dynamic date and time text string for Service Portal.</description>
+        <display_name>Generate Formatted Date Text</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>4</order>
+        <step_config display_value="Generate Formatted Date Text">970bc83e8382c7501902ba96feaad3de</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 13:17:38</sys_created_on>
+        <sys_id>f4ec803283c2c7501902ba96feaad32a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Generate Formatted Date Text</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_atf_step_f4ec803283c2c7501902ba96feaad32a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 19:04:37</sys_updated_on>
+        <table/>
+        <test display_value="Workspace Reservation - Base Request Template">9201c46e830247501902ba96feaad3f1</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=f4ec803283c2c7501902ba96feaad32a"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_atf_output_variable_callable_9201c46e830247501902ba96feaad3f1^id=f4ec803283c2c7501902ba96feaad32a"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</application>
+        <file_path/>
+        <instance_id>0210aedcff7fc218c812f8e4fc4fd90d</instance_id>
+        <instance_name>dev284016</instance_name>
+        <name>sys_atf_step_f4ec803283c2c7501902ba96feaad32a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>false</active><callable_outputs/><copied_from/><description>Generate dynamic date and time text string for Service Portal.</description><display_name>Generate Formatted Date Text</display_name><inputs/><mugshots_cache_json/><notes/><order>4</order><step_config display_value="Generate Formatted Date Text">970bc83e8382c7501902ba96feaad3de</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-16 13:17:38</sys_created_on><sys_id>f4ec803283c2c7501902ba96feaad32a</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Generate Formatted Date Text</sys_name><sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package><sys_policy/><sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope><sys_update_name>sys_atf_step_f4ec803283c2c7501902ba96feaad32a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-16 19:04:37</sys_updated_on><table/><test display_value="Workspace Reservation - Base Request Template">9201c46e830247501902ba96feaad3f1</test><timeout/><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=f4ec803283c2c7501902ba96feaad32a"/><sys_element_mapping action="delete_multiple" query="table=var__m_atf_output_variable_callable_9201c46e830247501902ba96feaad3f1^id=f4ec803283c2c7501902ba96feaad32a"/></record_update>]]></payload>
+        <payload_hash>-1095053388</payload_hash>
+        <record_name>Generate Formatted Date Text</record_name>
+        <reverted_from/>
+        <source>e76ef34e83ce83501902ba96feaad343</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 19:04:37</sys_created_on>
+        <sys_id>315c5132834ec7501902ba96feaad347</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f6c5106af0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 19:04:37</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>7d5c5132d64ec750fddb0b531c493a45</update_guid>
+        <update_guid_history>7d5c5132d64ec750fddb0b531c493a45:-1095053388,3ee79176610ec7502397121868ba4204:206860693,d7ecc4321ec2c75013b794fdc79e7827:-2088151826</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 19:04:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>5e54595188654ac2a35c9329b2e68064</sys_id>
+        <sys_metadata>f4ec803283c2c7501902ba96feaad32a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Generate Formatted Date Text</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_scope_delete display_value="">393aa292a9794d92995d1bcc716fef44</sys_scope_delete>
+        <sys_update_name>sys_atf_step_f4ec803283c2c7501902ba96feaad32a</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_f4ec803283c2c7501902ba96feaad32a">315c5132834ec7501902ba96feaad347</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 19:04:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
