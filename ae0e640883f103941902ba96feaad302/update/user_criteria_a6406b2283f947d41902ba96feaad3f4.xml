@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="user_criteria">
     <user_criteria action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <advanced>false</advanced>
         <company/>
         <department/>
@@ -23,14 +23,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a6406b2283f947d41902ba96feaad3f4</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>WRM Application Users</sys_name>
         <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name>user_criteria_a6406b2283f947d41902ba96feaad3f4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-14 15:54:11</sys_updated_on>
+        <sys_updated_on>2026-07-15 18:33:46</sys_updated_on>
         <user/>
     </user_criteria>
     <sys_translated_text action="delete_multiple" query="documentkey=a6406b2283f947d41902ba96feaad3f4"/>

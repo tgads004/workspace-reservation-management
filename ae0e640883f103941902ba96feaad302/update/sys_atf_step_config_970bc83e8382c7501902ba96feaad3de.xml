@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step_config">
+    <sys_atf_step_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <batch_order_constraint/>
+        <can_mutate_page>false</can_mutate_page>
+        <category display_value="Server">317c4dc20b202200a8d7a12cf6673aa8</category>
+        <class_name/>
+        <class_type>script</class_type>
+        <deprecated>false</deprecated>
+        <description_generator><![CDATA[function generateDescription() {
+    // the global variable 'step' represents the current glide record
+    var description = "Generate dynamic date and time text string for Service Portal.";
+	// your code here
+	return description;
+}
+ generateDescription();
+]]></description_generator>
+        <html_description><![CDATA[<p>Generates a dynamic string for current date and time.</p>]]></html_description>
+        <icon>icon-article-document</icon>
+        <inputs/>
+        <name>Generate Formatted Date Text</name>
+        <order>100</order>
+        <outputs/>
+        <performance_include>false</performance_include>
+        <step_env display_value="Server - Independent">6c2bcea1870312009dccc9ded0e3ecca</step_env>
+        <step_execution_generator><![CDATA[// The inputs are a map of the variables defined in the inputs related list below.
+// Inputs are consumed in the step configuration. Input
+// values may be hardcoded or mapped from the outputs of a previous step.
+// If a test author using your step uses mapping to pass in an output from a previous 
+// test step then when referencing the input variable the mapping will be resolved 
+// automatically
+//  Example:
+//      var myRecords = new GlideRecord(inputs.table);
+//
+// The outputs are a map of the variables defined in the outputs related list.
+// Outputs should be set (assigned) in order to pass data out of a test step that
+// can be consumed my mapping as an input to subsequent steps. 
+//  Example:
+//      outputs.table = gr.getRecordClassName()
+//
+//
+// Note that inputs and outputs are strongly typed as defined in their variable definition.
+// Their behavior is the same as a dictionary defined field of the same type in a table.
+//
+// The stepResult is a simple API for controlling the step pass/fail and logging with three
+// methods:
+//      stepResult.setFailed: Causes step to fail
+//
+//      stepResult.setSuccess: Causes step to succeed
+//
+//      stepResult.setOutputMessage: Log a message to step results after step executes.
+//            Can only be called once or will overwrite previous 
+//            message
+//
+// If neither setFailed or setSuccess is called the default is to succeed.
+//
+// Example usage of step timeout in script
+//      var counter = 0;
+//      // 'timeout' is a field on the step form
+//      while (counter <= timeout) {
+//            if (desiredOutcome) {
+//                stepResult.setOutputMessage('Success!');
+//                stepResult.setSuccess();
+//                return;
+//            }
+//            counter++;
+//
+//            // When writing scripts in ATF, use waitOneSecond() instead of gs.sleep()
+//            // since gs.sleep() may not work in non-global scopes
+//            sn_atf.AutomatedTestingFramework.waitOneSecond();
+//      }
+//
+//      // desired outcome did not occur within the timeout
+//      stepResult.setOutputMessage('Failure!');
+//      stepResult.setFailed();
+//
+(function executeStep(inputs, outputs, stepResult, timeout) {
+    var gdt = new GlideDateTime();
+    var datePart = gdt.getLocalDate().getByFormat("MM-dd-yyyy");
+    var timePart = gdt.getLocalTime().getByFormat("hh:mm a");
+
+    if (timePart.indexOf('0') === 0) {
+        timePart = timePart.substring(1);
+    }
+
+    // Output our string cleanly through our newly registered parameter
+    outputs.u_date_string = datePart + ' ' + timeString.toLowerCase();
+    stepResult.setSuccess();
+}(inputs, outputs, stepResult, timeout));]]></step_execution_generator>
+        <sys_class_name>sys_atf_step_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 13:16:01</sys_created_on>
+        <sys_id>970bc83e8382c7501902ba96feaad3de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Generate Formatted Date Text</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_atf_step_config_970bc83e8382c7501902ba96feaad3de</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 13:16:01</sys_updated_on>
+        <template_reminder>Enter step details </template_reminder>
+        <type display_value="Test Step" name="sys_atf_step">ba70ba8618b632108bb255f46a373aff</type>
+        <wizard_redirect/>
+    </sys_atf_step_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=970bc83e8382c7501902ba96feaad3de"/>
+    <sys_variable_value action="delete_multiple" query="document_key=970bc83e8382c7501902ba96feaad3de"/>
+</record_update>
