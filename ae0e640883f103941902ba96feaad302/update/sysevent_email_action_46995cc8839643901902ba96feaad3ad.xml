@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>true</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Reservations" name="Reservations">2aa1924b83068b501902ba96feaad31c</category>
+        <collection>x_1534869_wrm_reservation_tracker</collection>
+        <condition table="x_1534869_wrm_reservation_tracker">reservation_statusCHANGESTOchecked_out^EQ<item display_value="Checked-out" endquery="false" field="reservation_status" goto="false" newquery="false" operator="CHANGESTO" or="false" value="checked_out"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <content_type>text/html</content_type>
+        <default_digest>false</default_digest>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digest_type>single</digest_type>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>activate.life.cycle.migration</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>engine</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5; color: #333333; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px; background-color: #ffffff;"><!-- Header banner -->
+<div style="background-color: #1a365d; color: #ffffff; padding: 15px; border-radius: 6px 6px 0 0; font-size: 16px; font-weight: bold;">Workspace Inspection Required</div>
+<!-- Main Body Text -->
+<p style="margin-top: 20px; margin-bottom: 20px;">A workspace reservation has been checked out and requires your inspection.</p>
+<!-- Record Details Card -->
+<div style="background-color: #f7fafc; border: 1px solid #edf2f7; border-radius: 6px; padding: 15px; margin-bottom: 25px;">
+<table style="width: 100%; border-collapse: collapse;">
+<tbody>
+<tr>
+<td style="padding: 4px 0; font-weight: bold; width: 35%; color: #4a5568;">Reservation:</td>
+<td style="padding: 4px 0; color: #1a202c;">${number}</td>
+</tr>
+<tr>
+<td style="padding: 4px 0; font-weight: bold; color: #4a5568;">Workspace:</td>
+<td style="padding: 4px 0; color: #1a202c;">${workspace}</td>
+</tr>
+<tr>
+<td style="padding: 4px 0; font-weight: bold; color: #4a5568;">Reservation Status:</td>
+<td style="padding: 4px 0; color: #1a202c;"><span style="background-color: #feebc8; color: #c05621; padding: 2px 6px; border-radius: 4px; font-size: 12px; font-weight: bold;">${reservation_status}</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Instructions Section -->
+<p style="margin-bottom: 12px; font-weight: bold; color: #2d3748;">Please inspect the workspace area now that the session has ended.</p>
+<ul style="margin: 0; padding-left: 20px; color: #4a5568;">
+<li style="margin-bottom: 10px;">If no issues are found, no further action is needed.</li>
+<li style="margin-bottom: 10px;"><strong>If maintenance is required:</strong>
+<ol style="margin-top: 6px; margin-bottom: 0; padding-left: 20px; color: #2d3748;">
+<li style="margin-bottom: 4px;">Open the reservation record</li>
+<li style="margin-bottom: 4px;">Fill out the <em>Maintenance issue</em> field</li>
+<li style="margin-bottom: 4px;">Save the record</li>
+<li style="margin-bottom: 4px;">Set the <em>Reservation status</em> to <strong>Needs Maintenance</strong></li>
+</ol>
+</li>
+</ul>
+<!-- Footer --><hr style="border: 0; border-top: 1px solid #edf2f7; margin-top: 30px; margin-bottom: 20px;">
+<p style="font-size: 12px; color: #718096; margin: 0;">Thank you,<br><strong>Workspace Reservation Management System</strong></p>
+</div>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Workspace Check-Out Inspection Required</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>assigned_to</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>Workspace check required for ${number}</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-20 11:30:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>46995cc8839643901902ba96feaad3ad</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Workspace Check-Out Inspection Required</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sysevent_email_action_46995cc8839643901902ba96feaad3ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-20 11:38:23</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>
