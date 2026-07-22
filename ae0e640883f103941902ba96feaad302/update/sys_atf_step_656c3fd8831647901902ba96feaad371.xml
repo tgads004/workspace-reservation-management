@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description>Validate there is at least one record in 'sysapproval_approver' matching query:
+Approval for = {{Step 4: Execute Test: Workspace Reservation - Base Request Template.RITM Record}}
+and Approver is System Administrator
+With a failure timeout of 5 Seconds</description>
+        <display_name>Record Query</display_name>
+        <inputs/>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>11</order>
+        <step_config display_value="Record Query">2d82e3c7531400109e02ddeeff7b12a7</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-21 22:36:02</sys_created_on>
+        <sys_id>656c3fd8831647901902ba96feaad371</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Record Query</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_atf_step_656c3fd8831647901902ba96feaad371</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-22 03:18:39</sys_updated_on>
+        <table>sysapproval_approver</table>
+        <test display_value="Workspace Reservation - Approval Path">73933c6683c647501902ba96feaad32b</test>
+        <timeout>1970-01-01 00:00:05</timeout>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=656c3fd8831647901902ba96feaad371"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>656c3fd8831647901902ba96feaad371</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-21 22:36:03</sys_created_on>
+        <sys_id>00bc3b1c831647901902ba96feaad309</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-21 22:36:03</sys_updated_on>
+        <value>sysapproval_approver</value>
+        <variable display_value="Table">78b8d86b531000109e02ddeeff7b12f3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>656c3fd8831647901902ba96feaad371</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-21 22:36:03</sys_created_on>
+        <sys_id>44bc3b1c831647901902ba96feaad309</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-21 22:36:03</sys_updated_on>
+        <value>sysapproval={{step['6de374a683c647501902ba96feaad349'].u_ritm_record}}^approverDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ</value>
+        <variable display_value="Conditions">915990ab531000109e02ddeeff7b12f8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>656c3fd8831647901902ba96feaad371</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-21 22:36:03</sys_created_on>
+        <sys_id>c8bc3b1c831647901902ba96feaad308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-21 22:36:03</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Enforce security">02fb0027531000109e02ddeeff7b120b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>656c3fd8831647901902ba96feaad371</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-21 22:36:03</sys_created_on>
+        <sys_id>ccbcf71c831647901902ba96feaad3ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-21 22:36:03</sys_updated_on>
+        <value>records_match_query</value>
+        <variable display_value="Assert type">b86c0427531000109e02ddeeff7b1227</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=656c3fd8831647901902ba96feaad371"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>enforce_security</field>
+        <id>656c3fd8831647901902ba96feaad371</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-21 22:36:03</sys_created_on>
+        <sys_id>ccbcf71c831647901902ba96feaad3ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-21 22:36:03</sys_updated_on>
+        <table>var__m_atf_input_variable_2d82e3c7531400109e02ddeeff7b12a7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>656c3fd8831647901902ba96feaad371</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-21 22:36:03</sys_created_on>
+        <sys_id>0cbcf71c831647901902ba96feaad3ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-21 22:36:03</sys_updated_on>
+        <table>var__m_atf_input_variable_2d82e3c7531400109e02ddeeff7b12a7</table>
+        <value>sysapproval={{step['6de374a683c647501902ba96feaad349'].u_ritm_record}}^approverDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ</value>
+    </sys_element_mapping>
+</record_update>

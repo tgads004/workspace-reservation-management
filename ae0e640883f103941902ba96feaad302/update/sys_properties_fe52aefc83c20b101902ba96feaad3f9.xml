@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Discord webhook URL for workspace alerts</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_1534869_wrm.discord.webhook_url</name>
+        <read_roles/>
+        <suffix>discord.webhook_url</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-10 19:04:39</sys_created_on>
+        <sys_id>fe52aefc83c20b101902ba96feaad3f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1534869_wrm.discord.webhook_url</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_properties_fe52aefc83c20b101902ba96feaad3f9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-10 19:04:39</sys_updated_on>
+        <type>string</type>
+        <value>https://discord.com/api/webhooks/1525208950889255043/2ZwrNALOn0DhDr79y9FkwUmDlv7FEoEEtKkjR7dhTftloJP4Tekp2K6O-5PUksbF5Cdu</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=fe52aefc83c20b101902ba96feaad3f9"/>
+</record_update>

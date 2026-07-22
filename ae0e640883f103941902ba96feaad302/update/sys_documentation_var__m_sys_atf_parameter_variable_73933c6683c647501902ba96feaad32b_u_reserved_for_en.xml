@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_reserved_for" label="reserved for" language="en" table="var__m_sys_atf_parameter_variable_73933c6683c647501902ba96feaad32b">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_reserved_for</element>
+            <help/>
+            <hint/>
+            <label>reserved for</label>
+            <language>en</language>
+            <name>var__m_sys_atf_parameter_variable_73933c6683c647501902ba96feaad32b</name>
+            <plural>reserved for</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-15 22:01:04</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>reserved for</sys_name>
+            <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_atf_parameter_variable_73933c6683c647501902ba96feaad32b_u_reserved_for_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-15 22:01:04</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

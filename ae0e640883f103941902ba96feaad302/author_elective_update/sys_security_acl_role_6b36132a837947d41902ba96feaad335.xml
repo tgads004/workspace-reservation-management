@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-03 23:04:23</sys_created_on>
+        <sys_id>6b36132a837947d41902ba96feaad335</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.x_1534869_wrm.wrm_user</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_security_acl display_value="">e636dba6837947d41902ba96feaad3b0</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_6b36132a837947d41902ba96feaad335</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-03 23:04:23</sys_updated_on>
+        <sys_user_role display_value="x_1534869_wrm.wrm_user" name="x_1534869_wrm.wrm_user">760e640883f103941902ba96feaad39d</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</application>
+        <file_path/>
+        <instance_id>0210aedcff7fc218c812f8e4fc4fd90d</instance_id>
+        <instance_name>dev284016</instance_name>
+        <name>sys_security_acl_role_6b36132a837947d41902ba96feaad335</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-03 23:04:23</sys_created_on><sys_id>6b36132a837947d41902ba96feaad335</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.x_1534869_wrm.wrm_user</sys_name><sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package><sys_policy/><sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope><sys_security_acl display_value="">e636dba6837947d41902ba96feaad3b0</sys_security_acl><sys_update_name>sys_security_acl_role_6b36132a837947d41902ba96feaad335</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-03 23:04:23</sys_updated_on><sys_user_role display_value="x_1534869_wrm.wrm_user" name="x_1534869_wrm.wrm_user">760e640883f103941902ba96feaad39d</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>1440673666</payload_hash>
+        <record_name>.x_1534869_wrm.wrm_user</record_name>
+        <reverted_from/>
+        <source>acd67d0983790b941902ba96feaad39f</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-03 23:04:24</sys_created_on>
+        <sys_id>fb869b2a837947d41902ba96feaad365</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f2a39e2e20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-03 23:04:24</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>3b869b2a887947d42e006c79b921f664</update_guid>
+        <update_guid_history>3b869b2a887947d42e006c79b921f664:1440673666</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value=".x_1534869_wrm.wrm_user">fd23c81e8302c3501902ba96feaad35f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-14 23:17:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>a2e16baaa18349609b576eb86ffd5a40</sys_id>
+        <sys_metadata>6b36132a837947d41902ba96feaad335</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.x_1534869_wrm.wrm_user</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_parent display_value="x_1534869_wrm_workspace_options">e636dba6837947d41902ba96feaad3b0</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_scope_delete display_value="">393aa292a9794d92995d1bcc716fef44</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_6b36132a837947d41902ba96feaad335</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_6b36132a837947d41902ba96feaad335">fb869b2a837947d41902ba96feaad365</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-14 23:17:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom">
+    <sc_cat_item_user_criteria_mtom action="DELETE">
+        <sc_cat_item display_value="Workspace Reservation Request">1a31ed1683b983d41902ba96feaad37f</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-03 23:51:04</sys_created_on>
+        <sys_id>2f312ba283f947d41902ba96feaad342</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Workspace Reservation Request.WRM Application Users</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_2f312ba283f947d41902ba96feaad342</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-03 23:51:04</sys_updated_on>
+        <user_criteria display_value="WRM Application Users">a6406b2283f947d41902ba96feaad3f4</user_criteria>
+    </sc_cat_item_user_criteria_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</application>
+        <file_path/>
+        <instance_id>0210aedcff7fc218c812f8e4fc4fd90d</instance_id>
+        <instance_name>dev284016</instance_name>
+        <name>sc_cat_item_user_criteria_mtom_2f312ba283f947d41902ba96feaad342</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom"><sc_cat_item_user_criteria_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Workspace Reservation Request">1a31ed1683b983d41902ba96feaad37f</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-03 23:51:04</sys_created_on><sys_id>2f312ba283f947d41902ba96feaad342</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Workspace Reservation Request.WRM Application Users</sys_name><sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package><sys_policy/><sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope><sys_update_name>sc_cat_item_user_criteria_mtom_2f312ba283f947d41902ba96feaad342</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-03 23:51:04</sys_updated_on><user_criteria display_value="WRM Application Users">a6406b2283f947d41902ba96feaad3f4</user_criteria></sc_cat_item_user_criteria_mtom></record_update>]]></payload>
+        <payload_hash>-1455059834</payload_hash>
+        <record_name>Workspace Reservation Request.WRM Application Users</record_name>
+        <reverted_from/>
+        <source>acd67d0983790b941902ba96feaad39f</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-03 23:51:05</sys_created_on>
+        <sys_id>6f312ba283f947d41902ba96feaad348</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f2a649eb40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-03 23:51:05</sys_updated_on>
+        <type>Catalog Item Available for</type>
+        <update_guid>2f312ba29cf947d406fd4833cf3c1047</update_guid>
+        <update_guid_history>2f312ba29cf947d406fd4833cf3c1047:-1455059834</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Workspace Reservation Request.WRM Application Users">2d3dd27e83460b501902ba96feaad3d1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 23:48:02</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_mtom">sc_cat_item_user_criteria_mtom</sys_db_object>
+        <sys_id>0e5d78060f104844aa00915a455a1649</sys_id>
+        <sys_metadata>2f312ba283f947d41902ba96feaad342</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Workspace Reservation Request.WRM Application Users</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_scope_delete display_value="">393aa292a9794d92995d1bcc716fef44</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_2f312ba283f947d41902ba96feaad342</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_mtom_2f312ba283f947d41902ba96feaad342">6f312ba283f947d41902ba96feaad348</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 23:48:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

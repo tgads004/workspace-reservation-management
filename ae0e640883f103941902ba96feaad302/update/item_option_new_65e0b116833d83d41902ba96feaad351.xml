@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new">
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
-        <attributes>ref_ac_columns=workspace_name,workspace_type,location,max_occupancy, ref_auto_completer=AJAXTableCompleter</attributes>
+        <attributes>ref_auto_completer=AJAXTableCompleter,ref_ac_columns_search=true,ref_ac_columns=workspace_name;workspace_type;location;max_occupancy</attributes>
         <cat_item display_value="Workspace Reservation Request">1a31ed1683b983d41902ba96feaad37f</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
@@ -84,14 +84,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-02 21:16:36</sys_created_on>
         <sys_id>65e0b116833d83d41902ba96feaad351</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Select workspace</sys_name>
         <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name>item_option_new_65e0b116833d83d41902ba96feaad351</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-04 16:18:09</sys_updated_on>
+        <sys_updated_on>2026-07-16 23:57:02</sys_updated_on>
         <table/>
         <tooltip>Select a workspace</tooltip>
         <topic_block/>
@@ -103,7 +103,7 @@
         <validate_regex/>
         <variable_name/>
         <variable_set/>
-        <variable_width/>
+        <variable_width>50</variable_width>
         <visibility>1</visibility>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
