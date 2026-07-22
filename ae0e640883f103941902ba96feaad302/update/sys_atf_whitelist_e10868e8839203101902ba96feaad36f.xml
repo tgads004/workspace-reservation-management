@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_whitelist">
+    <sys_atf_whitelist action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>This client error occurred on the page in Chrome 150.0.0.0</description>
+        <error_location>client_error</error_location>
+        <error_message>Uncaught ReferenceError: g_form is not defined</error_message>
+        <report_level>ignored</report_level>
+        <sys_class_name>sys_atf_whitelist</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-22 01:45:24</sys_created_on>
+        <sys_id>e10868e8839203101902ba96feaad36f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Uncaught ReferenceError: g_form is not defined</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_atf_whitelist_e10868e8839203101902ba96feaad36f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-22 01:45:24</sys_updated_on>
+        <test display_value="Workspace Reservation - Approval Path">73933c6683c647501902ba96feaad32b</test>
+    </sys_atf_whitelist>
+</record_update>

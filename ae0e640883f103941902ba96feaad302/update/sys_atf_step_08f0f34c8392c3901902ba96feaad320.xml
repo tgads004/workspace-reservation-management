@@ -8,51 +8,37 @@
         <inputs/>
         <mugshots_cache_json/>
         <notes/>
-        <order>10</order>
+        <order>7</order>
         <step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config>
         <sys_class_name>sys_atf_step</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-16 22:29:56</sys_created_on>
-        <sys_id>b32b4e3683c20b501902ba96feaad36e</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_created_on>2026-07-21 03:06:44</sys_created_on>
+        <sys_id>08f0f34c8392c3901902ba96feaad320</sys_id>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Run Server Side Script</sys_name>
         <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
-        <sys_update_name>sys_atf_step_b32b4e3683c20b501902ba96feaad36e</sys_update_name>
+        <sys_update_name>sys_atf_step_08f0f34c8392c3901902ba96feaad320</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-21 03:06:44</sys_updated_on>
+        <sys_updated_on>2026-07-21 03:26:10</sys_updated_on>
         <table/>
         <test display_value="Workspace Reservation - Base Request Template">9201c46e830247501902ba96feaad3f1</test>
         <timeout/>
         <warning_message/>
     </sys_atf_step>
-    <sys_variable_value action="delete_multiple" query="document_key=b32b4e3683c20b501902ba96feaad36e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=08f0f34c8392c3901902ba96feaad320"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_atf_step</document>
-        <document_key>b32b4e3683c20b501902ba96feaad36e</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-16 22:29:56</sys_created_on>
-        <sys_id>2d5b067683c20b501902ba96feaad344</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-16 22:29:56</sys_updated_on>
-        <value>3.1</value>
-        <variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_atf_step</document>
-        <document_key>b32b4e3683c20b501902ba96feaad36e</document_key>
+        <document_key>08f0f34c8392c3901902ba96feaad320</document_key>
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-16 22:29:56</sys_created_on>
-        <sys_id>615b067683c20b501902ba96feaad345</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2026-07-21 03:06:44</sys_created_on>
+        <sys_id>17013b4c8392c3901902ba96feaad3cf</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-16 22:29:56</sys_updated_on>
+        <sys_updated_on>2026-07-21 03:22:15</sys_updated_on>
         <value>// You can use this step to execute a variety of server-side javascript tests including&#13;
 // jasmine tests and custom assertions&#13;
 //&#13;
@@ -137,13 +123,47 @@
 //      assertEqual(testAssertion); // throws Error, logs message to test step output&#13;
 //&#13;
 (function(outputs, steps, params, stepResult, assertEqual) {&#13;
-    // add test script here&#13;
-    var ritm = steps.order_item.outputs.requested_item;&#13;
-    outputs.RITM_Record = ritm;&#13;
+    // 1. Get a time window of the last 60 seconds&#13;
+    var gdt = new GlideDateTime();&#13;
+    gdt.addSeconds(-60);&#13;
+&#13;
+    // 2. Look up the exact RITM created by this session&#13;
+    var ritm = new GlideRecord('sc_req_item');&#13;
+    ritm.addQuery('opened_by', gs.getUserID());&#13;
+    ritm.addQuery('sys_created_on', '&gt;=', gdt);&#13;
+    ritm.orderByDesc('sys_created_on');&#13;
+    ritm.setLimit(1);&#13;
+    ritm.query();&#13;
+&#13;
+    if (ritm.next()) {&#13;
+        // 3. Explicitly log the human readable number &#13;
+        stepResult.setOutputMessage("The generated RITM number is: " + ritm.getValue('number'));&#13;
+        stepResult.setSuccess();&#13;
+        return true;&#13;
+    } else {&#13;
+        // 4. Clean fallback message so it never hits the "not set correctly" engine error&#13;
+        stepResult.setOutputMessage("Could not locate a valid RITM record from the current execution window.");&#13;
+        stepResult.setFailed();&#13;
+        return false;&#13;
+    }&#13;
 })(outputs, steps, params, stepResult, assertEqual);&#13;
 // uncomment the next line to execute this script as a jasmine test&#13;
 //jasmine.getEnv().execute();</value>
         <variable display_value="Test script">989d9e235324220002c6435723dc3484</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_output_variable_callable_9201c46e830247501902ba96feaad3f1^id=b32b4e3683c20b501902ba96feaad36e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>08f0f34c8392c3901902ba96feaad320</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-21 03:06:44</sys_created_on>
+        <sys_id>df013b4c8392c3901902ba96feaad3ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-21 03:06:44</sys_updated_on>
+        <value>3.1</value>
+        <variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_output_variable_callable_9201c46e830247501902ba96feaad3f1^id=08f0f34c8392c3901902ba96feaad320"/>
 </record_update>
