@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description>Order item and confirm that ordering is successful</description>
+        <display_name>Order a Catalog Item (SP)</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>5</order>
+        <step_config display_value="Order a Catalog Item (SP)">c0fede515f23030076861f9f2f7313db</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 01:59:08</sys_created_on>
+        <sys_id>8b91fde283ce47501902ba96feaad303</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Order a Catalog Item (SP)</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_atf_step_8b91fde283ce47501902ba96feaad303</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 19:04:59</sys_updated_on>
+        <table/>
+        <test display_value="Workspace Reservation - Base Request Template">9201c46e830247501902ba96feaad3f1</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=8b91fde283ce47501902ba96feaad303"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>8b91fde283ce47501902ba96feaad303</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 01:59:08</sys_created_on>
+        <sys_id>84a1b16683ce47501902ba96feaad3d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 01:59:08</sys_updated_on>
+        <value>form_submitted_to_server</value>
+        <variable display_value="Assert Type">b27f92915f23030076861f9f2f731356</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_output_variable_callable_9201c46e830247501902ba96feaad3f1^id=8b91fde283ce47501902ba96feaad303"/>
+</record_update>

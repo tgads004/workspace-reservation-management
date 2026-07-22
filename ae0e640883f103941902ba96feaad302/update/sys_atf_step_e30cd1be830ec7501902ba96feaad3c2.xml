@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description>Validate there is at least one record in 'x_1534869_wrm_workspace_options' matching query:
+Status = Available
+With a failure timeout of 5 Seconds</description>
+        <display_name>Record Query</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>1</order>
+        <step_config display_value="Record Query">2d82e3c7531400109e02ddeeff7b12a7</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 19:04:16</sys_created_on>
+        <sys_id>e30cd1be830ec7501902ba96feaad3c2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Record Query</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_atf_step_e30cd1be830ec7501902ba96feaad3c2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 19:17:57</sys_updated_on>
+        <table>x_1534869_wrm_workspace_options</table>
+        <test display_value="Workspace Reservation - Base Request Template">9201c46e830247501902ba96feaad3f1</test>
+        <timeout>1970-01-01 00:00:05</timeout>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=e30cd1be830ec7501902ba96feaad3c2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>e30cd1be830ec7501902ba96feaad3c2</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 19:04:16</sys_created_on>
+        <sys_id>3c4c9dfe830ec7501902ba96feaad3a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 19:04:16</sys_updated_on>
+        <value>x_1534869_wrm_workspace_options</value>
+        <variable display_value="Table">78b8d86b531000109e02ddeeff7b12f3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>e30cd1be830ec7501902ba96feaad3c2</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 19:04:16</sys_created_on>
+        <sys_id>704c9dfe830ec7501902ba96feaad3a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 19:04:16</sys_updated_on>
+        <value>status=available^EQ</value>
+        <variable display_value="Conditions">915990ab531000109e02ddeeff7b12f8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>e30cd1be830ec7501902ba96feaad3c2</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 19:04:16</sys_created_on>
+        <sys_id>b04c9dfe830ec7501902ba96feaad3a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 19:04:16</sys_updated_on>
+        <value>records_match_query</value>
+        <variable display_value="Assert type">b86c0427531000109e02ddeeff7b1227</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>e30cd1be830ec7501902ba96feaad3c2</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 19:04:16</sys_created_on>
+        <sys_id>f44c9dfe830ec7501902ba96feaad3a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 19:04:16</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Enforce security">02fb0027531000109e02ddeeff7b120b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_output_variable_callable_9201c46e830247501902ba96feaad3f1^id=e30cd1be830ec7501902ba96feaad3c2"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_2d82e3c7531400109e02ddeeff7b12a7^id=e30cd1be830ec7501902ba96feaad3c2"/>
+</record_update>

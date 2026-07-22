@@ -18,22 +18,22 @@
         <query/>
         <report/>
         <require_confirmation>true</require_confirmation>
-        <roles>x_1534869_wrm.wrm_admin</roles>
+        <roles/>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>tgadson</sys_created_by>
         <sys_created_on>2026-06-25 23:33:48</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e040d28883fd03941902ba96feaad389</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>All</sys_name>
         <sys_overrides/>
         <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name>sys_app_module_e040d28883fd03941902ba96feaad389</sys_update_name>
-        <sys_updated_by>tgadson</sys_updated_by>
-        <sys_updated_on>2026-06-27 21:40:25</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-22 03:59:38</sys_updated_on>
         <timeline_page/>
         <title>All</title>
         <uncancelable>false</uncancelable>

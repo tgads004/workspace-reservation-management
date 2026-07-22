@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description>Open "Workspace Reservation Request" in the "Service Portal" portal</description>
+        <display_name>Open a Catalog Item (SP)</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>3</order>
+        <step_config display_value="Open a Catalog Item (SP)">e81f02dc73e703008e6b0d573cf6a76f</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 01:01:02</sys_created_on>
+        <sys_id>4f242d6a834e47501902ba96feaad304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open a Catalog Item (SP)</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_atf_step_4f242d6a834e47501902ba96feaad304</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 01:01:02</sys_updated_on>
+        <table/>
+        <test display_value="Workspace Reservation - Approval Path">73933c6683c647501902ba96feaad32b</test>
+        <timeout>1970-01-01 00:00:30</timeout>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=4f242d6a834e47501902ba96feaad304"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>4f242d6a834e47501902ba96feaad304</document_key>
+        <order>120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 01:01:02</sys_created_on>
+        <sys_id>1d5461aa834e47501902ba96feaad3ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 01:01:02</sys_updated_on>
+        <value>1a31ed1683b983d41902ba96feaad37f</value>
+        <variable display_value="Catalog Item">ac615adc73e703008e6b0d573cf6a702</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>4f242d6a834e47501902ba96feaad304</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 01:01:02</sys_created_on>
+        <sys_id>515461aa834e47501902ba96feaad3ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 01:01:02</sys_updated_on>
+        <value>9f12251147132100ba13a5554ee490f4</value>
+        <variable display_value="Page">83d1dadc73e703008e6b0d573cf6a779</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>4f242d6a834e47501902ba96feaad304</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 01:01:02</sys_created_on>
+        <sys_id>515461aa834e47501902ba96feaad3eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 01:01:02</sys_updated_on>
+        <value>81b75d3147032100ba13a5554ee4902b</value>
+        <variable display_value="Portal">3731d6dc73e703008e6b0d573cf6a788</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>4f242d6a834e47501902ba96feaad304</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 01:01:02</sys_created_on>
+        <sys_id>d55461aa834e47501902ba96feaad3ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 01:01:02</sys_updated_on>
+        <value/>
+        <variable display_value="Query parameters">3a6e5fb15f1013001f1e1f9f2f7313e3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_atf_input_variable_e81f02dc73e703008e6b0d573cf6a76f^id=4f242d6a834e47501902ba96feaad304"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</application>
+        <file_path/>
+        <instance_id>0210aedcff7fc218c812f8e4fc4fd90d</instance_id>
+        <instance_name>dev284016</instance_name>
+        <name>sys_atf_step_4f242d6a834e47501902ba96feaad304</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><callable_outputs/><copied_from/><description>Open "Workspace Reservation Request" in the "Service Portal" portal</description><display_name>Open a Catalog Item (SP)</display_name><inputs/><mugshots_cache_json/><notes/><order>3</order><step_config display_value="Open a Catalog Item (SP)">e81f02dc73e703008e6b0d573cf6a76f</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-16 01:01:02</sys_created_on><sys_id>4f242d6a834e47501902ba96feaad304</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Open a Catalog Item (SP)</sys_name><sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package><sys_policy/><sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope><sys_update_name>sys_atf_step_4f242d6a834e47501902ba96feaad304</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-16 01:01:02</sys_updated_on><table/><test display_value="Workspace Reservation - Approval Path">73933c6683c647501902ba96feaad32b</test><timeout>1970-01-01 00:00:30</timeout><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=4f242d6a834e47501902ba96feaad304"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>4f242d6a834e47501902ba96feaad304</document_key><order>120</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-16 01:01:02</sys_created_on><sys_id>1d5461aa834e47501902ba96feaad3ea</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-16 01:01:02</sys_updated_on><value>1a31ed1683b983d41902ba96feaad37f</value><variable display_value="Catalog Item">ac615adc73e703008e6b0d573cf6a702</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>4f242d6a834e47501902ba96feaad304</document_key><order>110</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-16 01:01:02</sys_created_on><sys_id>515461aa834e47501902ba96feaad3ea</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-16 01:01:02</sys_updated_on><value>9f12251147132100ba13a5554ee490f4</value><variable display_value="Page">83d1dadc73e703008e6b0d573cf6a779</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>4f242d6a834e47501902ba96feaad304</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-16 01:01:02</sys_created_on><sys_id>515461aa834e47501902ba96feaad3eb</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-16 01:01:02</sys_updated_on><value>81b75d3147032100ba13a5554ee4902b</value><variable display_value="Portal">3731d6dc73e703008e6b0d573cf6a788</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>4f242d6a834e47501902ba96feaad304</document_key><order>150</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-16 01:01:02</sys_created_on><sys_id>d55461aa834e47501902ba96feaad3ea</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-16 01:01:02</sys_updated_on><value/><variable display_value="Query parameters">3a6e5fb15f1013001f1e1f9f2f7313e3</variable></sys_variable_value><sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_e81f02dc73e703008e6b0d573cf6a76f^id=4f242d6a834e47501902ba96feaad304"/></record_update>]]></payload>
+        <payload_hash>-1401449124</payload_hash>
+        <record_name>Open a Catalog Item (SP)</record_name>
+        <reverted_from/>
+        <source>e76ef34e83ce83501902ba96feaad343</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 01:01:02</sys_created_on>
+        <sys_id>155461aa834e47501902ba96feaad3ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f6870fbc60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 01:01:02</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>d15461aaf44e4750cf362f88b5c85bee</update_guid>
+        <update_guid_history>d15461aaf44e4750cf362f88b5c85bee:-1401449124</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 01:01:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>4847ac2d453944daa05bcbe9d473ede4</sys_id>
+        <sys_metadata>4f242d6a834e47501902ba96feaad304</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open a Catalog Item (SP)</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_scope_delete display_value="">393aa292a9794d92995d1bcc716fef44</sys_scope_delete>
+        <sys_update_name>sys_atf_step_4f242d6a834e47501902ba96feaad304</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_4f242d6a834e47501902ba96feaad304">155461aa834e47501902ba96feaad3ef</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 01:01:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>get_workspace_max_occupancy</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript( /* GlideRecord */ current, /* TemplatePrinter */ template,
+    /* Optional EmailOutbound */
+    email, /* Optional GlideRecord */ email_action,
+    /* Optional GlideRecord */
+    event) {
+
+    // 1. Fetch the Sys ID of the selected workspace record from your variable
+    // Make sure 'select_workspace' exactly matches your workspace catalog variable name!
+    var workspaceSysId = current.variables.select_workspace;
+
+    if (workspaceSysId) {
+        var roomGr = new GlideRecord('x_1534869_wrm_workspace_options'); // Change to your workspace table name if different
+        if (roomGr.get(workspaceSysId)) {
+
+            var maxOcc = roomGr.getValue('max_occupancy'); // Replace 'max_occupancy' with its exact column backend name
+
+            // 3. Print the text layouts directly into your email body frame         
+            // if (maxOcc) {
+            //     template.print('• <b>Max Occupancy:</b> ' + maxOcc + '<br />');
+            // }
+            if (maxOcc) {
+                template.print(maxOcc);
+            }
+        }
+    }
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-17 23:39:28</sys_created_on>
+        <sys_id>e7632b8f838e8b501902ba96feaad34c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>get_workspace_max_occupancy</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_script_email_e7632b8f838e8b501902ba96feaad34c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-17 23:42:40</sys_updated_on>
+    </sys_script_email>
+</record_update>
