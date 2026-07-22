@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <callable_outputs/>
+        <callable_outputs/>
+        <copied_from/>
+        <description>Set the reusable output variables for the test as follows:
+RITM Record = {{Step 6: Record Query.First record}}</description>
+        <display_name>Set Output Variables</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>9</order>
+        <step_config display_value="Set Output Variables">26302752a33012100df567d1361e61ef</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-20 19:57:34</sys_created_on>
+        <sys_id>ce0d8208835683901902ba96feaad3cd</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Set Output Variables</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_atf_step_ce0d8208835683901902ba96feaad3cd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-21 03:06:44</sys_updated_on>
+        <table/>
+        <test display_value="Workspace Reservation - Base Request Template">9201c46e830247501902ba96feaad3f1</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=ce0d8208835683901902ba96feaad3cd"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>ce0d8208835683901902ba96feaad3cd</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-20 19:57:34</sys_created_on>
+        <sys_id>64de0ec8835683901902ba96feaad306</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-20 19:57:34</sys_updated_on>
+        <value/>
+        <variable display_value="RITM Record">6ef524aa834647501902ba96feaad317</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ce0d8208835683901902ba96feaad3cd"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>u_ritm_record</field>
+        <id>ce0d8208835683901902ba96feaad3cd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-20 19:57:34</sys_created_on>
+        <sys_id>a0de0ec8835683901902ba96feaad306</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-21 02:35:25</sys_updated_on>
+        <table>var__m_atf_output_variable_callable_9201c46e830247501902ba96feaad3f1</table>
+        <value>{{step['e3182fc48352c3901902ba96feaad352'].first_record}}</value>
+    </sys_element_mapping>
+</record_update>

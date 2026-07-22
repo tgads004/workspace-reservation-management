@@ -3,30 +3,33 @@
         <active>true</active>
         <callable_outputs/>
         <copied_from/>
-        <description>Impersonate the user: {{Step 6: Record Query.First record}}</description>
+        <description>Impersonate the user: Charles Beckley with user Id: charles.beckley
+
+Warning: Impersonating an existing user may cause unexpected behavior for this test. Avoid potential issues by adding a 'Create a User' step instead&#13;
+See the documentation for Test Design Considerations</description>
         <display_name>Impersonate</display_name>
-        <inputs/>
         <inputs/>
         <mugshots_cache_json/>
         <notes/>
-        <order>7</order>
+        <order>10</order>
         <step_config display_value="Impersonate">071ee5b253331200040729cac2dc348d</step_config>
         <sys_class_name>sys_atf_step</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-16 20:19:59</sys_created_on>
         <sys_id>be8ded7e834ec7501902ba96feaad320</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>Impersonate</sys_name>
         <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name>sys_atf_step_be8ded7e834ec7501902ba96feaad320</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-16 21:35:31</sys_updated_on>
+        <sys_updated_on>2026-07-22 03:18:38</sys_updated_on>
         <table/>
         <test display_value="Workspace Reservation - Approval Path">73933c6683c647501902ba96feaad32b</test>
         <timeout/>
-        <warning_message/>
+        <warning_message>Warning: Impersonating an existing user may cause unexpected behavior for this test. Avoid potential issues by adding a 'Create a User' step instead&#13;
+See the documentation for Test Design Considerations</warning_message>
     </sys_atf_step>
     <sys_variable_value action="delete_multiple" query="document_key=be8ded7e834ec7501902ba96feaad320"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -37,23 +40,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-16 20:19:59</sys_created_on>
         <sys_id>799d617683cec7501902ba96feaad35f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-16 20:19:59</sys_updated_on>
-        <value/>
+        <sys_updated_on>2026-07-22 01:30:15</sys_updated_on>
+        <value>5f74e421c0a8010e01ec0d74a7ee2cc6</value>
         <variable display_value="User">586e2c4253e0220002c6435723dc3415</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=be8ded7e834ec7501902ba96feaad320"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>user</field>
-        <id>be8ded7e834ec7501902ba96feaad320</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-16 20:19:59</sys_created_on>
-        <sys_id>b59d617683cec7501902ba96feaad35f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-16 20:19:59</sys_updated_on>
-        <table>var__m_atf_input_variable_071ee5b253331200040729cac2dc348d</table>
-        <value>{{step['9daba17283cec7501902ba96feaad3b8'].first_record}}</value>
-    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_071ee5b253331200040729cac2dc348d^id=be8ded7e834ec7501902ba96feaad320"/>
 </record_update>

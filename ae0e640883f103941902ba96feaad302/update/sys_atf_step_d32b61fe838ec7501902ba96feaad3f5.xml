@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
     <sys_atf_step action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <callable_outputs/>
         <copied_from/>
         <description>Validate there is at least one record in 'sc_req_item' matching query:
-Number = {{Step 4: Execute Test: Workspace Reservation - Base Request Template.RITM Record.Number}}
-and Requested for is System Administrator
+Request = {{Step 4: Execute Test: Workspace Reservation - Base Request Template.RITM Record.Request}}
 With a failure timeout of 5 Seconds</description>
         <display_name>Record Query</display_name>
         <inputs/>
         <inputs/>
         <mugshots_cache_json/>
         <notes/>
-        <order>5</order>
+        <order>8</order>
         <step_config display_value="Record Query">2d82e3c7531400109e02ddeeff7b12a7</step_config>
         <sys_class_name>sys_atf_step</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-16 20:11:13</sys_created_on>
         <sys_id>d32b61fe838ec7501902ba96feaad3f5</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>Record Query</sys_name>
         <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name>sys_atf_step_d32b61fe838ec7501902ba96feaad3f5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-16 22:01:40</sys_updated_on>
+        <sys_updated_on>2026-07-22 03:18:39</sys_updated_on>
         <table>sc_req_item</table>
         <test display_value="Workspace Reservation - Approval Path">73933c6683c647501902ba96feaad32b</test>
         <timeout>1970-01-01 00:00:05</timeout>
@@ -82,10 +81,10 @@ With a failure timeout of 5 Seconds</description>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-16 20:11:13</sys_created_on>
         <sys_id>a99ba17283cec7501902ba96feaad39d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-16 22:01:40</sys_updated_on>
-        <value>number={{step['6de374a683c647501902ba96feaad349'].u_ritm_record.number}}^requested_forDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ</value>
+        <sys_updated_on>2026-07-21 01:32:03</sys_updated_on>
+        <value>request={{step['6de374a683c647501902ba96feaad349'].u_ritm_record.request}}^EQ</value>
         <variable display_value="Conditions">915990ab531000109e02ddeeff7b12f8</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=d32b61fe838ec7501902ba96feaad3f5"/>
@@ -107,10 +106,10 @@ With a failure timeout of 5 Seconds</description>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-16 20:11:13</sys_created_on>
         <sys_id>ad9ba17283cec7501902ba96feaad39b</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-16 22:01:40</sys_updated_on>
+        <sys_updated_on>2026-07-21 01:32:03</sys_updated_on>
         <table>var__m_atf_input_variable_2d82e3c7531400109e02ddeeff7b12a7</table>
-        <value>number={{step['6de374a683c647501902ba96feaad349'].u_ritm_record.number}}^requested_forDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ</value>
+        <value>request={{step['6de374a683c647501902ba96feaad349'].u_ritm_record.request}}^EQ</value>
     </sys_element_mapping>
 </record_update>
