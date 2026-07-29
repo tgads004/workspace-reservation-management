@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_test_suite_test">
+    <sys_atf_test_suite_test action="INSERT_OR_UPDATE">
+        <abort_on_failure>false</abort_on_failure>
+        <order>3</order>
+        <sys_class_name>sys_atf_test_suite_test</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-29 15:54:18</sys_created_on>
+        <sys_id>365d23fe83568b101902ba96feaad313</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>5f2d72ae831ec7101902ba96feaad36e</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_atf_test_suite_test_365d23fe83568b101902ba96feaad313</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-29 15:54:18</sys_updated_on>
+        <test display_value="Workspace Reservation - Agent Approval: Reject">5f2d72ae831ec7101902ba96feaad36e</test>
+        <test_suite display_value="Workspace Reservation Management Suite">1798faa2831ec7101902ba96feaad3a4</test_suite>
+    </sys_atf_test_suite_test>
+</record_update>

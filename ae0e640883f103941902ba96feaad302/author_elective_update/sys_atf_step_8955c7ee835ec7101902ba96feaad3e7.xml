@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>false</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description>Run Server Side Validation Script</description>
+        <display_name>Run Server Side Script</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes>Finds and validates the Reservation Tracker record dynamically. Uses a custom server script because the native UI Record Query cannot match a text RITM number string with the Sys ID data pill. Evaluates the record state against Parameters.u_expected_approval to seamlessly support both Approval and Rejection execution pathways.</notes>
+        <order>12</order>
+        <step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 18:23:39</sys_created_on>
+        <sys_id>8955c7ee835ec7101902ba96feaad3e7</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Run Server Side Script</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_atf_step_8955c7ee835ec7101902ba96feaad3e7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 20:21:17</sys_updated_on>
+        <table/>
+        <test display_value="Workspace Reservation - Agent Approval copy">5f2d72ae831ec7101902ba96feaad36e</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=8955c7ee835ec7101902ba96feaad3e7"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>8955c7ee835ec7101902ba96feaad3e7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 18:23:40</sys_created_on>
+        <sys_id>07064362839ec7101902ba96feaad3d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 18:23:40</sys_updated_on>
+        <value>3.1</value>
+        <variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>8955c7ee835ec7101902ba96feaad3e7</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 18:23:40</sys_created_on>
+        <sys_id>4b064362839ec7101902ba96feaad3d5</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 19:00:41</sys_updated_on>
+        <value>// You can use this step to execute a variety of server-side javascript tests including&#13;
+// jasmine tests and custom assertions&#13;
+//&#13;
+//&#13;
+// Pass or fail a step: Override the step outcome to pass or fail. This is ignored &#13;
+//                      by jasmine tests&#13;
+//&#13;
+//  - Return true from the main function body to pass the step&#13;
+//  - Return false from the main function body to fail the step&#13;
+//&#13;
+//&#13;
+// outputs:       Pre-defined Step config Output variables to set on this step during &#13;
+//                execution that are available to later steps&#13;
+//&#13;
+// steps(SYS_ID): A function to retrieve Output variable data from a step that executed&#13;
+//                earlier in the test. The desired step's sys_id is required&#13;
+//&#13;
+// params:        The current test run data set's parameter data including both &#13;
+//                exclusive and shared parameters&#13;
+//&#13;
+//  Example:&#13;
+//&#13;
+//      // Test step 1 - add data&#13;
+//      var gr = new GlideRecord('sc_task');&#13;
+//      // If parameterized testing is enabled, parameters are stored in the params object&#13;
+//      gr.setValue('short_description', params.u_my_short_description)&#13;
+//      gr.setValue('caller', params.u_my_user.manager)&#13;
+//      // this sample step's Step config has Output variables named table and record_id&#13;
+//      outputs.table = 'sc_task';&#13;
+//      outputs.record_id = gr.insert();&#13;
+//&#13;
+//      // Test step 2 - access added data and validate&#13;
+//      // check that the record exists (or that business logic changed it)&#13;
+//      var gr = new GlideRecord("sc_task");&#13;
+//      gr.get(steps(PREVIOUS_STEP_SYS_ID).record_id);&#13;
+//      assertEqual({name: "task gr exists", shouldbe: true, value: gr.isValidRecord()});&#13;
+//&#13;
+//&#13;
+// stepResult.setOutputMessage: Log a message to step results after step executes.&#13;
+//                              Can only be called once or will overwrite previous &#13;
+//                              message&#13;
+//&#13;
+//  Example:&#13;
+//&#13;
+//      var gr = new GlideRecord('sc_task');&#13;
+//      gr.setValue('short_description', 'verify task can be inserted');&#13;
+//      var grSysId = gr.insert();&#13;
+//      var justCreatedGR = new GlideRecord('sc_task');&#13;
+//      if (justCreatedGR.get(grSysId)) {&#13;
+//            stepResult.setOutputMessage("Successfully inserted task record");&#13;
+//            return true; // pass the step&#13;
+//      } else { &#13;
+//            stepResult.setOutputMessage("Failed to insert task record");&#13;
+//            return false; // fail the step&#13;
+//      }&#13;
+//&#13;
+//&#13;
+// Note: describe is only supported in Global scope.&#13;
+// Use 'describe' to create a suite of test scripts and 'it' to define test expectations&#13;
+//&#13;
+//  Example jasmine test:&#13;
+//&#13;
+//      describe('my suite of script tests', function() {&#13;
+//            it('should meet expectations', function() {&#13;
+//                  expect(true).not.toBe(false);&#13;
+//            });&#13;
+//      });&#13;
+//      // make sure to uncomment jasmine.getEnv().execute(); outside the function body&#13;
+//&#13;
+//&#13;
+// assertEqual: A function used to compare that assertion.shouldbe == assertion.value;&#13;
+//              in case of failure it throws an Error and logs that the assertion by&#13;
+//              name has failed&#13;
+//&#13;
+//  Example:&#13;
+//&#13;
+//      var testAssertion = {&#13;
+//            name: "my test assertion",&#13;
+//            shouldbe: "expected value"&#13;
+//            value: "actual value",&#13;
+//      };&#13;
+//      assertEqual(testAssertion); // throws Error, logs message to test step output&#13;
+//&#13;
+(function(outputs, steps, params, stepResult, assertEqual) {&#13;
+    var step6 = 'a72db2ae831ec7101902ba96feaad35c';&#13;
+    var scReqItemTbl = 'sc_req_item';&#13;
+&#13;
+    // 1. Get the RITM Sys ID that was opened in your test session&#13;
+    // (Ensure this matches your actual step that opens or queries the form)&#13;
+    var ritmSysId = steps(step6).first_record;&#13;
+&#13;
+    // 2. Read the dynamic UI Action name from your parameter data set&#13;
+    var actionToClick = params.u_expected_approval; // "Approve" or "Reject"&#13;
+&#13;
+    var gr = new GlideRecord(scReqItemTbl);&#13;
+    if (gr.get(ritmSysId)) {&#13;
+&#13;
+        // 3. This triggers the business rules/flows tied to that specific button action&#13;
+        // It uses the backend action name (usually lower-case match like 'approve' or 'reject')&#13;
+        var actionName = actionToClick.toLowerCase();&#13;
+&#13;
+        // Execute the UI action logic on the server record container&#13;
+        // var actionSuccess = gs.executeAction(actionName, gr);&#13;
+&#13;
+		// 4. Use ServiceNow's native UIActionUtils API to execute the button logic&#13;
+        var uiActionUtils = new SNC.UIActionUtils();&#13;
+        uiActionUtils.executeUIAction(actionName, gr);&#13;
+&#13;
+        stepResult.setOutputMessage('Successfully clicked dynamic action: ' + actionToClick);&#13;
+        stepResult.setSuccess();&#13;
+    } else {&#13;
+        stepResult.setOutputMessage('Failed to find open RITM record to click action.');&#13;
+        stepResult.setFailed();&#13;
+    }&#13;
+})(outputs, steps, params, stepResult, assertEqual);&#13;
+// uncomment the next line to execute this script as a jasmine test&#13;
+//jasmine.getEnv().execute();</value>
+        <variable display_value="Test script">989d9e235324220002c6435723dc3484</variable>
+    </sys_variable_value>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</application>
+        <file_path/>
+        <instance_id>0210aedcff7fc218c812f8e4fc4fd90d</instance_id>
+        <instance_name>dev284016</instance_name>
+        <name>sys_atf_step_8955c7ee835ec7101902ba96feaad3e7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>false</active><callable_outputs/><copied_from/><description>Run Server Side Validation Script</description><display_name>Run Server Side Script</display_name><inputs/><mugshots_cache_json/><notes>Finds and validates the Reservation Tracker record dynamically. Uses a custom server script because the native UI Record Query cannot match a text RITM number string with the Sys ID data pill. Evaluates the record state against Parameters.u_expected_approval to seamlessly support both Approval and Rejection execution pathways.</notes><order>12</order><step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-28 18:23:39</sys_created_on><sys_id>8955c7ee835ec7101902ba96feaad3e7</sys_id><sys_mod_count>12</sys_mod_count><sys_name>Run Server Side Script</sys_name><sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package><sys_policy/><sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope><sys_update_name>sys_atf_step_8955c7ee835ec7101902ba96feaad3e7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-28 20:21:17</sys_updated_on><table/><test display_value="Workspace Reservation - Agent Approval copy">5f2d72ae831ec7101902ba96feaad36e</test><timeout/><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=8955c7ee835ec7101902ba96feaad3e7"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>8955c7ee835ec7101902ba96feaad3e7</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-28 18:23:40</sys_created_on><sys_id>07064362839ec7101902ba96feaad3d5</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-28 18:23:40</sys_updated_on><value>3.1</value><variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>8955c7ee835ec7101902ba96feaad3e7</document_key><order>200</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-28 18:23:40</sys_created_on><sys_id>4b064362839ec7101902ba96feaad3d5</sys_id><sys_mod_count>6</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-28 19:00:41</sys_updated_on><value>// You can use this step to execute a variety of server-side javascript tests including&#13;
+// jasmine tests and custom assertions&#13;
+//&#13;
+//&#13;
+// Pass or fail a step: Override the step outcome to pass or fail. This is ignored &#13;
+//                      by jasmine tests&#13;
+//&#13;
+//  - Return true from the main function body to pass the step&#13;
+//  - Return false from the main function body to fail the step&#13;
+//&#13;
+//&#13;
+// outputs:       Pre-defined Step config Output variables to set on this step during &#13;
+//                execution that are available to later steps&#13;
+//&#13;
+// steps(SYS_ID): A function to retrieve Output variable data from a step that executed&#13;
+//                earlier in the test. The desired step's sys_id is required&#13;
+//&#13;
+// params:        The current test run data set's parameter data including both &#13;
+//                exclusive and shared parameters&#13;
+//&#13;
+//  Example:&#13;
+//&#13;
+//      // Test step 1 - add data&#13;
+//      var gr = new GlideRecord('sc_task');&#13;
+//      // If parameterized testing is enabled, parameters are stored in the params object&#13;
+//      gr.setValue('short_description', params.u_my_short_description)&#13;
+//      gr.setValue('caller', params.u_my_user.manager)&#13;
+//      // this sample step's Step config has Output variables named table and record_id&#13;
+//      outputs.table = 'sc_task';&#13;
+//      outputs.record_id = gr.insert();&#13;
+//&#13;
+//      // Test step 2 - access added data and validate&#13;
+//      // check that the record exists (or that business logic changed it)&#13;
+//      var gr = new GlideRecord("sc_task");&#13;
+//      gr.get(steps(PREVIOUS_STEP_SYS_ID).record_id);&#13;
+//      assertEqual({name: "task gr exists", shouldbe: true, value: gr.isValidRecord()});&#13;
+//&#13;
+//&#13;
+// stepResult.setOutputMessage: Log a message to step results after step executes.&#13;
+//                              Can only be called once or will overwrite previous &#13;
+//                              message&#13;
+//&#13;
+//  Example:&#13;
+//&#13;
+//      var gr = new GlideRecord('sc_task');&#13;
+//      gr.setValue('short_description', 'verify task can be inserted');&#13;
+//      var grSysId = gr.insert();&#13;
+//      var justCreatedGR = new GlideRecord('sc_task');&#13;
+//      if (justCreatedGR.get(grSysId)) {&#13;
+//            stepResult.setOutputMessage("Successfully inserted task record");&#13;
+//            return true; // pass the step&#13;
+//      } else { &#13;
+//            stepResult.setOutputMessage("Failed to insert task record");&#13;
+//            return false; // fail the step&#13;
+//      }&#13;
+//&#13;
+//&#13;
+// Note: describe is only supported in Global scope.&#13;
+// Use 'describe' to create a suite of test scripts and 'it' to define test expectations&#13;
+//&#13;
+//  Example jasmine test:&#13;
+//&#13;
+//      describe('my suite of script tests', function() {&#13;
+//            it('should meet expectations', function() {&#13;
+//                  expect(true).not.toBe(false);&#13;
+//            });&#13;
+//      });&#13;
+//      // make sure to uncomment jasmine.getEnv().execute(); outside the function body&#13;
+//&#13;
+//&#13;
+// assertEqual: A function used to compare that assertion.shouldbe == assertion.value;&#13;
+//              in case of failure it throws an Error and logs that the assertion by&#13;
+//              name has failed&#13;
+//&#13;
+//  Example:&#13;
+//&#13;
+//      var testAssertion = {&#13;
+//            name: "my test assertion",&#13;
+//            shouldbe: "expected value"&#13;
+//            value: "actual value",&#13;
+//      };&#13;
+//      assertEqual(testAssertion); // throws Error, logs message to test step output&#13;
+//&#13;
+(function(outputs, steps, params, stepResult, assertEqual) {&#13;
+    var step6 = 'a72db2ae831ec7101902ba96feaad35c';&#13;
+    var scReqItemTbl = 'sc_req_item';&#13;
+&#13;
+    // 1. Get the RITM Sys ID that was opened in your test session&#13;
+    // (Ensure this matches your actual step that opens or queries the form)&#13;
+    var ritmSysId = steps(step6).first_record;&#13;
+&#13;
+    // 2. Read the dynamic UI Action name from your parameter data set&#13;
+    var actionToClick = params.u_expected_approval; // "Approve" or "Reject"&#13;
+&#13;
+    var gr = new GlideRecord(scReqItemTbl);&#13;
+    if (gr.get(ritmSysId)) {&#13;
+&#13;
+        // 3. This triggers the business rules/flows tied to that specific button action&#13;
+        // It uses the backend action name (usually lower-case match like 'approve' or 'reject')&#13;
+        var actionName = actionToClick.toLowerCase();&#13;
+&#13;
+        // Execute the UI action logic on the server record container&#13;
+        // var actionSuccess = gs.executeAction(actionName, gr);&#13;
+&#13;
+		// 4. Use ServiceNow's native UIActionUtils API to execute the button logic&#13;
+        var uiActionUtils = new SNC.UIActionUtils();&#13;
+        uiActionUtils.executeUIAction(actionName, gr);&#13;
+&#13;
+        stepResult.setOutputMessage('Successfully clicked dynamic action: ' + actionToClick);&#13;
+        stepResult.setSuccess();&#13;
+    } else {&#13;
+        stepResult.setOutputMessage('Failed to find open RITM record to click action.');&#13;
+        stepResult.setFailed();&#13;
+    }&#13;
+})(outputs, steps, params, stepResult, assertEqual);&#13;
+// uncomment the next line to execute this script as a jasmine test&#13;
+//jasmine.getEnv().execute();</value><variable display_value="Test script">989d9e235324220002c6435723dc3484</variable></sys_variable_value></record_update>]]></payload>
+        <payload_hash>-983254481</payload_hash>
+        <record_name>Run Server Side Script</record_name>
+        <reverted_from/>
+        <source>dc2c919e835e07101902ba96feaad301</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 20:21:17</sys_created_on>
+        <sys_id>0af0a3a283920b101902ba96feaad3d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19faa6389180000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 20:21:17</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>46f0a3a281920b106dee2191cbe2c6d5</update_guid>
+        <update_guid_history>46f0a3a281920b106dee2191cbe2c6d5:-983254481,29b1d36214120b102079ee2c473666c5:1634335440,698e476a62dec710684bd901cb3396b0:-1670610089,847d8b6611dec71038494ccd9323298b:1984194206,e86ccf620bdec710392255c8c36b29a7:1352816154,574b83ae729ec7106d5787f227b039db:1747064119,55990f2a4e9ec710152cabef712139f4:297626621,c178c3a6b39ec7109ce44e74293bb946:-180466076,a7088766f29ec710a485684482312f81:-184961276,83b78b26d49ec7103bb98fdf38a36706:-976515362,0b0643629e9ec7105d521271fd33c8d8:145677181</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 20:38:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>128c1f3870f64dd191cdbeda2a093239</sys_id>
+        <sys_metadata>8955c7ee835ec7101902ba96feaad3e7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Run Server Side Script</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_scope_delete display_value="">393aa292a9794d92995d1bcc716fef44</sys_scope_delete>
+        <sys_update_name>sys_atf_step_8955c7ee835ec7101902ba96feaad3e7</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_8955c7ee835ec7101902ba96feaad3e7">0af0a3a283920b101902ba96feaad3d6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 20:38:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_test_suite">
+    <sys_atf_test_suite action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <input_filter/>
+        <name>Workspace Reservation Management Suite</name>
+        <parent/>
+        <sn_atf_tg_generated>false</sn_atf_tg_generated>
+        <sys_class_name>sys_atf_test_suite</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 17:27:36</sys_created_on>
+        <sys_id>1798faa2831ec7101902ba96feaad3a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Workspace Reservation Management Suite</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_atf_test_suite_1798faa2831ec7101902ba96feaad3a4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 17:27:36</sys_updated_on>
+    </sys_atf_test_suite>
+</record_update>

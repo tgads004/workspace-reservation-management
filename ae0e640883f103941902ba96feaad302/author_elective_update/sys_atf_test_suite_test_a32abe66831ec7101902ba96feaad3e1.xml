@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_test_suite_test">
+    <sys_atf_test_suite_test action="DELETE">
+        <abort_on_failure>false</abort_on_failure>
+        <order>2</order>
+        <sys_class_name>sys_atf_test_suite_test</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 17:32:03</sys_created_on>
+        <sys_id>a32abe66831ec7101902ba96feaad3e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>dc856a1683d647101902ba96feaad3a8</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_atf_test_suite_test_a32abe66831ec7101902ba96feaad3e1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 17:32:03</sys_updated_on>
+        <test display_value="Workspace Reservation - Agent Approval">dc856a1683d647101902ba96feaad3a8</test>
+        <test_suite display_value="Workspace Reservation Management Suite">1798faa2831ec7101902ba96feaad3a4</test_suite>
+    </sys_atf_test_suite_test>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</application>
+        <file_path/>
+        <instance_id>0210aedcff7fc218c812f8e4fc4fd90d</instance_id>
+        <instance_name>dev284016</instance_name>
+        <name>sys_atf_test_suite_test_a32abe66831ec7101902ba96feaad3e1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_test_suite_test"><sys_atf_test_suite_test action="INSERT_OR_UPDATE"><abort_on_failure>false</abort_on_failure><order>2</order><sys_class_name>sys_atf_test_suite_test</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-28 17:32:03</sys_created_on><sys_id>a32abe66831ec7101902ba96feaad3e1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>dc856a1683d647101902ba96feaad3a8</sys_name><sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package><sys_policy/><sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope><sys_update_name>sys_atf_test_suite_test_a32abe66831ec7101902ba96feaad3e1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-28 17:32:03</sys_updated_on><test display_value="Workspace Reservation - Agent Approval">dc856a1683d647101902ba96feaad3a8</test><test_suite display_value="Workspace Reservation Management Suite">1798faa2831ec7101902ba96feaad3a4</test_suite></sys_atf_test_suite_test></record_update>]]></payload>
+        <payload_hash>-33326563</payload_hash>
+        <record_name>dc856a1683d647101902ba96feaad3a8</record_name>
+        <reverted_from/>
+        <source>bfe6c53683124b101902ba96feaad358</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-29 03:46:51</sys_created_on>
+        <sys_id>c1f6893683124b101902ba96feaad382</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19fabfb75fd0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-29 03:46:51</sys_updated_on>
+        <type>Test Suite Test</type>
+        <update_guid>c73af2a6091ec710f4b28aca5b4c6018</update_guid>
+        <update_guid_history>c73af2a6091ec710f4b28aca5b4c6018:-33326563,68d481fea0de0b106df14fb12450a488:-2050732285,c73af2a6091ec710f4b28aca5b4c6018:-33326563</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-29 15:52:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_test_suite_test">sys_atf_test_suite_test</sys_db_object>
+        <sys_id>b1a8c6775cf541568007ef1234e70899</sys_id>
+        <sys_metadata>a32abe66831ec7101902ba96feaad3e1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>dc856a1683d647101902ba96feaad3a8</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_scope_delete display_value="">393aa292a9794d92995d1bcc716fef44</sys_scope_delete>
+        <sys_update_name>sys_atf_test_suite_test_a32abe66831ec7101902ba96feaad3e1</sys_update_name>
+        <sys_update_version display_value="sys_atf_test_suite_test_a32abe66831ec7101902ba96feaad3e1">c1f6893683124b101902ba96feaad382</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-29 15:52:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
