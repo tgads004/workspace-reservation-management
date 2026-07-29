@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description>Order item and confirm that ordering is successful</description>
+        <display_name>Order Catalog Item</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>5</order>
+        <step_config display_value="Order Catalog Item">c930b4b2c310320076173b0ac3d3aeec</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 00:33:32</sys_created_on>
+        <sys_id>b5c09bda831e47101902ba96feaad37c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Order Catalog Item</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_atf_step_b5c09bda831e47101902ba96feaad37c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 00:40:50</sys_updated_on>
+        <table/>
+        <test display_value="Workspace Reservation - Agent Approval: Approved">dc856a1683d647101902ba96feaad3a8</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=b5c09bda831e47101902ba96feaad37c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>b5c09bda831e47101902ba96feaad37c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 00:33:33</sys_created_on>
+        <sys_id>2b115b1e831e47101902ba96feaad332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 00:33:33</sys_updated_on>
+        <value>form_submitted_to_server</value>
+        <variable display_value="Assert type">17513cb2c310320076173b0ac3d3ae64</variable>
+    </sys_variable_value>
+</record_update>

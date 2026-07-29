@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <callable_outputs/>
+        <copied_from display_value="Set Variable Values">dd6f479e83da47101902ba96feaad3ac</copied_from>
+        <description>Answer the questions on the form as follows:
+Select workspace = 
+and Additional comments = ATF Testing.
+and Purpose of visit = Team ATF Scrum meeting.
+and Start date/time = 2026-07-28 22:18:56
+and End date/time = 2026-07-30 05:18:56</description>
+        <display_name>Set Variable Values</display_name>
+        <inputs/>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>7</order>
+        <step_config display_value="Set Variable Values">323ca6e1c3b2220076173b0ac3d3aec1</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 17:44:55</sys_created_on>
+        <sys_id>632db2ae831ec7101902ba96feaad34b</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Set Variable Values</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_atf_step_632db2ae831ec7101902ba96feaad34b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-29 12:18:56</sys_updated_on>
+        <table/>
+        <test display_value="Workspace Reservation - Agent Approval: Reject">5f2d72ae831ec7101902ba96feaad36e</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=632db2ae831ec7101902ba96feaad34b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>632db2ae831ec7101902ba96feaad34b</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 17:44:55</sys_created_on>
+        <sys_id>af2db2ae831ec7101902ba96feaad34c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-29 04:45:37</sys_updated_on>
+        <value>IO:65e0b116833d83d41902ba96feaad351={{step['e29395b283924b101902ba96feaad3c3'].first_record}}^IO:2e3a8e5683fd83d41902ba96feaad366=ATF Testing.^IO:9793c69a83bd83d41902ba96feaad3b2=Team ATF Scrum meeting.^IO:d490c61683bd83d41902ba96feaad370=javascript:gs.nowDateTime()^IO:d5f1ca9e837d83d41902ba96feaad3b4=javascript:gs.daysAgo(-1)^EQ</value>
+        <variable display_value="Variable Values">346eea25c3b2220076173b0ac3d3ae8b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>632db2ae831ec7101902ba96feaad34b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 17:44:55</sys_created_on>
+        <sys_id>e32db2ae831ec7101902ba96feaad34d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 17:44:55</sys_updated_on>
+        <value>1a31ed1683b983d41902ba96feaad37f</value>
+        <variable display_value="Item">571e6a25c3b2220076173b0ac3d3ae46</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=632db2ae831ec7101902ba96feaad34b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>variable_values</field>
+        <id>632db2ae831ec7101902ba96feaad34b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-29 04:31:39</sys_created_on>
+        <sys_id>8931dd3e83524b101902ba96feaad326</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-29 04:45:37</sys_updated_on>
+        <table>var__m_atf_input_variable_323ca6e1c3b2220076173b0ac3d3aec1</table>
+        <value>IO:65e0b116833d83d41902ba96feaad351={{step['e29395b283924b101902ba96feaad3c3'].first_record}}^IO:2e3a8e5683fd83d41902ba96feaad366=ATF Testing.^IO:9793c69a83bd83d41902ba96feaad3b2=Team ATF Scrum meeting.^IO:d490c61683bd83d41902ba96feaad370=javascript:gs.nowDateTime()^IO:d5f1ca9e837d83d41902ba96feaad3b4=javascript:gs.daysAgo(-1)^EQ</value>
+    </sys_element_mapping>
+</record_update>
