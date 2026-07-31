@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1534869_wrm_reservation_tracker</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_1534869_wrm_reservation_tracker">reservation_statusVALCHANGES^EQ<item display_value="-- None --" endquery="false" field="reservation_status" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Reservation Tracker WorkSpace Opt Sync</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+    // gs.info('WRM Sync BR fired for reservation: ' + current.number);
+
+    // Ensure workspace reference exists
+    if (!current.workspace) {
+        // gs.info('WRM Sync: No workspace reference found, exiting.');
+        return;
+    }
+
+    // Get the workspace record
+    var workspace = new GlideRecord('x_1534869_wrm_workspace_options');
+    if (!workspace.get(current.workspace)) {
+        // gs.info('WRM Sync: Workspace record not found for sys_id: ' + current.workspace);
+        return;
+    }
+
+    // Determine new workspace status based on reservation status
+    var newStatus = '';
+
+    switch (current.reservation_status.toString()) {
+        case 'pending_check_in':
+        case 'checked_in':
+            newStatus = 'unavailable';
+            break;
+
+        case 'checked_out':
+        case 'no_show':
+        case 'cancelled':
+            newStatus = 'available';
+            break;
+
+        default:
+            // No action for other statuses
+            // gs.info('WRM Sync: Status not mapped, exiting. Status was: ' + current.reservation_status);
+            return;
+    }
+
+    // Only update if the workspace status is actually changing
+    if (workspace.status != newStatus) {
+        gs.info('WRM Sync: Updating workspace ' + workspace.number + ' to status: ' + newStatus);
+		workspace.setWorkflow(false);
+        workspace.status = newStatus;		
+        workspace.update();
+    } else {
+        // gs.info('WRM Sync: Workspace already set to ' + newStatus + ', no update needed.');
+    }
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-29 22:38:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>35354dc38352cb101902ba96feaad39b</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Reservation Tracker WorkSpace Opt Sync</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_script_35354dc38352cb101902ba96feaad39b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-30 18:18:22</sys_updated_on>
+        <template>123TEXTQUERY321=^EQ</template>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=35354dc38352cb101902ba96feaad39b"/>
+</record_update>
