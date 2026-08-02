@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
-    <sp_instance action="INSERT_OR_UPDATE">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table">
+    <sp_instance_table action="INSERT_OR_UPDATE">
         <active>true</active>
         <advanced_placeholder_dimensions>false</advanced_placeholder_dimensions>
         <async_load>false</async_load>
@@ -8,9 +8,17 @@
         <class_name/>
         <color>default</color>
         <css/>
-        <glyph/>
+        <display_field/>
+        <field_list>number,workspace,reservation_status,work_start,work_end,location</field_list>
+        <filter table="x_1534869_wrm_reservation_tracker">reserved_for=javascript:gs.getUserID()^EQ<item endquery="false" field="reserved_for" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserID()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <glyph>empty</glyph>
         <id/>
-        <order>1</order>
+        <maximum_entries>20</maximum_entries>
+        <order>2</order>
+        <order_by>work_start</order_by>
+        <order_direction>desc</order_direction>
         <placeholder_dimensions>{&#13;	"mobile": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	},&#13;	"desktop": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	},&#13;	"tablet": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	}&#13;}</placeholder_dimensions>
         <placeholder_dimensions_script><![CDATA[function evaluateConfig(options) { return {	"mobile": {		"height": "250px",		"width": "100%"	},	"desktop": {		"height": "250px",		"width": "100%"	},	"tablet": {		"height": "250px",		"width": "100%"	}}; }]]></placeholder_dimensions_script>
         <placeholder_template>&lt;!-- 
@@ -32,23 +40,25 @@
         <roles/>
         <short_description/>
         <size>md</size>
-        <sp_column display_value="1">8a7198f7839a03501902ba96feaad37f</sp_column>
-        <sp_widget display_value="WRM – Available Workspaces">d236f27f835283501902ba96feaad3b6</sp_widget>
-        <sys_class_name>sp_instance</sys_class_name>
+        <sp_column display_value="1">bf6cec18832247501902ba96feaad373</sp_column>
+        <sp_page/>
+        <sp_widget display_value="Data Table from Instance Definition">38058ff1cb11020000f8d856634c9c8c</sp_widget>
+        <sys_class_name>sp_instance_table</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-08-01 14:52:16</sys_created_on>
-        <sys_id>610cbe3b839283501902ba96feaad3bd</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_created_on>2026-08-02 17:42:45</sys_created_on>
+        <sys_id>a8aca458832247501902ba96feaad38e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
-        <sys_update_name>sp_instance_610cbe3b839283501902ba96feaad3bd</sys_update_name>
+        <sys_update_name>sp_instance_table_a8aca458832247501902ba96feaad38e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-02 17:57:42</sys_updated_on>
+        <sys_updated_on>2026-08-02 20:51:11</sys_updated_on>
+        <table>x_1534869_wrm_reservation_tracker</table>
         <title/>
         <url/>
         <widget_parameters/>
-    </sp_instance>
-    <sys_translated_text action="delete_multiple" query="documentkey=610cbe3b839283501902ba96feaad3bd"/>
+    </sp_instance_table>
+    <sys_translated_text action="delete_multiple" query="documentkey=a8aca458832247501902ba96feaad38e"/>
 </record_update>

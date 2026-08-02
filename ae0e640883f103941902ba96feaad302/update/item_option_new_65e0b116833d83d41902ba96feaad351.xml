@@ -47,7 +47,7 @@
         <mask_use_encryption>false</mask_use_encryption>
         <name>select_workspace</name>
         <not_available_conversation>false</not_available_conversation>
-        <order>100</order>
+        <order>400</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -84,14 +84,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-02 21:16:36</sys_created_on>
         <sys_id>65e0b116833d83d41902ba96feaad351</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Select workspace</sys_name>
         <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name>item_option_new_65e0b116833d83d41902ba96feaad351</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-16 23:57:02</sys_updated_on>
+        <sys_updated_on>2026-08-02 16:40:53</sys_updated_on>
         <table/>
         <tooltip>Select a workspace</tooltip>
         <topic_block/>

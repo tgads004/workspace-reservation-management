@@ -47,7 +47,7 @@
         <mask_use_encryption>true</mask_use_encryption>
         <name>start_date_time</name>
         <not_available_conversation>false</not_available_conversation>
-        <order>300</order>
+        <order>600</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -82,14 +82,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-02 22:11:59</sys_created_on>
         <sys_id>d490c61683bd83d41902ba96feaad370</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Start date/time</sys_name>
         <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name>item_option_new_d490c61683bd83d41902ba96feaad370</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-02 22:19:11</sys_updated_on>
+        <sys_updated_on>2026-08-02 16:40:53</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
