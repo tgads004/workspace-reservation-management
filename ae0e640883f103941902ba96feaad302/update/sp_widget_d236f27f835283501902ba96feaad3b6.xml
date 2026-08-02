@@ -5,14 +5,14 @@
     /* widget controller */
     var c = this;
 
-	// Check if the server flagged the user as unauthorized
+    // Check if the server flagged the user as unauthorized
     // if (c.data.notAuthorized) {
     //     // 1. Generate a floating red error message banner on the session window
     //     spUtil.addErrorMessage(']]>🔒<![CDATA[ Access Denied: You do not have the required permissions (wrm_user) to view the workspace dashboard.');
-        
+
     //     // 2. Clear out any local browser state to keep URL parameters clean
     //     $location.url('/sp');
-        
+
     //     // 3. Force the window location context routing to execute the clean bounce
     //     $window.location.href = '/sp';
     //     return;
@@ -30,22 +30,72 @@
             console.error('Navigation aborted: request_item_sys_id is empty or missing from server script.');
         }
     };
+
+    // Direct card click router handler
+    c.selectAndBookWorkspace = function(workspaceId) {
+        if (c.data.request_item_sys_id && workspaceId) {
+            $location.search({
+                id: 'sc_cat_item',
+                sys_id: c.data.request_item_sys_id,
+                sysparm_workspace: workspaceId // Appends the room identifier to the page URL
+            });
+        }
+    };
 };]]></client_script>
         <controller_as>c</controller_as>
         <css>.wrm-container {&#13;
   padding: 20px;&#13;
 }&#13;
-.wrm-header h2 {&#13;
-  margin-bottom: 5px;&#13;
+&#13;
+/* Flex layout to space out header and the new tracking navigation button */&#13;
+.wrm-header-flex {&#13;
+  display: flex;&#13;
+  justify-content: space-between;&#13;
+  align-items: flex-start;&#13;
+  margin-bottom: 25px;&#13;
 }&#13;
+&#13;
+.wrm-header-flex h2 {&#13;
+  margin: 0 0 5px 0;&#13;
+}&#13;
+&#13;
+/* Styling for the new header icon */&#13;
+.wrm-header-icon {&#13;
+  margin-right: 10px;    /* Pushes the text away from the icon */&#13;
+  color: #1f77b4;        /* Optional: Gives the icon a clean brand blue color */&#13;
+}&#13;
+&#13;
 .wrm-subtitle {&#13;
   color: #666;&#13;
+  margin: 0;&#13;
+}&#13;
+&#13;
+/* Nav Button Styling */&#13;
+.wrm-nav-btn {&#13;
+  border-radius: 4px;&#13;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);&#13;
+}&#13;
+&#13;
+.wrm-nav-btn i {&#13;
+  margin-right: 6px;&#13;
+}&#13;
+&#13;
+/* Card spacing in the grid row loop */&#13;
+.wrm-card-spacing {&#13;
   margin-bottom: 20px;&#13;
 }&#13;
+&#13;
+/* Card Image Link behavior */&#13;
+.wrm-card-link {&#13;
+  cursor: pointer;&#13;
+  display: block;&#13;
+}&#13;
+&#13;
 /* Grid container handles width dynamically via standard rows */&#13;
 .wrm-card-grid {&#13;
   width: 100%;&#13;
 }&#13;
+&#13;
 /* Clean up card logic so it takes up 100% of its native Bootstrap column wrapper */&#13;
 .wrm-card {&#13;
   background: #fff;&#13;
@@ -54,25 +104,28 @@
   overflow: hidden;&#13;
   display: flex;&#13;
   flex-direction: column;&#13;
-  /*height: 100%;*/ /* Keeps cards the same height if title lengths vary */&#13;
-   min-height: 340px; /* Forces all cards to have the exact same minimum structural height */&#13;
+  min-height: 340px; /* Forces all cards to have the exact same minimum structural height */&#13;
 }&#13;
-}&#13;
+&#13;
 .wrm-card-image img {&#13;
   width: 100%;&#13;
   height: 160px;&#13;
   object-fit: cover;&#13;
 }&#13;
+&#13;
 .wrm-card-body {&#13;
   padding: 12px 16px 16px;&#13;
 }&#13;
+&#13;
 .wrm-card-title {&#13;
   margin: 0 0 8px;&#13;
   font-size: 18px;&#13;
 }&#13;
+&#13;
 .wrm-card-meta {&#13;
   margin-bottom: 8px;&#13;
 }&#13;
+&#13;
 .wrm-pill {&#13;
   display: inline-block;&#13;
   background: #f0f0f0;&#13;
@@ -81,24 +134,35 @@
   margin-right: 6px;&#13;
   font-size: 12px;&#13;
 }&#13;
+&#13;
 .wrm-card-status,&#13;
 .wrm-card-occupancy {&#13;
   margin: 0 0 4px;&#13;
   font-size: 13px;&#13;
 }&#13;
+&#13;
 .wrm-status {&#13;
   font-weight: 600;&#13;
 }&#13;
+&#13;
 .wrm-empty {&#13;
   margin-top: 16px;&#13;
   color: #777;&#13;
 }&#13;
+&#13;
 .wrm-side-panel {&#13;
   background: #fff;&#13;
   border-radius: 6px;&#13;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12);&#13;
   padding: 16px;&#13;
 }&#13;
+&#13;
+/* Wrapper to align the sidebar button in the center */&#13;
+.wrm-btn-center-container {&#13;
+  text-align: center;&#13;
+  margin-top: 15px;&#13;
+}&#13;
+&#13;
 /* Safety anchor to prevent the panel button from expanding */&#13;
 .wrm-side-panel .btn-primary {&#13;
   display: inline-block !important;&#13;
@@ -163,20 +227,21 @@
     if (catItemGR.next()) {
         data.request_item_sys_id = catItemGR.getUniqueValue();
     }
+
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-01 14:48:44</sys_created_on>
         <sys_id>d236f27f835283501902ba96feaad3b6</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>WRM – Available Workspaces</sys_name>
         <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name>sp_widget_d236f27f835283501902ba96feaad3b6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-02 02:31:21</sys_updated_on>
+        <sys_updated_on>2026-08-02 23:06:43</sys_updated_on>
         <template><![CDATA[<!-- Put this at the very top of your HTML Template container -->
  <div class="alert alert-danger text-center" ng-if="c.data.notAuthorized" style="margin: 20px;">
   <h3>]]>🔒<![CDATA[ Access Denied</h3>
@@ -185,12 +250,18 @@
 
 <!-- Wrap existing code in an ng-if so it hides from unauthorized users -->
 <div class="wrm-container" ng-if="!c.data.notAuthorized">
-<div class="wrm-container">
-  <div class="wrm-header">
-    <h2>Available Workspaces</h2>
-    <p class="wrm-subtitle">
-      Browse available workspaces and request a reservation.
-    </p>
+<!--<div class="wrm-container"> -->
+  <div div class="wrm-header-flex">
+     <div>
+      <h2><i class="fa fa-building wrm-header-icon"></i>Available Workspaces</h2>
+      <p class="wrm-subtitle">
+        Browse available workspaces and request a reservation.
+      </p>
+    </div>
+    <!-- Navigation button linking to your brand new tracking page -->
+    <a href="?id=my_workspace_reservations" class="btn btn-default wrm-nav-btn">
+      <i class="fa fa-calendar-check-o"></i> View My Reservations
+    </a>
   </div>
 
   <div class="row">
@@ -199,11 +270,13 @@
       <div class="row">
         
         <!-- Loop over each card wrapper directly using Bootstrap columns -->
-        <div class="col-lg-4 col-md-6 col-sm-12" ng-repeat="ws in c.data.workspaces" style="margin-bottom: 20px;">
+        <div class="col-lg-3 col-md-6 col-sm-12" ng-repeat="ws in c.data.workspaces" style="margin-bottom: 20px;">
           <div class="wrm-card">
-            <div class="wrm-card-image" ng-if="ws.image">
-              <img ng-src="{{ws.image}}" alt="{{ws.workspace_name}}">
-            </div>
+            <a ng-click="c.selectAndBookWorkspace(ws.sys_id)" class="wrm-card-link">
+              <div class="wrm-card-image" ng-if="ws.image">
+                <img ng-src="{{ws.image}}" alt="{{ws.workspace_name}}">
+              </div>
+            </a>
             <div class="wrm-card-body">
               <h3 class="wrm-card-title">{{ws.workspace_name}}</h3>
               <p class="wrm-card-meta">
@@ -233,7 +306,7 @@
       <div class="wrm-side-panel">
         <h3>Request a Reservation</h3>
         <p>
-          Use the workspace reservation catalog item to request a specific workspace.
+          Use the workspace reservation form to request a specific workspace.
         </p>
         <!-- Centering container wrapper -->
   		<div style="text-align: center; margin-top: 15px;">

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <css>/* Select and permanently hide the data table breadcrumb filter bar */&#13;
+.sp-breadcrumb {&#13;
+  display: none !important;&#13;
+}&#13;
+</css>
+        <draft>false</draft>
+        <dynamic_title_structure>My Workspace Reservations</dynamic_title_structure>
+        <human_readable_url_structure/>
+        <id>my_workspace_reservations</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>false</public>
+        <roles/>
+        <seo_script/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-02 17:39:59</sys_created_on>
+        <sys_id>63aba8d4832247501902ba96feaad34f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>my_workspace_reservations</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sp_page_63aba8d4832247501902ba96feaad34f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-02 20:45:36</sys_updated_on>
+        <title>My Workspace Reservations</title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=63aba8d4832247501902ba96feaad34f"/>
+</record_update>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.wrm-container {&#13;
+  padding: 20px 20px 0px 20px; /* Reduced bottom padding to blend cleanly with the table below */&#13;
+}&#13;
+&#13;
+.wrm-header-flex {&#13;
+  display: flex;&#13;
+  justify-content: space-between;&#13;
+  align-items: flex-start;&#13;
+  margin-bottom: 15px;&#13;
+}&#13;
+&#13;
+.wrm-header-flex h2 {&#13;
+  margin: 0 0 5px 0;&#13;
+}&#13;
+&#13;
+.wrm-subtitle {&#13;
+  color: #666;&#13;
+  margin: 0;&#13;
+}&#13;
+&#13;
+.wrm-header-icon {&#13;
+  margin-right: 10px;&#13;
+  color: #1f77b4; /* Keeps the uniform brand blue color accent */&#13;
+}&#13;
+&#13;
+.wrm-nav-btn {&#13;
+  border-radius: 4px;&#13;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);&#13;
+}&#13;
+&#13;
+.wrm-nav-btn i {&#13;
+  margin-right: 6px;&#13;
+}&#13;
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>wrm_reservations_header</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Reservations Header</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-02 19:43:34</sys_created_on>
+        <sys_id>1266c15c83e247501902ba96feaad340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reservations Header</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sp_widget_1266c15c83e247501902ba96feaad340</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-02 19:43:34</sys_updated_on>
+        <template><![CDATA[<div class="wrm-container">
+  <div class="wrm-header-flex">
+    <div>
+      <h2><i class="fa fa-calendar-check-o wrm-header-icon"></i>My Workspace Reservations</h2>
+      <p class="wrm-subtitle">
+        Track, modify, or review your current and historical workspace bookings.
+      </p>
+    </div>
+    
+    <!-- Clean return navigation button linking back to your main grid dashboard -->
+    <a href="?id=workspace_reservations_home" class="btn btn-default wrm-nav-btn">
+      <i class="fa fa-th"></i> Return to Workspaces
+    </a>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>
