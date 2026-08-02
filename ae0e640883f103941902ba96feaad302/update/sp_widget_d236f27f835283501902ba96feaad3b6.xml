@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope, $location) {
+    /* widget controller */
+    var c = this;
+
+	// Check if the server flagged the user as unauthorized
+    // if (c.data.notAuthorized) {
+    //     // 1. Generate a floating red error message banner on the session window
+    //     spUtil.addErrorMessage(']]>🔒<![CDATA[ Access Denied: You do not have the required permissions (wrm_user) to view the workspace dashboard.');
+        
+    //     // 2. Clear out any local browser state to keep URL parameters clean
+    //     $location.url('/sp');
+        
+    //     // 3. Force the window location context routing to execute the clean bounce
+    //     $window.location.href = '/sp';
+    //     return;
+    // }
+
+    c.openReservation = function() {
+        console.log('Reservation button clicked. Routing target:', c.data.request_item_sys_id);
+        // Navigate to the catalog item dynamically
+        if (c.data.request_item_sys_id) {
+            $location.search({
+                id: 'sc_cat_item',
+                sys_id: c.data.request_item_sys_id
+            });
+        } else {
+            console.error('Navigation aborted: request_item_sys_id is empty or missing from server script.');
+        }
+    };
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.wrm-container {&#13;
+  padding: 20px;&#13;
+}&#13;
+.wrm-header h2 {&#13;
+  margin-bottom: 5px;&#13;
+}&#13;
+.wrm-subtitle {&#13;
+  color: #666;&#13;
+  margin-bottom: 20px;&#13;
+}&#13;
+/* Grid container handles width dynamically via standard rows */&#13;
+.wrm-card-grid {&#13;
+  width: 100%;&#13;
+}&#13;
+/* Clean up card logic so it takes up 100% of its native Bootstrap column wrapper */&#13;
+.wrm-card {&#13;
+  background: #fff;&#13;
+  border-radius: 6px;&#13;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);&#13;
+  overflow: hidden;&#13;
+  display: flex;&#13;
+  flex-direction: column;&#13;
+  /*height: 100%;*/ /* Keeps cards the same height if title lengths vary */&#13;
+   min-height: 340px; /* Forces all cards to have the exact same minimum structural height */&#13;
+}&#13;
+}&#13;
+.wrm-card-image img {&#13;
+  width: 100%;&#13;
+  height: 160px;&#13;
+  object-fit: cover;&#13;
+}&#13;
+.wrm-card-body {&#13;
+  padding: 12px 16px 16px;&#13;
+}&#13;
+.wrm-card-title {&#13;
+  margin: 0 0 8px;&#13;
+  font-size: 18px;&#13;
+}&#13;
+.wrm-card-meta {&#13;
+  margin-bottom: 8px;&#13;
+}&#13;
+.wrm-pill {&#13;
+  display: inline-block;&#13;
+  background: #f0f0f0;&#13;
+  border-radius: 12px;&#13;
+  padding: 2px 8px;&#13;
+  margin-right: 6px;&#13;
+  font-size: 12px;&#13;
+}&#13;
+.wrm-card-status,&#13;
+.wrm-card-occupancy {&#13;
+  margin: 0 0 4px;&#13;
+  font-size: 13px;&#13;
+}&#13;
+.wrm-status {&#13;
+  font-weight: 600;&#13;
+}&#13;
+.wrm-empty {&#13;
+  margin-top: 16px;&#13;
+  color: #777;&#13;
+}&#13;
+.wrm-side-panel {&#13;
+  background: #fff;&#13;
+  border-radius: 6px;&#13;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);&#13;
+  padding: 16px;&#13;
+}&#13;
+/* Safety anchor to prevent the panel button from expanding */&#13;
+.wrm-side-panel .btn-primary {&#13;
+  display: inline-block !important;&#13;
+  width: auto !important;&#13;
+  max-width: 100% !important;&#13;
+  padding: 8px 16px;&#13;
+}&#13;
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>x_1534869_wrm_wrm_available_workspaces</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>WRM – Available Workspaces</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    // SECURITY CHECK: Validate if the logged-in user has the wrm_user role
+    var hasRole = gs.hasRole('x_1534869_wrm.wrm_user');
+
+    if (!hasRole) {
+        // If they don't have the role, clear out the workspace data completely
+        data.workspaces = [];
+        data.notAuthorized = true;
+        return; // Halt script execution immediately
+    }
+
+    // Query Available Workspaces from Workspace Options
+    var gr = new GlideRecord('x_1534869_wrm_workspace_options');
+    gr.addActiveQuery();
+    gr.addQuery('status', 'available'); // internal value for Available
+    gr.orderBy('workspace_name');
+    gr.query();
+    data.workspaces = [];
+    while (gr.next()) {
+        if (!$sp.canReadRecord(gr))
+            continue;
+        var ws = {};
+        $sp.getRecordDisplayValues(ws, gr,
+            'workspace_name,workspace_type,location,status,max_occupancy,image');
+        // Also send raw values if needed
+        ws.sys_id = gr.getUniqueValue();
+        ws.status_value = gr.getValue('status');
+        data.workspaces.push(ws);
+    }
+    // Optional: catalog item sys_id for Request Workspace Reservation
+    // data.request_item_sys_id = '1a31ed1683b983d41902ba96feaad37f';
+
+    // OPtional:  DYNAMIC LOOKUP: Fetch catalog item sys_id by its exact name
+    data.request_item_sys_id = ''; // Default fallback
+    var catItemGR = new GlideRecord('sc_cat_item');
+    catItemGR.addQuery('name', 'Workspace Reservation Request'); // Use your exact item name here
+    catItemGR.addActiveQuery();
+    catItemGR.query();
+    if (catItemGR.next()) {
+        data.request_item_sys_id = catItemGR.getUniqueValue();
+    }
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 14:48:44</sys_created_on>
+        <sys_id>d236f27f835283501902ba96feaad3b6</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>WRM – Available Workspaces</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sp_widget_d236f27f835283501902ba96feaad3b6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-02 02:31:21</sys_updated_on>
+        <template><![CDATA[<!-- Put this at the very top of your HTML Template container -->
+ <div class="alert alert-danger text-center" ng-if="c.data.notAuthorized" style="margin: 20px;">
+  <h3>]]>🔒<![CDATA[ Access Denied</h3>
+  <p>You do not have the required permissions (wrm_user) to view this workspace dashboard.</p>
+</div>
+
+<!-- Wrap existing code in an ng-if so it hides from unauthorized users -->
+<div class="wrm-container" ng-if="!c.data.notAuthorized">
+<div class="wrm-container">
+  <div class="wrm-header">
+    <h2>Available Workspaces</h2>
+    <p class="wrm-subtitle">
+      Browse available workspaces and request a reservation.
+    </p>
+  </div>
+
+  <div class="row">
+    <!-- Main Left Column (Holds the Workspace Grid) -->
+    <div class="col-md-8">
+      <div class="row">
+        
+        <!-- Loop over each card wrapper directly using Bootstrap columns -->
+        <div class="col-lg-4 col-md-6 col-sm-12" ng-repeat="ws in c.data.workspaces" style="margin-bottom: 20px;">
+          <div class="wrm-card">
+            <div class="wrm-card-image" ng-if="ws.image">
+              <img ng-src="{{ws.image}}" alt="{{ws.workspace_name}}">
+            </div>
+            <div class="wrm-card-body">
+              <h3 class="wrm-card-title">{{ws.workspace_name}}</h3>
+              <p class="wrm-card-meta">
+                <span class="wrm-pill">{{ws.workspace_type}}</span>
+                <span class="wrm-pill">{{ws.location}}</span>
+              </p>
+              <p class="wrm-card-status">
+                Status: <span class="wrm-status">{{ws.status}}</span>
+              </p>
+              <p class="wrm-card-occupancy">
+                Max occupancy: {{ws.max_occupancy}}
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Empty State Handling -->
+        <div ng-if="!c.data.workspaces.length" class="col-xs-12 wrm-empty">
+          No available workspaces found.
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Right Side Panel Column -->
+    <div class="col-md-4">
+      <div class="wrm-side-panel">
+        <h3>Request a Reservation</h3>
+        <p>
+          Use the workspace reservation catalog item to request a specific workspace.
+        </p>
+        <!-- Centering container wrapper -->
+  		<div style="text-align: center; margin-top: 15px;">
+          <button class="btn btn-primary btn-block"
+                  ng-click="c.openReservation()">
+            Request Workspace Reservation
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>
