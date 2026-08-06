@@ -189,8 +189,9 @@
         <script><![CDATA[(function() {
     // SECURITY CHECK: Validate if the logged-in user has the wrm_user role
     var hasRole = gs.hasRole('x_1534869_wrm.wrm_user');
+	var hasAgentRole = gs.hasRole('x_1534869_wrm.wrm_agent');
 
-    if (!hasRole) {
+    if (!hasRole && !hasAgentRole) {
         // If they don't have the role, clear out the workspace data completely
         data.workspaces = [];
         data.notAuthorized = true;
@@ -234,14 +235,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-01 14:48:44</sys_created_on>
         <sys_id>d236f27f835283501902ba96feaad3b6</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name>WRM – Available Workspaces</sys_name>
         <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name>sp_widget_d236f27f835283501902ba96feaad3b6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-02 23:06:43</sys_updated_on>
+        <sys_updated_on>2026-08-05 21:41:24</sys_updated_on>
         <template><![CDATA[<!-- Put this at the very top of your HTML Template container -->
  <div class="alert alert-danger text-center" ng-if="c.data.notAuthorized" style="margin: 20px;">
   <h3>]]>🔒<![CDATA[ Access Denied</h3>
@@ -318,7 +319,6 @@
       </div>
     </div>
   </div>
-</div>
-]]></template>
+</div>]]></template>
     </sp_widget>
 </record_update>
