@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Hide Workspace Maintenance for WRM User</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    // Check if the user has the 'wrm_user' role
+    if (g_user.hasRoleExactly('x_1534869_wrm.wrm_user')) {
+        
+		// Go to the Native UI and open your reservation form.Right-click any column header in the Workspace Maintenances related list at the bottom.
+		// Select Configure > List Control.
+		// Copy the exact string found in the Related list field and use it directly inside your script function.
+
+        // Hide the specific related list link on the form        
+        g_form.hideRelatedList('x_1534869_wrm_workspace_maintenance.reservation'); 
+    }
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 17:50:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>66a64015832a87101902ba96feaad3f8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Hide Workspace Maintenance for WRM User</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_script_client_66a64015832a87101902ba96feaad3f8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 18:07:03</sys_updated_on>
+        <table>x_1534869_wrm_reservation_tracker</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</application>
+        <file_path/>
+        <instance_id>0210aedcff7fc218c812f8e4fc4fd90d</instance_id>
+        <instance_name>dev284016</instance_name>
+        <name>sys_script_client_66a64015832a87101902ba96feaad3f8</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Hide Workspace Maintenance for WRM User&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+    // Check if the user has the 'wrm_user' role
+    if (g_user.hasRoleExactly('x_1534869_wrm.wrm_user')) {
+        
+		// Go to the Native UI and open your reservation form.Right-click any column header in the Workspace Maintenances related list at the bottom.
+		// Select Configure &gt; List Control.
+		// Copy the exact string found in the Related list field and use it directly inside your script function.
+
+        // Hide the specific related list link on the form        
+        g_form.hideRelatedList('x_1534869_wrm_workspace_maintenance.reservation'); 
+    }
+}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-05 17:50:56&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;66a64015832a87101902ba96feaad3f8&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Hide Workspace Maintenance for WRM User&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm"&gt;ae0e640883f103941902ba96feaad302&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Workspace Reservation Management"&gt;ae0e640883f103941902ba96feaad302&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_66a64015832a87101902ba96feaad3f8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-05 18:07:03&lt;/sys_updated_on&gt;&lt;table&gt;x_1534869_wrm_reservation_tracker&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-588401311</payload_hash>
+        <record_name>Hide Workspace Maintenance for WRM User</record_name>
+        <reverted_from/>
+        <source>bd53445483ea07501902ba96feaad378</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 18:07:03</sys_created_on>
+        <sys_id>31fe0095836a87101902ba96feaad3e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19fd31b84960000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 18:07:03</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>7dfe0095e46a8710dfcfb4b3e6dd3ce5</update_guid>
+        <update_guid_history>7dfe0095e46a8710dfcfb4b3e6dd3ce5:-588401311,b7cc40517b6a87103d83ce756944a0be:-246270572,e94b409dc82a871035b04a231cb6b6d4:-444083608</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 19:19:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>f7664a58aef94ab9a353e2001bd813b9</sys_id>
+        <sys_metadata>66a64015832a87101902ba96feaad3f8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hide Workspace Maintenance for WRM User</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_parent display_value="Reservation Tracker">a6c6566883bd07941902ba96feaad36b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_scope_delete display_value="">393aa292a9794d92995d1bcc716fef44</sys_scope_delete>
+        <sys_update_name>sys_script_client_66a64015832a87101902ba96feaad3f8</sys_update_name>
+        <sys_update_version display_value="sys_script_client_66a64015832a87101902ba96feaad3f8">31fe0095836a87101902ba96feaad3e7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 19:19:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
