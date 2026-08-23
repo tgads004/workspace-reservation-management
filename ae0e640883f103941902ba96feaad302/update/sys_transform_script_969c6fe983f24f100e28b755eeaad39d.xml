@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <map display_value="Workspace Transform">819de39c8379c3941902ba96feaad35e</map>
+        <order>100</order>
+        <script><![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+
+    // // 1. Get the target filename from the import staging table row
+    // var fileName = source.getValue('u_image');
+    // if (!fileName) {
+    //     log.info('Skipping row: No image filename provided in the source data.');
+    //     return;
+    // }
+
+    // // 1. FIXED: Pulls string conversion directly to bypass source mapping object blocks
+    // var fileName = source.u_image ? source.u_image.toString().trim() : '';
+    // if (!fileName) {
+    //     log.info('Skipping row: No image filename read from source row configuration.');
+    //     return;
+    // }
+
+    // // 1. Temporary Diagnostic Loop: Print every single column available on the staging row
+    // log.info('--- DIAGNOSTIC fields list for staging row ---');
+    // for (var column in source) {
+    //     if (column.startsWith('u_image')) {
+    //         log.info('Available Staging Field: ' + column + ' = "' + source.getValue(column) + '"');
+    //     }
+    // }
+    // log.info('--------------------------------------------');
+
+    // // Halt processing on this row so we can read the diagnostic results first
+    // return;
+
+    // 1. Pull the clean filename string from your staging column 'u_image'
+    var fileName = source.getValue('u_image');
+    if (!fileName) {
+        log.warn('Skipping row: No image filename found in the u_image column.');
+        return;
+    }
+
+    var targetTable = String(target.getTableName());
+    var targetSysId = String(target.getUniqueValue());
+
+    // 2. SAFEGUARD AND BIND: Check if the file is already bound to this record
+    var existingAttach = new GlideRecord('sys_attachment');
+    existingAttach.addQuery('table_name', 'IN', [targetTable, 'ZZ_YY' + targetTable]);
+    existingAttach.addQuery('table_sys_id', targetSysId);
+    existingAttach.addQuery('file_name', fileName);
+    existingAttach.query();
+
+    if (existingAttach.next()) {
+        log.info('Image "' + fileName + '" already exists in system. Bypassing Google download and linking to field.');
+
+        // Link the existing file back to your empty form pointer field
+        var attachmentSysId = existingAttach.getUniqueValue();
+        existingAttach.setValue('table_name', 'ZZ_YY' + targetTable);
+        existingAttach.update();
+
+        var targetRec = new GlideRecord(targetTable);
+        if (targetRec.get(targetSysId)) {
+            targetRec.setValue('image', attachmentSysId);
+            targetRec.update();
+        }
+        return; // Complete row processing safely
+    }
+
+    // 3. Setup Authenticated Google API Configuration
+    var apiKey = gs.getProperty('x_1534869_wrm.google_api_key');
+    if (!apiKey) {
+        apiKey = 'AIzaSyC7OUe9k4Myo3IQIEjl12Gu9_1e0BqJYMs'; // Fallback tested key
+    }
+
+    var folderId = '1242sRN0cJYuL7kHgkNJp18PnkCAwAgtb';
+    var apiBaseDomain = 'https://googleapis.com';
+    var filesEndpoint = '/drive/v3/files';
+
+    // 4. STEP A: Query Google Drive to find the unique File ID
+    var searchRequest = new sn_ws.RESTMessageV2();
+    var queryStr = "'" + folderId + "' in parents and name = '" + fileName + "' and trashed = false";
+    var searchUrl = apiBaseDomain + filesEndpoint + '?q=' + encodeURIComponent(queryStr) + '&key=' + apiKey + '&fields=files(id)';
+
+    searchRequest.setEndpoint(searchUrl);
+    searchRequest.setHttpMethod('GET');
+
+    var searchResponse = searchRequest.execute();
+    if (searchResponse.getStatusCode() !== 200) {
+        log.error('Google API Search Failed for "' + fileName + '" — HTTP ' + searchResponse.getStatusCode());
+        return;
+    }
+
+    var searchData = JSON.parse(searchResponse.getBody());
+    if (!searchData.files || searchData.files.length === 0) {
+        log.warn('Google Drive API could not find a file matching name: "' + fileName + '" inside the folder.');
+        return;
+    }
+
+    var fileId = searchData.files[0].id;
+
+    // 5. STEP B: Download the binary file data
+    var downloadRequest = new sn_ws.RESTMessageV2();
+    var downloadUrl = apiBaseDomain + filesEndpoint + '/' + fileId + '?alt=media&key=' + apiKey;
+
+    downloadRequest.setEndpoint(downloadUrl);
+    downloadRequest.setHttpMethod('GET');
+
+    // Save response directly into the target attachment table
+    downloadRequest.saveResponseBodyAsAttachment(targetTable, targetSysId, fileName);
+
+    var downloadResponse = downloadRequest.execute();
+    var downloadStatus = downloadResponse.getStatusCode();
+
+    if (downloadStatus === 200) {
+        log.info('Successfully downloaded image "' + fileName + '"');
+
+        var getAttach = new GlideRecord('sys_attachment');
+        getAttach.addQuery('table_name', targetTable);
+        getAttach.addQuery('table_sys_id', targetSysId);
+        getAttach.addQuery('file_name', fileName);
+        getAttach.query();
+
+        if (getAttach.next()) {
+            var newAttachmentSysId = getAttach.getUniqueValue();
+
+            // Format table name to show up as a form graphic
+            getAttach.setValue('table_name', 'ZZ_YY' + targetTable);
+            getAttach.update();
+
+            // Link the attachment unique reference key to your target image field
+            var targetRecord = new GlideRecord(targetTable);
+            if (targetRecord.get(targetSysId)) {
+                targetRecord.setValue('image', newAttachmentSysId);
+                targetRecord.update();
+                log.info('Successfully registered image binary stream to UI layout map.');
+            }
+        }
+    } else {
+        log.error('Failed to download media for file ID ' + fileId + ' — HTTP ' + downloadStatus);
+
+        var failedAttach = new GlideRecord('sys_attachment');
+        failedAttach.addQuery('table_name', targetTable);
+        failedAttach.addQuery('table_sys_id', targetSysId);
+        failedAttach.addQuery('file_name', fileName);
+        failedAttach.query();
+        if (failedAttach.next()) {
+            failedAttach.deleteRecord();
+        }
+    }
+
+
+})(source, map, log, target);]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 15:11:58</sys_created_on>
+        <sys_id>969c6fe983f24f100e28b755eeaad39d</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>onAfter</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_transform_script_969c6fe983f24f100e28b755eeaad39d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-23 00:05:59</sys_updated_on>
+        <when>onAfter</when>
+    </sys_transform_script>
+</record_update>
