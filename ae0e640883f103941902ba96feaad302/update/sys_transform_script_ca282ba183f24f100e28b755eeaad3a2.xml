@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <map/>
+        <order>100</order>
+        <script><![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+
+    var fileId = source.getValue('u_google_file_id');
+    var fileName = source.getValue('u_image');
+    if (!fileId) return;
+    // Check if image already attached
+    var existingAttach = new GlideRecord('sys_attachment');
+    existingAttach.addQuery('table_name', String(target.getTableName()));
+    existingAttach.addQuery('table_sys_id', String(target.getUniqueValue()));
+    existingAttach.addQuery('file_name', fileName);
+    existingAttach.query();
+    if (existingAttach.hasNext()) {
+        log.info('Image "' + fileName + '" already attached — skipping.');
+        return;
+    }
+    // Fetch from Google Drive (public share)
+    var url = 'https://drive.google.com/uc?export=download&id=' + fileId;
+    var request = new sn_ws.RESTMessageV2();
+    request.setEndpoint(url);
+    request.setHttpMethod('GET');
+    request.setFollowAllRedirects(true);
+    request.setRequestHeader('Accept', 'image/*');
+    var response = request.execute();
+    var status = response.getStatusCode();
+    if (status == 200) {
+        var sa = new GlideSysAttachment();
+        sa.writeBase64(
+            target,
+            fileName || 'workspace_image.jpg',
+            response.getHeader('Content-Type') || 'image/jpeg',
+            GlideStringUtil.base64Encode(response.getBody())
+        );
+        log.info('Attached "' + fileName + '" to ' + target.getValue('name'));
+    } else {
+        log.warn('Failed to fetch "' + fileName + '" (HTTP ' + status + ')');
+    }
+
+})(source, map, log, target);]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 14:54:29</sys_created_on>
+        <sys_id>ca282ba183f24f100e28b755eeaad3a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onAfter</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
+        <sys_update_name>sys_transform_script_ca282ba183f24f100e28b755eeaad3a2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 14:54:29</sys_updated_on>
+        <when>onAfter</when>
+    </sys_transform_script>
+</record_update>
