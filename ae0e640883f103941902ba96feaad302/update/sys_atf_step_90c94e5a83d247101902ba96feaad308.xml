@@ -4,8 +4,9 @@
         <callable_outputs/>
         <copied_from/>
         <description>Validate that the answer match the following condition:
-Location = 
-and Reserved for = </description>
+Select workspace = 
+and Reserved for = 
+and Purpose of visit STARTSWITH {{Parameters.Purpose of Visit}}</description>
         <display_name>Validate Variable Values (SP)</display_name>
         <inputs/>
         <inputs/>
@@ -17,14 +18,14 @@ and Reserved for = </description>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-27 19:23:40</sys_created_on>
         <sys_id>90c94e5a83d247101902ba96feaad308</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Validate Variable Values (SP)</sys_name>
         <sys_package display_value="Workspace Reservation Management" source="x_1534869_wrm">ae0e640883f103941902ba96feaad302</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">ae0e640883f103941902ba96feaad302</sys_scope>
         <sys_update_name>sys_atf_step_90c94e5a83d247101902ba96feaad308</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-27 20:19:10</sys_updated_on>
+        <sys_updated_on>2026-08-24 15:48:03</sys_updated_on>
         <table/>
         <test display_value="Workspace Reservation - User Portal Submission">db7cdd5e835e07101902ba96feaad355</test>
         <timeout/>
@@ -67,10 +68,10 @@ and Reserved for = </description>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-27 19:23:40</sys_created_on>
         <sys_id>dc3a02da83d247101902ba96feaad327</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-27 20:19:10</sys_updated_on>
-        <value>IO:11c28e1a83bd83d41902ba96feaad34d={{parameter['db7cdd5e835e07101902ba96feaad355'].u_location}}^IO:9e136d1a83b983d41902ba96feaad3de={{step['fd46fdd2835247101902ba96feaad37d'].user}}^EQ</value>
+        <sys_updated_on>2026-08-24 15:48:03</sys_updated_on>
+        <value>IO:65e0b116833d83d41902ba96feaad351={{parameter['db7cdd5e835e07101902ba96feaad355'].u_workspace}}^IO:9e136d1a83b983d41902ba96feaad3de={{step['fd46fdd2835247101902ba96feaad37d'].user}}^IO:9793c69a83bd83d41902ba96feaad3b2STARTSWITH{{parameter['db7cdd5e835e07101902ba96feaad355'].u_purpose_of_visit}}^EQ</value>
         <variable display_value="Catalog Conditions">e0cc42b59f1303002528d4b4232e70f9</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=90c94e5a83d247101902ba96feaad308"/>
@@ -80,10 +81,10 @@ and Reserved for = </description>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-27 19:23:40</sys_created_on>
         <sys_id>903a02da83d247101902ba96feaad327</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-27 20:19:10</sys_updated_on>
+        <sys_updated_on>2026-08-24 15:48:03</sys_updated_on>
         <table>var__m_atf_input_variable_2c8882759f1303002528d4b4232e708a</table>
-        <value>IO:11c28e1a83bd83d41902ba96feaad34d={{parameter['db7cdd5e835e07101902ba96feaad355'].u_location}}^IO:9e136d1a83b983d41902ba96feaad3de={{step['fd46fdd2835247101902ba96feaad37d'].user}}^EQ</value>
+        <value>IO:65e0b116833d83d41902ba96feaad351={{parameter['db7cdd5e835e07101902ba96feaad355'].u_workspace}}^IO:9e136d1a83b983d41902ba96feaad3de={{step['fd46fdd2835247101902ba96feaad37d'].user}}^IO:9793c69a83bd83d41902ba96feaad3b2STARTSWITH{{parameter['db7cdd5e835e07101902ba96feaad355'].u_purpose_of_visit}}^EQ</value>
     </sys_element_mapping>
 </record_update>
